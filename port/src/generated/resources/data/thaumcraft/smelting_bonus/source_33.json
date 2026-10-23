@@ -1,0 +1,25 @@
+{
+  "source_order": 33,
+  "input": {
+    "legacy_ore": "oreQuartz",
+    "tag": "c:ores/quartz"
+  },
+  "output": {
+    "id": "thaumcraft:nugget_rareearth",
+    "count": 1
+  },
+  "chance": 0.01,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nugget_rareearth"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ores/quartz"
+      }
+    }
+  ]
+}

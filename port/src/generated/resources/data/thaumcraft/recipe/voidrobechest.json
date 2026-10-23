@@ -1,0 +1,89 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "VOIDROBEARMOR",
+  "result": {
+    "id": "thaumcraft:void_robe_chest",
+    "count": 1
+  },
+  "instability": 6,
+  "aspects": {
+    "metallum": 35,
+    "praemunio": 35,
+    "potentia": 25,
+    "alienis": 25,
+    "vacuos": 35
+  },
+  "central": {
+    "type": "thaumcraft:nbt",
+    "stack": {
+      "id": "thaumcraft:void_chest",
+      "count": 1,
+      "components": {
+        "minecraft:damage": 0
+      }
+    }
+  },
+  "components": [
+    {
+      "type": "thaumcraft:nbt",
+      "stack": {
+        "id": "thaumcraft:cloth_chest",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 0
+        }
+      }
+    },
+    {
+      "tag": "c:plates/void"
+    },
+    {
+      "tag": "c:plates/void"
+    },
+    {
+      "item": "thaumcraft:salis_mundus"
+    },
+    {
+      "item": "thaumcraft:fabric"
+    },
+    {
+      "tag": "c:leathers"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:cloth_chest"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:fabric"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:salis_mundus"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:void_chest"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:void_robe_chest"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:leathers"
+      }
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:plates/void"
+      }
+    }
+  ]
+}

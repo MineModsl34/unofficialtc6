@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_nugget_iron": {
+      "conditions": {
+        "items": [
+          {
+            "items": "thaumcraft:nugget_iron"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "thaumcraft:ironnuggetconvert"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_nugget_iron"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "thaumcraft:ironnuggetconvert"
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "enabled": "true"
+      },
+      "apply": {
+        "model": "thaumcraft:block/stage6_lamp_arcane_variant_13"
+      }
+    },
+    {
+      "when": {
+        "enabled": "false"
+      },
+      "apply": {
+        "model": "thaumcraft:block/stage6_lamp_arcane_variant_14"
+      }
+    },
+    {
+      "when": {
+        "facing": "up"
+      },
+      "apply": {
+        "model": "thaumcraft:block/stage6_lamp_arcane_variant_15",
+        "x": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "down"
+      },
+      "apply": {
+        "model": "thaumcraft:block/stage6_lamp_arcane_variant_16"
+      }
+    },
+    {
+      "when": {
+        "facing": "north"
+      },
+      "apply": {
+        "model": "thaumcraft:block/stage6_lamp_arcane_variant_17",
+        "x": 90,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south"
+      },
+      "apply": {
+        "model": "thaumcraft:block/stage6_lamp_arcane_variant_18",
+        "x": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east"
+      },
+      "apply": {
+        "model": "thaumcraft:block/stage6_lamp_arcane_variant_19",
+        "x": 90,
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west"
+      },
+      "apply": {
+        "model": "thaumcraft:block/stage6_lamp_arcane_variant_20",
+        "x": 90,
+        "y": 90
+      }
+    }
+  ]
+}

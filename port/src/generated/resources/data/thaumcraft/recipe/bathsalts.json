@@ -1,0 +1,27 @@
+{
+  "type": "thaumcraft:crucible",
+  "research": "BATHSALTS",
+  "result": {
+    "id": "thaumcraft:bath_salts",
+    "count": 1
+  },
+  "catalyst": {
+    "item": "thaumcraft:salis_mundus"
+  },
+  "aspects": {
+    "cognitio": 40,
+    "aer": 40,
+    "ordo": 40,
+    "victus": 40
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:bath_salts"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:salis_mundus"
+    }
+  ]
+}

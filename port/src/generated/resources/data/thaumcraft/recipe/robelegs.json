@@ -1,0 +1,38 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "group": "minecraft:",
+  "research": "UNLOCKINFUSION",
+  "vis": 100,
+  "crystals": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "result": {
+    "id": "thaumcraft:cloth_legs",
+    "count": 1
+  },
+  "pattern": [
+    "III",
+    "I I",
+    "I I"
+  ],
+  "key": {
+    "I": {
+      "item": "thaumcraft:fabric"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:cloth_legs"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:fabric"
+    }
+  ]
+}

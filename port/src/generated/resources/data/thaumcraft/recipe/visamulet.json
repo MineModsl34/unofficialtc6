@@ -1,0 +1,100 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "VISAMULET",
+  "result": {
+    "id": "thaumcraft:amulet_vis_crafted",
+    "count": 1
+  },
+  "instability": 6,
+  "aspects": {
+    "auram": 50,
+    "potentia": 100,
+    "vacuos": 50
+  },
+  "central": {
+    "item": "thaumcraft:amulet_mundane"
+  },
+  "components": [
+    {
+      "item": "thaumcraft:vis_resonator"
+    },
+    {
+      "type": "thaumcraft:nbt",
+      "stack": {
+        "id": "thaumcraft:crystal_essence",
+        "count": 1,
+        "components": {
+          "thaumcraft:aspects": {
+            "aer": 1
+          }
+        }
+      }
+    },
+    {
+      "type": "thaumcraft:nbt",
+      "stack": {
+        "id": "thaumcraft:crystal_essence",
+        "count": 1,
+        "components": {
+          "thaumcraft:aspects": {
+            "ignis": 1
+          }
+        }
+      }
+    },
+    {
+      "type": "thaumcraft:nbt",
+      "stack": {
+        "id": "thaumcraft:crystal_essence",
+        "count": 1,
+        "components": {
+          "thaumcraft:aspects": {
+            "aqua": 1
+          }
+        }
+      }
+    },
+    {
+      "type": "thaumcraft:nbt",
+      "stack": {
+        "id": "thaumcraft:crystal_essence",
+        "count": 1,
+        "components": {
+          "thaumcraft:aspects": {
+            "terra": 1
+          }
+        }
+      }
+    },
+    {
+      "type": "thaumcraft:nbt",
+      "stack": {
+        "id": "thaumcraft:crystal_essence",
+        "count": 1,
+        "components": {
+          "thaumcraft:aspects": {
+            "ordo": 1
+          }
+        }
+      }
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:amulet_mundane"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:amulet_vis_crafted"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:crystal_essence"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:vis_resonator"
+    }
+  ]
+}

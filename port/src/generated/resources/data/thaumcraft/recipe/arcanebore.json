@@ -1,0 +1,78 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "ARCANEBORE",
+  "result": {
+    "id": "thaumcraft:turret_bore",
+    "count": 1
+  },
+  "instability": 4,
+  "aspects": {
+    "potentia": 25,
+    "terra": 25,
+    "machina": 100,
+    "vacuos": 25,
+    "motus": 25
+  },
+  "central": {
+    "item": "thaumcraft:turret_basic"
+  },
+  "components": [
+    {
+      "item": "thaumcraft:plank_greatwood"
+    },
+    {
+      "item": "thaumcraft:plank_greatwood"
+    },
+    {
+      "item": "thaumcraft:mechanism_complex"
+    },
+    {
+      "tag": "c:plates/brass"
+    },
+    {
+      "item": "minecraft:diamond_pickaxe"
+    },
+    {
+      "item": "minecraft:diamond_shovel"
+    },
+    {
+      "item": "thaumcraft:morphic_resonator"
+    },
+    {
+      "item": "thaumcraft:nugget_rareearth"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:mechanism_complex"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:morphic_resonator"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nugget_rareearth"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:plank_greatwood"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:turret_basic"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:turret_bore"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:plates/brass"
+      }
+    }
+  ]
+}

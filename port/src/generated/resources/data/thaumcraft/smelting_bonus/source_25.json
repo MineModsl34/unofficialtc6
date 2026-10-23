@@ -1,0 +1,25 @@
+{
+  "source_order": 25,
+  "input": {
+    "legacy_ore": "oreEmerald",
+    "tag": "c:ores/emerald"
+  },
+  "output": {
+    "id": "thaumcraft:nugget_rareearth",
+    "count": 1
+  },
+  "chance": 0.025,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nugget_rareearth"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ores/emerald"
+      }
+    }
+  ]
+}

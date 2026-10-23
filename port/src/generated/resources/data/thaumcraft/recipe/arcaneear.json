@@ -1,0 +1,61 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "group": "minecraft:",
+  "research": "ARCANEEAR",
+  "vis": 15,
+  "crystals": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "result": {
+    "id": "thaumcraft:arcane_ear",
+    "count": 1
+  },
+  "pattern": [
+    "P P",
+    " G ",
+    "WRW"
+  ],
+  "key": {
+    "W": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "G": {
+      "item": "thaumcraft:mechanism_simple"
+    },
+    "P": {
+      "tag": "c:plates/brass"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:arcane_ear"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:mechanism_simple"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:plates/brass"
+      }
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "minecraft:wooden_slabs"
+      }
+    }
+  ]
+}

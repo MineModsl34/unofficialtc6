@@ -1,0 +1,29 @@
+{
+  "type": "thaumcraft:arcane_shapeless",
+  "group": "minecraft:",
+  "research": "FIRSTSTEPS",
+  "vis": 10,
+  "crystals": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "result": {
+    "id": "thaumcraft:activator_rail",
+    "count": 1
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:activator_rail"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:activator_rail"
+    }
+  ]
+}

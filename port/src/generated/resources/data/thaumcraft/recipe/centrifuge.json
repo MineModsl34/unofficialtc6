@@ -1,0 +1,59 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "group": "minecraft:",
+  "research": "CENTRIFUGE",
+  "vis": 100,
+  "crystals": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1
+  ],
+  "result": {
+    "id": "thaumcraft:centrifuge",
+    "count": 1
+  },
+  "pattern": [
+    " T ",
+    "RCP",
+    " T "
+  ],
+  "key": {
+    "T": {
+      "item": "thaumcraft:tube"
+    },
+    "P": {
+      "item": "thaumcraft:mechanism_simple"
+    },
+    "R": {
+      "item": "thaumcraft:morphic_resonator"
+    },
+    "C": {
+      "item": "thaumcraft:metal_alchemical"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:centrifuge"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:mechanism_simple"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:metal_alchemical"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:morphic_resonator"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:tube"
+    }
+  ]
+}

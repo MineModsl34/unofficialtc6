@@ -1,0 +1,48 @@
+{
+  "targets": [
+    "swap"
+  ],
+  "passes": [
+    {
+      "name": "thaumcraft:warp_blur",
+      "intarget": "minecraft:main",
+      "outtarget": "swap",
+      "uniforms": [
+        {
+          "name": "BlurDir",
+          "values": [
+            1,
+            0
+          ]
+        },
+        {
+          "name": "Radius",
+          "values": [
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "name": "thaumcraft:warp_blur",
+      "intarget": "swap",
+      "outtarget": "minecraft:main",
+      "uniforms": [
+        {
+          "name": "BlurDir",
+          "values": [
+            0,
+            1
+          ]
+        },
+        {
+          "name": "Radius",
+          "values": [
+            10
+          ]
+        }
+      ]
+    }
+  ]
+}
+

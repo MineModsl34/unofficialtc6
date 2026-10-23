@@ -1,0 +1,33 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "CHARMUNDYING",
+  "result": {
+    "id": "thaumcraft:charm_undying",
+    "count": 1
+  },
+  "instability": 2,
+  "aspects": {
+    "victus": 25
+  },
+  "central": {
+    "item": "minecraft:totem_of_undying"
+  },
+  "components": [
+    {
+      "tag": "c:plates/brass"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:charm_undying"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:plates/brass"
+      }
+    }
+  ]
+}

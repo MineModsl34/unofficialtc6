@@ -1,0 +1,58 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "group": "minecraft:",
+  "research": "ARCANESPA",
+  "vis": 50,
+  "crystals": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+  ],
+  "result": {
+    "id": "thaumcraft:spa",
+    "count": 1
+  },
+  "pattern": [
+    "QIQ",
+    "SJS",
+    "SPS"
+  ],
+  "key": {
+    "P": {
+      "item": "thaumcraft:mechanism_simple"
+    },
+    "J": {
+      "item": "thaumcraft:jar_normal"
+    },
+    "S": {
+      "item": "thaumcraft:stone_arcane"
+    },
+    "Q": {
+      "item": "minecraft:quartz_block"
+    },
+    "I": {
+      "item": "minecraft:iron_bars"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:jar_normal"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:mechanism_simple"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:spa"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:stone_arcane"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "group": "minecraft:",
+  "research": "POTIONSPRAYER",
+  "vis": 75,
+  "crystals": [
+    0,
+    1,
+    1,
+    0,
+    0,
+    0
+  ],
+  "result": {
+    "id": "thaumcraft:potion_sprayer",
+    "count": 1
+  },
+  "pattern": [
+    "BDB",
+    "IAI",
+    "ICI"
+  ],
+  "key": {
+    "B": {
+      "tag": "c:plates/brass"
+    },
+    "I": {
+      "tag": "c:plates/iron"
+    },
+    "A": {
+      "item": "minecraft:brewing_stand"
+    },
+    "D": {
+      "item": "minecraft:dispenser"
+    },
+    "C": {
+      "item": "thaumcraft:metal_alchemical"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:metal_alchemical"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:potion_sprayer"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:plates/brass"
+      }
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:plates/iron"
+      }
+    }
+  ]
+}

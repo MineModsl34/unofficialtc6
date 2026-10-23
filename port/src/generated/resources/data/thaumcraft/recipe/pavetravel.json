@@ -1,0 +1,9 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "crystals": [1, 0, 0, 1, 0, 0],
+  "key": {"S": {"item": "thaumcraft:stone_arcane_brick"}},
+  "pattern": ["SS", "SS"],
+  "research": "PAVINGSTONES",
+  "result": {"count": 4, "id": "thaumcraft:paving_stone_travel"},
+  "vis": 50
+}

@@ -1,0 +1,8 @@
+{
+  "type": "thaumcraft:flowers",
+  "config": {
+    "state": {
+      "Name": "thaumcraft:shimmerleaf"
+    }
+  }
+}

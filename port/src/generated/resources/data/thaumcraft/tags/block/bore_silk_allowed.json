@@ -1,0 +1,49 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:loot_crate_common",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:loot_crate_uncommon",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:loot_crate_rare",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:loot_urn_common",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:loot_urn_uncommon",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:loot_urn_rare",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:taint_crust",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:taint_soil",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:taint_rock",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:taint_geyser",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:taint_feature",
+      "required": false
+    }
+  ]
+}

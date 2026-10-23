@@ -1,0 +1,33 @@
+{
+  "type": "thaumcraft:arcane_shapeless",
+  "group": "minecraft:",
+  "research": "TUBES",
+  "vis": 10,
+  "crystals": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+  ],
+  "result": {
+    "id": "thaumcraft:tube_oneway",
+    "count": 1
+  },
+  "ingredients": [
+    {
+      "item": "thaumcraft:tube"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:tube"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:tube_oneway"
+    }
+  ]
+}

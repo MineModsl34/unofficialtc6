@@ -1,0 +1,82 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "components": {
+                "thaumcraft:aspects": {
+                  "aqua": 1
+                }
+              },
+              "function": "minecraft:set_components"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "thaumcraft:crystal_aqua",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "size": "0"
+                  }
+                }
+              ],
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "thaumcraft:crystal_aqua",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "size": "1"
+                  }
+                }
+              ],
+              "count": 2.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "thaumcraft:crystal_aqua",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "size": "2"
+                  }
+                }
+              ],
+              "count": 3.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "thaumcraft:crystal_aqua",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "size": "3"
+                  }
+                }
+              ],
+              "count": 4.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "thaumcraft:crystal_essence"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "thaumcraft:blocks/crystal_aqua"
+}

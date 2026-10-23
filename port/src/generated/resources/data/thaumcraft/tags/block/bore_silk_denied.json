@@ -1,0 +1,45 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thaumcraft:crystal_air",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:crystal_earth",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:crystal_fire",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:crystal_water",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:crystal_order",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:crystal_entropy",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:crystal_taint",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:taint_fibre",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:placeholder",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:placeholder_bars",
+      "required": false
+    }
+  ]
+}

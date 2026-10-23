@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_nugget_quicksilver": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:nuggets/quicksilver"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "thaumcraft:nuggetstoquicksilver"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_nugget_quicksilver"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "thaumcraft:nuggetstoquicksilver"
+    ]
+  }
+}

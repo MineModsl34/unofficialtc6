@@ -1,0 +1,1783 @@
+{
+  "format": 1,
+  "stage": 11,
+  "source": "TC6 BETA26 BlockBannerTC / BlockBannerTCItem / ModelBanner / TileBannerRenderer / models/item/banner.json",
+  "files": [
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/banner_white.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/banner_white"
+          }
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/banner_white.json",
+      "payload": {
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "thaumcraft:models/banner_blank"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/banner_white.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/banner_stand",
+          "layer1": "thaumcraft:item/banner",
+          "layer2": "thaumcraft:item/banner_symbol"
+        },
+        "display": {
+          "thirdperson_righthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "thirdperson_lefthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "firstperson_righthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          },
+          "firstperson_lefthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          }
+        }
+      }
+    },
+    {
+      "target": "data_pack",
+      "path": "thaumcraft/loot_table/blocks/banner_white.json",
+      "payload": {
+        "type": "minecraft:block",
+        "pools": []
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/banner_orange.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/banner_orange"
+          }
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/banner_orange.json",
+      "payload": {
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "thaumcraft:models/banner_blank"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/banner_orange.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/banner_stand",
+          "layer1": "thaumcraft:item/banner",
+          "layer2": "thaumcraft:item/banner_symbol"
+        },
+        "display": {
+          "thirdperson_righthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "thirdperson_lefthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "firstperson_righthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          },
+          "firstperson_lefthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          }
+        }
+      }
+    },
+    {
+      "target": "data_pack",
+      "path": "thaumcraft/loot_table/blocks/banner_orange.json",
+      "payload": {
+        "type": "minecraft:block",
+        "pools": []
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/banner_magenta.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/banner_magenta"
+          }
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/banner_magenta.json",
+      "payload": {
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "thaumcraft:models/banner_blank"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/banner_magenta.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/banner_stand",
+          "layer1": "thaumcraft:item/banner",
+          "layer2": "thaumcraft:item/banner_symbol"
+        },
+        "display": {
+          "thirdperson_righthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "thirdperson_lefthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "firstperson_righthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          },
+          "firstperson_lefthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          }
+        }
+      }
+    },
+    {
+      "target": "data_pack",
+      "path": "thaumcraft/loot_table/blocks/banner_magenta.json",
+      "payload": {
+        "type": "minecraft:block",
+        "pools": []
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/banner_light_blue.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/banner_light_blue"
+          }
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/banner_light_blue.json",
+      "payload": {
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "thaumcraft:models/banner_blank"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/banner_light_blue.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/banner_stand",
+          "layer1": "thaumcraft:item/banner",
+          "layer2": "thaumcraft:item/banner_symbol"
+        },
+        "display": {
+          "thirdperson_righthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "thirdperson_lefthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "firstperson_righthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          },
+          "firstperson_lefthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          }
+        }
+      }
+    },
+    {
+      "target": "data_pack",
+      "path": "thaumcraft/loot_table/blocks/banner_light_blue.json",
+      "payload": {
+        "type": "minecraft:block",
+        "pools": []
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/banner_yellow.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/banner_yellow"
+          }
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/banner_yellow.json",
+      "payload": {
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "thaumcraft:models/banner_blank"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/banner_yellow.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/banner_stand",
+          "layer1": "thaumcraft:item/banner",
+          "layer2": "thaumcraft:item/banner_symbol"
+        },
+        "display": {
+          "thirdperson_righthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "thirdperson_lefthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "firstperson_righthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          },
+          "firstperson_lefthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          }
+        }
+      }
+    },
+    {
+      "target": "data_pack",
+      "path": "thaumcraft/loot_table/blocks/banner_yellow.json",
+      "payload": {
+        "type": "minecraft:block",
+        "pools": []
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/banner_lime.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/banner_lime"
+          }
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/banner_lime.json",
+      "payload": {
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "thaumcraft:models/banner_blank"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/banner_lime.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/banner_stand",
+          "layer1": "thaumcraft:item/banner",
+          "layer2": "thaumcraft:item/banner_symbol"
+        },
+        "display": {
+          "thirdperson_righthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "thirdperson_lefthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "firstperson_righthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          },
+          "firstperson_lefthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          }
+        }
+      }
+    },
+    {
+      "target": "data_pack",
+      "path": "thaumcraft/loot_table/blocks/banner_lime.json",
+      "payload": {
+        "type": "minecraft:block",
+        "pools": []
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/banner_pink.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/banner_pink"
+          }
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/banner_pink.json",
+      "payload": {
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "thaumcraft:models/banner_blank"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/banner_pink.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/banner_stand",
+          "layer1": "thaumcraft:item/banner",
+          "layer2": "thaumcraft:item/banner_symbol"
+        },
+        "display": {
+          "thirdperson_righthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "thirdperson_lefthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "firstperson_righthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          },
+          "firstperson_lefthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          }
+        }
+      }
+    },
+    {
+      "target": "data_pack",
+      "path": "thaumcraft/loot_table/blocks/banner_pink.json",
+      "payload": {
+        "type": "minecraft:block",
+        "pools": []
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/banner_gray.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/banner_gray"
+          }
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/banner_gray.json",
+      "payload": {
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "thaumcraft:models/banner_blank"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/banner_gray.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/banner_stand",
+          "layer1": "thaumcraft:item/banner",
+          "layer2": "thaumcraft:item/banner_symbol"
+        },
+        "display": {
+          "thirdperson_righthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "thirdperson_lefthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "firstperson_righthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          },
+          "firstperson_lefthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          }
+        }
+      }
+    },
+    {
+      "target": "data_pack",
+      "path": "thaumcraft/loot_table/blocks/banner_gray.json",
+      "payload": {
+        "type": "minecraft:block",
+        "pools": []
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/banner_light_gray.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/banner_light_gray"
+          }
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/banner_light_gray.json",
+      "payload": {
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "thaumcraft:models/banner_blank"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/banner_light_gray.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/banner_stand",
+          "layer1": "thaumcraft:item/banner",
+          "layer2": "thaumcraft:item/banner_symbol"
+        },
+        "display": {
+          "thirdperson_righthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "thirdperson_lefthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "firstperson_righthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          },
+          "firstperson_lefthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          }
+        }
+      }
+    },
+    {
+      "target": "data_pack",
+      "path": "thaumcraft/loot_table/blocks/banner_light_gray.json",
+      "payload": {
+        "type": "minecraft:block",
+        "pools": []
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/banner_cyan.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/banner_cyan"
+          }
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/banner_cyan.json",
+      "payload": {
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "thaumcraft:models/banner_blank"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/banner_cyan.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/banner_stand",
+          "layer1": "thaumcraft:item/banner",
+          "layer2": "thaumcraft:item/banner_symbol"
+        },
+        "display": {
+          "thirdperson_righthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "thirdperson_lefthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "firstperson_righthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          },
+          "firstperson_lefthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          }
+        }
+      }
+    },
+    {
+      "target": "data_pack",
+      "path": "thaumcraft/loot_table/blocks/banner_cyan.json",
+      "payload": {
+        "type": "minecraft:block",
+        "pools": []
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/banner_purple.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/banner_purple"
+          }
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/banner_purple.json",
+      "payload": {
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "thaumcraft:models/banner_blank"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/banner_purple.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/banner_stand",
+          "layer1": "thaumcraft:item/banner",
+          "layer2": "thaumcraft:item/banner_symbol"
+        },
+        "display": {
+          "thirdperson_righthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "thirdperson_lefthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "firstperson_righthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          },
+          "firstperson_lefthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          }
+        }
+      }
+    },
+    {
+      "target": "data_pack",
+      "path": "thaumcraft/loot_table/blocks/banner_purple.json",
+      "payload": {
+        "type": "minecraft:block",
+        "pools": []
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/banner_blue.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/banner_blue"
+          }
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/banner_blue.json",
+      "payload": {
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "thaumcraft:models/banner_blank"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/banner_blue.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/banner_stand",
+          "layer1": "thaumcraft:item/banner",
+          "layer2": "thaumcraft:item/banner_symbol"
+        },
+        "display": {
+          "thirdperson_righthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "thirdperson_lefthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "firstperson_righthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          },
+          "firstperson_lefthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          }
+        }
+      }
+    },
+    {
+      "target": "data_pack",
+      "path": "thaumcraft/loot_table/blocks/banner_blue.json",
+      "payload": {
+        "type": "minecraft:block",
+        "pools": []
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/banner_brown.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/banner_brown"
+          }
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/banner_brown.json",
+      "payload": {
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "thaumcraft:models/banner_blank"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/banner_brown.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/banner_stand",
+          "layer1": "thaumcraft:item/banner",
+          "layer2": "thaumcraft:item/banner_symbol"
+        },
+        "display": {
+          "thirdperson_righthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "thirdperson_lefthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "firstperson_righthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          },
+          "firstperson_lefthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          }
+        }
+      }
+    },
+    {
+      "target": "data_pack",
+      "path": "thaumcraft/loot_table/blocks/banner_brown.json",
+      "payload": {
+        "type": "minecraft:block",
+        "pools": []
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/banner_green.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/banner_green"
+          }
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/banner_green.json",
+      "payload": {
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "thaumcraft:models/banner_blank"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/banner_green.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/banner_stand",
+          "layer1": "thaumcraft:item/banner",
+          "layer2": "thaumcraft:item/banner_symbol"
+        },
+        "display": {
+          "thirdperson_righthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "thirdperson_lefthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "firstperson_righthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          },
+          "firstperson_lefthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          }
+        }
+      }
+    },
+    {
+      "target": "data_pack",
+      "path": "thaumcraft/loot_table/blocks/banner_green.json",
+      "payload": {
+        "type": "minecraft:block",
+        "pools": []
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/banner_red.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/banner_red"
+          }
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/banner_red.json",
+      "payload": {
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "thaumcraft:models/banner_blank"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/banner_red.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/banner_stand",
+          "layer1": "thaumcraft:item/banner",
+          "layer2": "thaumcraft:item/banner_symbol"
+        },
+        "display": {
+          "thirdperson_righthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "thirdperson_lefthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "firstperson_righthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          },
+          "firstperson_lefthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          }
+        }
+      }
+    },
+    {
+      "target": "data_pack",
+      "path": "thaumcraft/loot_table/blocks/banner_red.json",
+      "payload": {
+        "type": "minecraft:block",
+        "pools": []
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/banner_black.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/banner_black"
+          }
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/banner_black.json",
+      "payload": {
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "thaumcraft:models/banner_blank"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/banner_black.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/banner_stand",
+          "layer1": "thaumcraft:item/banner",
+          "layer2": "thaumcraft:item/banner_symbol"
+        },
+        "display": {
+          "thirdperson_righthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "thirdperson_lefthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "firstperson_righthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          },
+          "firstperson_lefthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          }
+        }
+      }
+    },
+    {
+      "target": "data_pack",
+      "path": "thaumcraft/loot_table/blocks/banner_black.json",
+      "payload": {
+        "type": "minecraft:block",
+        "pools": []
+      }
+    }
+  ]
+}

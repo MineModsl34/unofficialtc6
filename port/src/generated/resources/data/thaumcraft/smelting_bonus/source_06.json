@@ -1,0 +1,25 @@
+{
+  "source_order": 6,
+  "input": {
+    "legacy_ore": "oreLead",
+    "tag": "c:ores/lead"
+  },
+  "output": {
+    "id": "thaumcraft:nugget_lead",
+    "count": 1
+  },
+  "chance": 0.33,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nugget_lead"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ores/lead"
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "type": "thaumcraft:arcane_shapeless",
+  "crystals": [0, 0, 1, 0, 1, 0],
+  "ingredients": [{"item": "thaumcraft:quicksilver"}, {"tag": "c:glass_panes"}],
+  "research": "BASEARTIFICE",
+  "result": {"count": 1, "id": "thaumcraft:mirrored_glass"},
+  "vis": 50
+}

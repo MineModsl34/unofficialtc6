@@ -1,0 +1,20 @@
+{
+  "type": "thaumcraft:infusion_enchantment",
+  "enchantment": "DESTRUCTIVE",
+  "aspects": {
+    "aversio": 200,
+    "perditio": 250
+  },
+  "components": [
+    {
+      "type": "thaumcraft:nbt",
+      "stack": {
+        "id": "minecraft:enchanted_book",
+        "count": 1
+      }
+    },
+    {
+      "item": "minecraft:tnt"
+    }
+  ]
+}

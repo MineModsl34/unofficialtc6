@@ -1,0 +1,23 @@
+{
+  "source_order": 11,
+  "input": {
+    "items": [
+      "thaumcraft:cluster_copper"
+    ]
+  },
+  "output": {
+    "id": "thaumcraft:nugget_copper",
+    "count": 1
+  },
+  "chance": 0.33,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:cluster_copper"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nugget_copper"
+    }
+  ]
+}

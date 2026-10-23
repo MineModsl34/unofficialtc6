@@ -1,0 +1,205 @@
+{
+  "variants": {
+    "facing=down": [
+      {
+        "model": "thaumcraft:block/stage8_taint_feature",
+        "x": 180
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_1",
+        "x": 180
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_2",
+        "x": 180
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature",
+        "x": 180,
+        "y": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_1",
+        "x": 180,
+        "y": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_2",
+        "x": 180,
+        "y": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature",
+        "x": 180,
+        "y": 180
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_1",
+        "x": 180,
+        "y": 180
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_2",
+        "x": 180,
+        "y": 180
+      }
+    ],
+    "facing=up": [
+      {
+        "model": "thaumcraft:block/stage8_taint_feature"
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_1"
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_2"
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature",
+        "y": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_1",
+        "y": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_2",
+        "y": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature",
+        "y": 180
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_1",
+        "y": 180
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_2",
+        "y": 180
+      }
+    ],
+    "facing=east": [
+      {
+        "model": "thaumcraft:block/stage8_taint_feature",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_1",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_2",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature",
+        "x": 270,
+        "y": 270
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_1",
+        "x": 270,
+        "y": 270
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_2",
+        "x": 270,
+        "y": 270
+      }
+    ],
+    "facing=west": [
+      {
+        "model": "thaumcraft:block/stage8_taint_feature",
+        "x": 90,
+        "y": 270
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_1",
+        "x": 90,
+        "y": 270
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_2",
+        "x": 90,
+        "y": 270
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature",
+        "x": 270,
+        "y": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_1",
+        "x": 270,
+        "y": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_2",
+        "x": 270,
+        "y": 90
+      }
+    ],
+    "facing=north": [
+      {
+        "model": "thaumcraft:block/stage8_taint_feature",
+        "x": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_1",
+        "x": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_2",
+        "x": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature",
+        "x": 270,
+        "y": 180
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_1",
+        "x": 270,
+        "y": 180
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_2",
+        "x": 270,
+        "y": 180
+      }
+    ],
+    "facing=south": [
+      {
+        "model": "thaumcraft:block/stage8_taint_feature",
+        "x": 90,
+        "y": 180
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_1",
+        "x": 90,
+        "y": 180
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_2",
+        "x": 90,
+        "y": 180
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature",
+        "x": 270
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_1",
+        "x": 270
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_feature_2",
+        "x": 270
+      }
+    ]
+  }
+}

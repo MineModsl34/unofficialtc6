@@ -1,0 +1,19 @@
+{
+  "source_order": 9,
+  "input": {
+    "items": [
+      "thaumcraft:cluster_gold"
+    ]
+  },
+  "output": {
+    "id": "minecraft:gold_nugget",
+    "count": 1
+  },
+  "chance": 0.33,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:cluster_gold"
+    }
+  ]
+}

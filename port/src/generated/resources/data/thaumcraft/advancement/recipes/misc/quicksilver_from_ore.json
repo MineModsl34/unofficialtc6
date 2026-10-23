@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ore_cinnabar": {
+      "conditions": {
+        "items": [
+          {
+            "items": "thaumcraft:ore_cinnabar"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "thaumcraft:quicksilver_from_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ore_cinnabar"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "thaumcraft:quicksilver_from_ore"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "thaumcraft:block/inlay_dot",
+  "textures": {
+    "over": "thaumcraft:block/inlay_connect0"
+  },
+  "render_type": "minecraft:cutout"
+}

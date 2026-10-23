@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stone_eldritch_tile": {
+      "conditions": {
+        "items": [
+          {
+            "items": "thaumcraft:stone_eldritch_tile"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "thaumcraft:slabeldritch"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stone_eldritch_tile"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "thaumcraft:slabeldritch"
+    ]
+  }
+}

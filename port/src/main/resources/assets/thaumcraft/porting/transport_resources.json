@@ -1,0 +1,646 @@
+{
+  "format": 1,
+  "source": "ConfigBlocks/Models original TC6",
+  "files": [
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/tube.json",
+      "payload": {
+        "multipart": [
+          {
+            "when": {
+              "north": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side",
+              "y": 180,
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "south": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side",
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "east": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side",
+              "y": 270,
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "west": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side",
+              "y": 90,
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "up": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side",
+              "x": 180
+            }
+          },
+          {
+            "when": {
+              "down": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side"
+            }
+          },
+          {
+            "when": {
+              "OR": [
+                {
+                  "north": false
+                },
+                {
+                  "east": false
+                },
+                {
+                  "south": false
+                },
+                {
+                  "west": false
+                },
+                {
+                  "up": false
+                },
+                {
+                  "down": false
+                }
+              ]
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_core"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/tube.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/tube_normal"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/tube_valve.json",
+      "payload": {
+        "multipart": [
+          {
+            "when": {
+              "north": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side",
+              "y": 180,
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "south": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side",
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "east": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side",
+              "y": 270,
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "west": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side",
+              "y": 90,
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "up": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side",
+              "x": 180
+            }
+          },
+          {
+            "when": {
+              "down": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side"
+            }
+          },
+          {
+            "apply": {
+              "model": "thaumcraft:block/tube_core_valve"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/tube_valve.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/tube_valve"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/tube_restrict.json",
+      "payload": {
+        "multipart": [
+          {
+            "when": {
+              "north": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side_restrict",
+              "y": 180,
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "south": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side_restrict",
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "east": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side_restrict",
+              "y": 270,
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "west": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side_restrict",
+              "y": 90,
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "up": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side_restrict",
+              "x": 180
+            }
+          },
+          {
+            "when": {
+              "down": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side_restrict"
+            }
+          },
+          {
+            "when": {
+              "OR": [
+                {
+                  "north": false
+                },
+                {
+                  "east": false
+                },
+                {
+                  "south": false
+                },
+                {
+                  "west": false
+                },
+                {
+                  "up": false
+                },
+                {
+                  "down": false
+                }
+              ]
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_core"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/tube_restrict.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/tube_restrict"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/tube_oneway.json",
+      "payload": {
+        "multipart": [
+          {
+            "when": {
+              "north": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side",
+              "y": 180,
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "south": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side",
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "east": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side",
+              "y": 270,
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "west": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side",
+              "y": 90,
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "up": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side",
+              "x": 180
+            }
+          },
+          {
+            "when": {
+              "down": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side"
+            }
+          },
+          {
+            "when": {
+              "OR": [
+                {
+                  "north": false
+                },
+                {
+                  "east": false
+                },
+                {
+                  "south": false
+                },
+                {
+                  "west": false
+                },
+                {
+                  "up": false
+                },
+                {
+                  "down": false
+                }
+              ]
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_core"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/tube_oneway.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/tube_oneway"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/tube_filter.json",
+      "payload": {
+        "multipart": [
+          {
+            "when": {
+              "north": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side",
+              "y": 180,
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "south": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side",
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "east": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side",
+              "y": 270,
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "west": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side",
+              "y": 90,
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "up": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side",
+              "x": 180
+            }
+          },
+          {
+            "when": {
+              "down": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side"
+            }
+          },
+          {
+            "apply": {
+              "model": "thaumcraft:block/tube_filter_core"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/tube_filter.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/tube_filter"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/tube_buffer.json",
+      "payload": {
+        "multipart": [
+          {
+            "when": {
+              "north": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side",
+              "y": 180,
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "south": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side",
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "east": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side",
+              "y": 270,
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "west": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side",
+              "y": 90,
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "up": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side",
+              "x": 180
+            }
+          },
+          {
+            "when": {
+              "down": true
+            },
+            "apply": {
+              "model": "thaumcraft:block/tube_side"
+            }
+          },
+          {
+            "apply": {
+              "model": "thaumcraft:block/tube_buffer_core"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/tube_buffer.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/tube_buffer"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/essentia_input.json",
+      "payload": {
+        "variants": {
+          "facing=down": {
+            "model": "thaumcraft:block/essentia_input",
+            "x": 180
+          },
+          "facing=up": {
+            "model": "thaumcraft:block/essentia_input"
+          },
+          "facing=east": {
+            "model": "thaumcraft:block/essentia_input",
+            "y": 90,
+            "x": 90
+          },
+          "facing=west": {
+            "model": "thaumcraft:block/essentia_input",
+            "y": 270,
+            "x": 90
+          },
+          "facing=north": {
+            "model": "thaumcraft:block/essentia_input",
+            "x": 90
+          },
+          "facing=south": {
+            "model": "thaumcraft:block/essentia_input",
+            "y": 180,
+            "x": 90
+          }
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/essentia_output.json",
+      "payload": {
+        "variants": {
+          "facing=down": {
+            "model": "thaumcraft:block/essentia_output",
+            "x": 180
+          },
+          "facing=up": {
+            "model": "thaumcraft:block/essentia_output"
+          },
+          "facing=east": {
+            "model": "thaumcraft:block/essentia_output",
+            "y": 90,
+            "x": 90
+          },
+          "facing=west": {
+            "model": "thaumcraft:block/essentia_output",
+            "y": 270,
+            "x": 90
+          },
+          "facing=north": {
+            "model": "thaumcraft:block/essentia_output",
+            "x": 90
+          },
+          "facing=south": {
+            "model": "thaumcraft:block/essentia_output",
+            "y": 180,
+            "x": 90
+          }
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/centrifuge.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/centrifuge"
+          }
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/centrifuge.json",
+      "payload": {
+        "parent": "thaumcraft:block/centrifuge"
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/essentia_input.json",
+      "payload": {
+        "parent": "thaumcraft:block/essentia_input"
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/essentia_output.json",
+      "payload": {
+        "parent": "thaumcraft:block/essentia_output"
+      }
+    }
+  ]
+}

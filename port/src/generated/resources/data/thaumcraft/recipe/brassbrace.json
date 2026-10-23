@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "tag": "c:nuggets/brass"
+    },
+    "S": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "NSN",
+    "S S",
+    "NSN"
+  ],
+  "result": {
+    "count": 2,
+    "id": "thaumcraft:jar_brace"
+  }
+}

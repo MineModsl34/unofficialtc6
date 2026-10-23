@@ -1,0 +1,61 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "ARMORFORTRESS",
+  "result": {
+    "id": "thaumcraft:fortress_chest",
+    "count": 1
+  },
+  "instability": 3,
+  "aspects": {
+    "metallum": 50,
+    "praemunio": 30,
+    "potentia": 25
+  },
+  "central": {
+    "item": "thaumcraft:thaumium_chest"
+  },
+  "components": [
+    {
+      "tag": "c:plates/thaumium"
+    },
+    {
+      "tag": "c:plates/thaumium"
+    },
+    {
+      "tag": "c:plates/thaumium"
+    },
+    {
+      "tag": "c:plates/thaumium"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "tag": "c:leathers"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:fortress_chest"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:thaumium_chest"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:leathers"
+      }
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:plates/thaumium"
+      }
+    }
+  ]
+}

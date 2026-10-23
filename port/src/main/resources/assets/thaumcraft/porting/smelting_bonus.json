@@ -1,0 +1,1031 @@
+{
+  "format": 1,
+  "source": "reference/tc6/src/thaumcraft/common/config/ConfigRecipes.java",
+  "sourceSha256": "5466b72c3d8e1f2afdab5bd720339ab703aa80d50a09244c20c0580ccaa553c8",
+  "notes": [
+    "35 ordered logical source registrations; duplicate oreGold/oreIron inputs with different outputs/chances intentionally coexist.",
+    "Native source_00..34 ids are NEW datapack definition identities, not TC6 registry/hash migration.",
+    "Source wildcard fish metadata32767 becomes exactly4 native fish alternatives; cluster wildcard exactly8 cluster alternatives. Each family remains one logical bonus, not multiple RNG trials.",
+    "Future chunk outputs have item_exists conditions before native decoding; infernal-furnace chance/RNG/XP/block gameplay remains its own phase6 consumer."
+  ],
+  "rules": [
+    {
+      "id": "thaumcraft:source_00",
+      "sourceLine": 2963,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(\"oreGold\", new ItemStack(Items.GOLD_NUGGET))",
+      "payload": {
+        "source_order": 0,
+        "input": {
+          "legacy_ore": "oreGold",
+          "tag": "c:ores/gold"
+        },
+        "output": {
+          "id": "minecraft:gold_nugget",
+          "count": 1
+        },
+        "chance": 0.33,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/gold"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_01",
+      "sourceLine": 2964,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(\"oreIron\", new ItemStack(Items.IRON_NUGGET))",
+      "payload": {
+        "source_order": 1,
+        "input": {
+          "legacy_ore": "oreIron",
+          "tag": "c:ores/iron"
+        },
+        "output": {
+          "id": "minecraft:iron_nugget",
+          "count": 1
+        },
+        "chance": 0.33,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/iron"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_02",
+      "sourceLine": 2965,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(\"oreCinnabar\", new ItemStack(ItemsTC.nuggets, 1, 5))",
+      "payload": {
+        "source_order": 2,
+        "input": {
+          "legacy_ore": "oreCinnabar",
+          "tag": "c:ores/cinnabar"
+        },
+        "output": {
+          "id": "thaumcraft:nugget_quicksilver",
+          "count": 1
+        },
+        "chance": 0.33,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:nugget_quicksilver"
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/cinnabar"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_03",
+      "sourceLine": 2966,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(\"oreCopper\", new ItemStack(ItemsTC.nuggets, 1, 1))",
+      "payload": {
+        "source_order": 3,
+        "input": {
+          "legacy_ore": "oreCopper",
+          "tag": "c:ores/copper"
+        },
+        "output": {
+          "id": "thaumcraft:nugget_copper",
+          "count": 1
+        },
+        "chance": 0.33,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:nugget_copper"
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/copper"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_04",
+      "sourceLine": 2967,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(\"oreTin\", new ItemStack(ItemsTC.nuggets, 1, 2))",
+      "payload": {
+        "source_order": 4,
+        "input": {
+          "legacy_ore": "oreTin",
+          "tag": "c:ores/tin"
+        },
+        "output": {
+          "id": "thaumcraft:nugget_tin",
+          "count": 1
+        },
+        "chance": 0.33,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:nugget_tin"
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/tin"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_05",
+      "sourceLine": 2968,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(\"oreSilver\", new ItemStack(ItemsTC.nuggets, 1, 3))",
+      "payload": {
+        "source_order": 5,
+        "input": {
+          "legacy_ore": "oreSilver",
+          "tag": "c:ores/silver"
+        },
+        "output": {
+          "id": "thaumcraft:nugget_silver",
+          "count": 1
+        },
+        "chance": 0.33,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:nugget_silver"
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/silver"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_06",
+      "sourceLine": 2969,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(\"oreLead\", new ItemStack(ItemsTC.nuggets, 1, 4))",
+      "payload": {
+        "source_order": 6,
+        "input": {
+          "legacy_ore": "oreLead",
+          "tag": "c:ores/lead"
+        },
+        "output": {
+          "id": "thaumcraft:nugget_lead",
+          "count": 1
+        },
+        "chance": 0.33,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:nugget_lead"
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/lead"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_07",
+      "sourceLine": 2970,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(\"oreQuartz\", new ItemStack(ItemsTC.nuggets, 1, 9))",
+      "payload": {
+        "source_order": 7,
+        "input": {
+          "legacy_ore": "oreQuartz",
+          "tag": "c:ores/quartz"
+        },
+        "output": {
+          "id": "thaumcraft:nugget_quartz",
+          "count": 1
+        },
+        "chance": 0.33,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:nugget_quartz"
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/quartz"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_08",
+      "sourceLine": 2971,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(new ItemStack(ItemsTC.clusters, 1, 0), new ItemStack(Items.IRON_NUGGET))",
+      "payload": {
+        "source_order": 8,
+        "input": {
+          "items": [
+            "thaumcraft:cluster_iron"
+          ]
+        },
+        "output": {
+          "id": "minecraft:iron_nugget",
+          "count": 1
+        },
+        "chance": 0.33,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:cluster_iron"
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_09",
+      "sourceLine": 2972,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(new ItemStack(ItemsTC.clusters, 1, 1), new ItemStack(Items.GOLD_NUGGET))",
+      "payload": {
+        "source_order": 9,
+        "input": {
+          "items": [
+            "thaumcraft:cluster_gold"
+          ]
+        },
+        "output": {
+          "id": "minecraft:gold_nugget",
+          "count": 1
+        },
+        "chance": 0.33,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:cluster_gold"
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_10",
+      "sourceLine": 2973,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(new ItemStack(ItemsTC.clusters, 1, 6), new ItemStack(ItemsTC.nuggets, 1, 5))",
+      "payload": {
+        "source_order": 10,
+        "input": {
+          "items": [
+            "thaumcraft:cluster_cinnabar"
+          ]
+        },
+        "output": {
+          "id": "thaumcraft:nugget_quicksilver",
+          "count": 1
+        },
+        "chance": 0.33,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:cluster_cinnabar"
+          },
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:nugget_quicksilver"
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_11",
+      "sourceLine": 2974,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(new ItemStack(ItemsTC.clusters, 1, 2), new ItemStack(ItemsTC.nuggets, 1, 1))",
+      "payload": {
+        "source_order": 11,
+        "input": {
+          "items": [
+            "thaumcraft:cluster_copper"
+          ]
+        },
+        "output": {
+          "id": "thaumcraft:nugget_copper",
+          "count": 1
+        },
+        "chance": 0.33,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:cluster_copper"
+          },
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:nugget_copper"
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_12",
+      "sourceLine": 2975,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(new ItemStack(ItemsTC.clusters, 1, 3), new ItemStack(ItemsTC.nuggets, 1, 2))",
+      "payload": {
+        "source_order": 12,
+        "input": {
+          "items": [
+            "thaumcraft:cluster_tin"
+          ]
+        },
+        "output": {
+          "id": "thaumcraft:nugget_tin",
+          "count": 1
+        },
+        "chance": 0.33,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:cluster_tin"
+          },
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:nugget_tin"
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_13",
+      "sourceLine": 2976,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(new ItemStack(ItemsTC.clusters, 1, 4), new ItemStack(ItemsTC.nuggets, 1, 3))",
+      "payload": {
+        "source_order": 13,
+        "input": {
+          "items": [
+            "thaumcraft:cluster_silver"
+          ]
+        },
+        "output": {
+          "id": "thaumcraft:nugget_silver",
+          "count": 1
+        },
+        "chance": 0.33,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:cluster_silver"
+          },
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:nugget_silver"
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_14",
+      "sourceLine": 2977,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(new ItemStack(ItemsTC.clusters, 1, 5), new ItemStack(ItemsTC.nuggets, 1, 4))",
+      "payload": {
+        "source_order": 14,
+        "input": {
+          "items": [
+            "thaumcraft:cluster_lead"
+          ]
+        },
+        "output": {
+          "id": "thaumcraft:nugget_lead",
+          "count": 1
+        },
+        "chance": 0.33,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:cluster_lead"
+          },
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:nugget_lead"
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_15",
+      "sourceLine": 2978,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(new ItemStack(ItemsTC.clusters, 1, 7), new ItemStack(ItemsTC.nuggets, 1, 9))",
+      "payload": {
+        "source_order": 15,
+        "input": {
+          "items": [
+            "thaumcraft:cluster_quartz"
+          ]
+        },
+        "output": {
+          "id": "thaumcraft:nugget_quartz",
+          "count": 1
+        },
+        "chance": 0.33,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:cluster_quartz"
+          },
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:nugget_quartz"
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_16",
+      "sourceLine": 2979,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(new ItemStack(Items.BEEF), new ItemStack(ItemsTC.chunks, 1, 0))",
+      "payload": {
+        "source_order": 16,
+        "input": {
+          "items": [
+            "minecraft:beef"
+          ]
+        },
+        "output": {
+          "id": "thaumcraft:chunk_beef",
+          "count": 1
+        },
+        "chance": 0.33,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:chunk_beef"
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_17",
+      "sourceLine": 2980,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(new ItemStack(Items.CHICKEN), new ItemStack(ItemsTC.chunks, 1, 1))",
+      "payload": {
+        "source_order": 17,
+        "input": {
+          "items": [
+            "minecraft:chicken"
+          ]
+        },
+        "output": {
+          "id": "thaumcraft:chunk_chicken",
+          "count": 1
+        },
+        "chance": 0.33,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:chunk_chicken"
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_18",
+      "sourceLine": 2981,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(new ItemStack(Items.PORKCHOP), new ItemStack(ItemsTC.chunks, 1, 2))",
+      "payload": {
+        "source_order": 18,
+        "input": {
+          "items": [
+            "minecraft:porkchop"
+          ]
+        },
+        "output": {
+          "id": "thaumcraft:chunk_pork",
+          "count": 1
+        },
+        "chance": 0.33,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:chunk_pork"
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_19",
+      "sourceLine": 2982,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(new ItemStack(Items.FISH, 1, 32767), new ItemStack(ItemsTC.chunks, 1, 3))",
+      "payload": {
+        "source_order": 19,
+        "input": {
+          "items": [
+            "minecraft:cod",
+            "minecraft:salmon",
+            "minecraft:tropical_fish",
+            "minecraft:pufferfish"
+          ]
+        },
+        "output": {
+          "id": "thaumcraft:chunk_fish",
+          "count": 1
+        },
+        "chance": 0.33,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:chunk_fish"
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_20",
+      "sourceLine": 2983,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(new ItemStack(Items.RABBIT), new ItemStack(ItemsTC.chunks, 1, 4))",
+      "payload": {
+        "source_order": 20,
+        "input": {
+          "items": [
+            "minecraft:rabbit"
+          ]
+        },
+        "output": {
+          "id": "thaumcraft:chunk_rabbit",
+          "count": 1
+        },
+        "chance": 0.33,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:chunk_rabbit"
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_21",
+      "sourceLine": 2984,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(new ItemStack(Items.MUTTON), new ItemStack(ItemsTC.chunks, 1, 5))",
+      "payload": {
+        "source_order": 21,
+        "input": {
+          "items": [
+            "minecraft:mutton"
+          ]
+        },
+        "output": {
+          "id": "thaumcraft:chunk_mutton",
+          "count": 1
+        },
+        "chance": 0.33,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:chunk_mutton"
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_22",
+      "sourceLine": 2985,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(\"oreDiamond\", new ItemStack(ItemsTC.nuggets, 1, 10), 0.025F)",
+      "payload": {
+        "source_order": 22,
+        "input": {
+          "legacy_ore": "oreDiamond",
+          "tag": "c:ores/diamond"
+        },
+        "output": {
+          "id": "thaumcraft:nugget_rareearth",
+          "count": 1
+        },
+        "chance": 0.025,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:nugget_rareearth"
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/diamond"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_23",
+      "sourceLine": 2986,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(\"oreRedstone\", new ItemStack(ItemsTC.nuggets, 1, 10), 0.01F)",
+      "payload": {
+        "source_order": 23,
+        "input": {
+          "legacy_ore": "oreRedstone",
+          "tag": "c:ores/redstone"
+        },
+        "output": {
+          "id": "thaumcraft:nugget_rareearth",
+          "count": 1
+        },
+        "chance": 0.01,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:nugget_rareearth"
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/redstone"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_24",
+      "sourceLine": 2987,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(\"oreLapis\", new ItemStack(ItemsTC.nuggets, 1, 10), 0.01F)",
+      "payload": {
+        "source_order": 24,
+        "input": {
+          "legacy_ore": "oreLapis",
+          "tag": "c:ores/lapis"
+        },
+        "output": {
+          "id": "thaumcraft:nugget_rareearth",
+          "count": 1
+        },
+        "chance": 0.01,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:nugget_rareearth"
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/lapis"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_25",
+      "sourceLine": 2988,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(\"oreEmerald\", new ItemStack(ItemsTC.nuggets, 1, 10), 0.025F)",
+      "payload": {
+        "source_order": 25,
+        "input": {
+          "legacy_ore": "oreEmerald",
+          "tag": "c:ores/emerald"
+        },
+        "output": {
+          "id": "thaumcraft:nugget_rareearth",
+          "count": 1
+        },
+        "chance": 0.025,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:nugget_rareearth"
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/emerald"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_26",
+      "sourceLine": 2989,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(\"oreGold\", new ItemStack(ItemsTC.nuggets, 1, 10), 0.02F)",
+      "payload": {
+        "source_order": 26,
+        "input": {
+          "legacy_ore": "oreGold",
+          "tag": "c:ores/gold"
+        },
+        "output": {
+          "id": "thaumcraft:nugget_rareearth",
+          "count": 1
+        },
+        "chance": 0.02,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:nugget_rareearth"
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/gold"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_27",
+      "sourceLine": 2990,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(\"oreIron\", new ItemStack(ItemsTC.nuggets, 1, 10), 0.01F)",
+      "payload": {
+        "source_order": 27,
+        "input": {
+          "legacy_ore": "oreIron",
+          "tag": "c:ores/iron"
+        },
+        "output": {
+          "id": "thaumcraft:nugget_rareearth",
+          "count": 1
+        },
+        "chance": 0.01,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:nugget_rareearth"
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/iron"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_28",
+      "sourceLine": 2991,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(\"oreCinnabar\", new ItemStack(ItemsTC.nuggets, 1, 10), 0.025F)",
+      "payload": {
+        "source_order": 28,
+        "input": {
+          "legacy_ore": "oreCinnabar",
+          "tag": "c:ores/cinnabar"
+        },
+        "output": {
+          "id": "thaumcraft:nugget_rareearth",
+          "count": 1
+        },
+        "chance": 0.025,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:nugget_rareearth"
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/cinnabar"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_29",
+      "sourceLine": 2992,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(\"oreCopper\", new ItemStack(ItemsTC.nuggets, 1, 10), 0.01F)",
+      "payload": {
+        "source_order": 29,
+        "input": {
+          "legacy_ore": "oreCopper",
+          "tag": "c:ores/copper"
+        },
+        "output": {
+          "id": "thaumcraft:nugget_rareearth",
+          "count": 1
+        },
+        "chance": 0.01,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:nugget_rareearth"
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/copper"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_30",
+      "sourceLine": 2993,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(\"oreTin\", new ItemStack(ItemsTC.nuggets, 1, 10), 0.01F)",
+      "payload": {
+        "source_order": 30,
+        "input": {
+          "legacy_ore": "oreTin",
+          "tag": "c:ores/tin"
+        },
+        "output": {
+          "id": "thaumcraft:nugget_rareearth",
+          "count": 1
+        },
+        "chance": 0.01,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:nugget_rareearth"
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/tin"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_31",
+      "sourceLine": 2994,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(\"oreSilver\", new ItemStack(ItemsTC.nuggets, 1, 10), 0.02F)",
+      "payload": {
+        "source_order": 31,
+        "input": {
+          "legacy_ore": "oreSilver",
+          "tag": "c:ores/silver"
+        },
+        "output": {
+          "id": "thaumcraft:nugget_rareearth",
+          "count": 1
+        },
+        "chance": 0.02,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:nugget_rareearth"
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/silver"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_32",
+      "sourceLine": 2995,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(\"oreLead\", new ItemStack(ItemsTC.nuggets, 1, 10), 0.01F)",
+      "payload": {
+        "source_order": 32,
+        "input": {
+          "legacy_ore": "oreLead",
+          "tag": "c:ores/lead"
+        },
+        "output": {
+          "id": "thaumcraft:nugget_rareearth",
+          "count": 1
+        },
+        "chance": 0.01,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:nugget_rareearth"
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/lead"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_33",
+      "sourceLine": 2996,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(\"oreQuartz\", new ItemStack(ItemsTC.nuggets, 1, 10), 0.01F)",
+      "payload": {
+        "source_order": 33,
+        "input": {
+          "legacy_ore": "oreQuartz",
+          "tag": "c:ores/quartz"
+        },
+        "output": {
+          "id": "thaumcraft:nugget_rareearth",
+          "count": 1
+        },
+        "chance": 0.01,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:nugget_rareearth"
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/quartz"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "thaumcraft:source_34",
+      "sourceLine": 2997,
+      "sourceExpression": "ThaumcraftApi.addSmeltingBonus(new ItemStack(ItemsTC.clusters, 1, 32767), new ItemStack(ItemsTC.nuggets, 1, 10), 0.02F)",
+      "payload": {
+        "source_order": 34,
+        "input": {
+          "items": [
+            "thaumcraft:cluster_iron",
+            "thaumcraft:cluster_gold",
+            "thaumcraft:cluster_copper",
+            "thaumcraft:cluster_tin",
+            "thaumcraft:cluster_silver",
+            "thaumcraft:cluster_lead",
+            "thaumcraft:cluster_cinnabar",
+            "thaumcraft:cluster_quartz"
+          ]
+        },
+        "output": {
+          "id": "thaumcraft:nugget_rareearth",
+          "count": 1
+        },
+        "chance": 0.02,
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:cluster_cinnabar"
+          },
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:cluster_copper"
+          },
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:cluster_gold"
+          },
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:cluster_iron"
+          },
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:cluster_lead"
+          },
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:cluster_quartz"
+          },
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:cluster_silver"
+          },
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:cluster_tin"
+          },
+          {
+            "type": "neoforge:item_exists",
+            "item": "thaumcraft:nugget_rareearth"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "pattern": [
+    "S S",
+    " N ",
+    "S S"
+  ],
+  "key": {
+    "S": {
+      "item": "thaumcraft:stone_arcane_brick"
+    },
+    "N": {
+      "tag": "c:nitor"
+    }
+  },
+  "result": {
+    "id": "thaumcraft:infusion_matrix"
+  },
+  "research": "INFUSION@2",
+  "vis": 150,
+  "crystals": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ]
+}

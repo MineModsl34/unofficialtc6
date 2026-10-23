@@ -1,0 +1,13 @@
+{
+  "values": {
+    "thaumcraft:log_greatwood": {
+      "burn_time": 500
+    },
+    "thaumcraft:alumentum": {
+      "burn_time": 4800
+    },
+    "thaumcraft:log_silverwood": {
+      "burn_time": 400
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "feature": "thaumcraft:vegetation",
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

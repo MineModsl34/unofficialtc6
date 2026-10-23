@@ -1,0 +1,20 @@
+{
+  "type": "thaumcraft:crucible",
+  "research": "BASEALCHEMY",
+  "result": {
+    "id": "thaumcraft:crystal_essence",
+    "count": 1,
+    "components": {
+      "thaumcraft:aspects": {
+        "praemunio": 1
+      }
+    }
+  },
+  "catalyst": {
+    "tag": "c:nuggets/quartz"
+  },
+  "aspects": {
+    "praemunio": 2
+  },
+  "group": "thaumcraft:viscrystalgroup"
+}

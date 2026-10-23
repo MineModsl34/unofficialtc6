@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=up": {
+      "model": "thaumcraft:block/stage6_hungry_chest_variant_40"
+    },
+    "facing=down": {
+      "model": "thaumcraft:block/stage6_hungry_chest_variant_41"
+    },
+    "facing=west": {
+      "model": "thaumcraft:block/stage6_hungry_chest_variant_42"
+    },
+    "facing=south": {
+      "model": "thaumcraft:block/stage6_hungry_chest_variant_43"
+    },
+    "facing=north": {
+      "model": "thaumcraft:block/stage6_hungry_chest_variant_44"
+    },
+    "facing=east": {
+      "model": "thaumcraft:block/stage6_hungry_chest_variant_45"
+    }
+  }
+}

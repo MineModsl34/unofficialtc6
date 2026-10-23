@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "thaumcraft:jarlabels",
+  "ingredients": [
+    {
+      "type": "thaumcraft:label_variant",
+      "filled": false
+    },
+    {
+      "type": "thaumcraft:nbt",
+      "stack": {
+        "id": "thaumcraft:phial_filled",
+        "count": 1,
+        "components": {
+          "thaumcraft:aspects": {
+            "ordo": 10
+          }
+        }
+      }
+    }
+  ],
+  "result": {
+    "id": "thaumcraft:label",
+    "count": 1,
+    "components": {
+      "thaumcraft:aspects": {
+        "ordo": 1
+      }
+    }
+  }
+}

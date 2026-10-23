@@ -1,0 +1,56 @@
+{
+  "type": "thaumcraft:arcane_shapeless",
+  "group": "minecraft:",
+  "research": "CONTROLSEALS",
+  "vis": 20,
+  "crystals": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "result": {
+    "id": "thaumcraft:seal_blank",
+    "count": 3
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:clay_ball"
+    },
+    {
+      "item": "thaumcraft:tallow"
+    },
+    {
+      "tag": "c:dyes/red"
+    },
+    {
+      "tag": "c:nitor"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:seal_blank"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:tallow"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:dyes/red"
+      }
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:nitor"
+      }
+    }
+  ]
+}

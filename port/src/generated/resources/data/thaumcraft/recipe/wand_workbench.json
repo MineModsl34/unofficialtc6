@@ -1,0 +1,79 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "group": "minecraft:",
+  "research": "BASEAUROMANCY@2",
+  "vis": 100,
+  "crystals": [
+    0,
+    0,
+    1,
+    1,
+    0,
+    0
+  ],
+  "result": {
+    "id": "thaumcraft:wand_workbench",
+    "count": 1
+  },
+  "pattern": [
+    "ISI",
+    "BRB",
+    "GTG"
+  ],
+  "key": {
+    "S": {
+      "item": "thaumcraft:slab_arcane_stone"
+    },
+    "T": {
+      "item": "thaumcraft:table_stone"
+    },
+    "R": {
+      "item": "thaumcraft:vis_resonator"
+    },
+    "B": {
+      "item": "thaumcraft:stone_arcane"
+    },
+    "G": {
+      "tag": "c:ingots/gold"
+    },
+    "I": {
+      "tag": "c:plates/iron"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:slab_arcane_stone"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:stone_arcane"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:table_stone"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:vis_resonator"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:wand_workbench"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ingots/gold"
+      }
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:plates/iron"
+      }
+    }
+  ]
+}

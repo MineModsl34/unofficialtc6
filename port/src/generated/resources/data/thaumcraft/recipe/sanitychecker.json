@@ -1,0 +1,55 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "group": "minecraft:",
+  "research": "WARP",
+  "vis": 20,
+  "crystals": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1
+  ],
+  "result": {
+    "id": "thaumcraft:sanity_checker",
+    "count": 1
+  },
+  "pattern": [
+    "BN ",
+    "M N",
+    "BN "
+  ],
+  "key": {
+    "N": {
+      "tag": "c:nuggets/brass"
+    },
+    "B": {
+      "item": "thaumcraft:brain"
+    },
+    "M": {
+      "item": "thaumcraft:mirrored_glass"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:brain"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:mirrored_glass"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:sanity_checker"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:nuggets/brass"
+      }
+    }
+  ]
+}

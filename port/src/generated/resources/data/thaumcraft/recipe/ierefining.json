@@ -1,0 +1,20 @@
+{
+  "type": "thaumcraft:infusion_enchantment",
+  "enchantment": "REFINING",
+  "aspects": {
+    "ordo": 80,
+    "permutatio": 60
+  },
+  "components": [
+    {
+      "type": "thaumcraft:nbt",
+      "stack": {
+        "id": "minecraft:enchanted_book",
+        "count": 1
+      }
+    },
+    {
+      "item": "thaumcraft:salis_mundus"
+    }
+  ]
+}

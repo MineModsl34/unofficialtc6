@@ -1,0 +1,21 @@
+{
+  "source_order": 1,
+  "input": {
+    "legacy_ore": "oreIron",
+    "tag": "c:ores/iron"
+  },
+  "output": {
+    "id": "minecraft:iron_nugget",
+    "count": 1
+  },
+  "chance": 0.33,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ores/iron"
+      }
+    }
+  ]
+}

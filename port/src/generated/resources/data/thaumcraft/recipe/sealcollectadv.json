@@ -1,0 +1,25 @@
+{
+  "type": "thaumcraft:crucible",
+  "research": "SEALCOLLECT&&MINDBIOTHAUMIC",
+  "result": {
+    "id": "thaumcraft:seal_pickup_advanced",
+    "count": 1
+  },
+  "catalyst": {
+    "item": "thaumcraft:seal_pickup"
+  },
+  "aspects": {
+    "sensus": 10,
+    "cognitio": 10
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:seal_pickup"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:seal_pickup_advanced"
+    }
+  ]
+}

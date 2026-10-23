@@ -1,0 +1,19 @@
+{
+  "source_order": 18,
+  "input": {
+    "items": [
+      "minecraft:porkchop"
+    ]
+  },
+  "output": {
+    "id": "thaumcraft:chunk_pork",
+    "count": 1
+  },
+  "chance": 0.33,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:chunk_pork"
+    }
+  ]
+}

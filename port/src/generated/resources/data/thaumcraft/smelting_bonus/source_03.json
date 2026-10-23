@@ -1,0 +1,25 @@
+{
+  "source_order": 3,
+  "input": {
+    "legacy_ore": "oreCopper",
+    "tag": "c:ores/copper"
+  },
+  "output": {
+    "id": "thaumcraft:nugget_copper",
+    "count": 1
+  },
+  "chance": 0.33,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nugget_copper"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ores/copper"
+      }
+    }
+  ]
+}

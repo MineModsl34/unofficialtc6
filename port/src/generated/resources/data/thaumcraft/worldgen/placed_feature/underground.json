@@ -1,0 +1,8 @@
+{
+  "feature": "thaumcraft:underground",
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "CRYSTALFARMER",
+  "result": {
+    "id": "thaumcraft:crystal_perditio",
+    "count": 1
+  },
+  "instability": 0,
+  "aspects": {
+    "perditio": 10,
+    "vitreus": 10,
+    "vinculum": 5
+  },
+  "central": {
+    "type": "thaumcraft:nbt",
+    "stack": {
+      "id": "thaumcraft:crystal_essence",
+      "count": 1,
+      "components": {
+        "thaumcraft:aspects": {
+          "perditio": 1
+        }
+      }
+    }
+  },
+  "components": [
+    {
+      "item": "minecraft:wheat_seeds"
+    },
+    {
+      "item": "thaumcraft:salis_mundus"
+    }
+  ]
+}

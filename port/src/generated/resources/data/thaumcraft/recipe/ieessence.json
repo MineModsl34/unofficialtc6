@@ -1,0 +1,20 @@
+{
+  "type": "thaumcraft:infusion_enchantment",
+  "enchantment": "ESSENCE",
+  "aspects": {
+    "bestia": 40,
+    "vitium": 60
+  },
+  "components": [
+    {
+      "type": "thaumcraft:nbt",
+      "stack": {
+        "id": "minecraft:enchanted_book",
+        "count": 1
+      }
+    },
+    {
+      "item": "thaumcraft:crystal_essence"
+    }
+  ]
+}

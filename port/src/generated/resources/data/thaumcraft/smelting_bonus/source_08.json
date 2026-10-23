@@ -1,0 +1,19 @@
+{
+  "source_order": 8,
+  "input": {
+    "items": [
+      "thaumcraft:cluster_iron"
+    ]
+  },
+  "output": {
+    "id": "minecraft:iron_nugget",
+    "count": 1
+  },
+  "chance": 0.33,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:cluster_iron"
+    }
+  ]
+}

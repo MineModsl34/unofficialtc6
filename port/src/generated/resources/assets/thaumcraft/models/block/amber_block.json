@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "render_type": "minecraft:translucent",
+  "textures": {
+    "bottom": "thaumcraft:block/amber_top",
+    "side": "thaumcraft:block/amber_side",
+    "top": "thaumcraft:block/amber_top"
+  }
+}

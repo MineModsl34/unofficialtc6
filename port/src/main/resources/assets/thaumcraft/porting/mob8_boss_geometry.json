@@ -1,0 +1,114 @@
+{
+  "format": 1,
+  "source": "reference/tc6/src",
+  "geometry": [
+    {
+      "class": "ModelEldritchGolem",
+      "source": "reference/tc6/src/thaumcraft/client/renderers/models/entity/ModelEldritchGolem.java",
+      "sha256_utf8": "2fe75c263bb9d51cbf64d43f29bea66cc0ac5333963cc435485273251d217f13",
+      "box_calls": 36,
+      "child_calls": 8
+    },
+    {
+      "class": "ModelEldritchGuardian",
+      "source": "reference/tc6/src/thaumcraft/client/renderers/models/entity/ModelEldritchGuardian.java",
+      "sha256_utf8": "5d4735ff299f44182d4004a512b60d9f958bb129829f388f54e4b9b64ace07c5",
+      "box_calls": 54,
+      "child_calls": 15
+    },
+    {
+      "class": "ModelTaintacle",
+      "source": "reference/tc6/src/thaumcraft/client/renderers/models/entity/ModelTaintacle.java",
+      "sha256_utf8": "f3f4711fabd96a10e6a93219ee9b47103bad706d75a786e8a006031842bc736f",
+      "box_calls": 4,
+      "child_calls": 4
+    },
+    {
+      "class": "ModelTaintSeed",
+      "source": "reference/tc6/src/thaumcraft/client/renderers/models/entity/ModelTaintSeed.java",
+      "sha256_utf8": "6426c3cfc09c2feba92d8166b72bce2b24dee8c5f891936b86ff619e5e4bb8f9",
+      "box_calls": 3,
+      "child_calls": 2
+    }
+  ],
+  "presentations": [
+    {
+      "renderer": "RenderCultistLeader",
+      "texture": "thaumcraft:textures/entity/cultist.png",
+      "model": "vanilla HumanoidModel 64x32 plus original praetor armor",
+      "id": "cultist_leader"
+    },
+    {
+      "renderer": "RenderCultistPortalGreater",
+      "texture": "thaumcraft:textures/misc/cultist_portal.png",
+      "model": "16 frame billboard",
+      "id": "cultist_portal_greater"
+    },
+    {
+      "renderer": "RenderEldritchGolem",
+      "texture": "thaumcraft:textures/entity/eldritch_golem.png",
+      "model": "ModelEldritchGolem",
+      "id": "eldritch_golem"
+    },
+    {
+      "renderer": "RenderEldritchWarden",
+      "texture": "thaumcraft:textures/entity/eldritch_warden.png",
+      "model": "ModelEldritchGuardian warden branch + HoodEye",
+      "id": "eldritch_warden"
+    },
+    {
+      "renderer": "RenderTaintacle",
+      "texture": "thaumcraft:textures/entity/taintacle.png",
+      "model": "ModelTaintacle length14",
+      "id": "taintacle_giant"
+    },
+    {
+      "renderer": "RenderTaintacle",
+      "texture": "thaumcraft:textures/entity/taintacle.png",
+      "model": "ModelTaintacle length10",
+      "id": "taintacle"
+    },
+    {
+      "renderer": "RenderTaintacle",
+      "texture": "thaumcraft:textures/entity/taintacle.png",
+      "model": "ModelTaintacle length6",
+      "id": "taintacle_small"
+    },
+    {
+      "renderer": "RenderTaintSeed",
+      "texture": "thaumcraft:textures/entity/taintseed.png",
+      "model": "ModelTaintSeed length8",
+      "id": "taint_seed"
+    },
+    {
+      "renderer": "RenderTaintSeed",
+      "texture": "thaumcraft:textures/entity/taintseed.png",
+      "model": "ModelTaintSeed length8",
+      "id": "taint_seed_prime"
+    },
+    {
+      "renderer": "RenderTaintCrawler",
+      "texture": "thaumcraft:textures/entity/crawler.png",
+      "model": "vanilla SilverfishModel scale0.7",
+      "id": "taint_crawler"
+    },
+    {
+      "renderer": "NoopRenderer + FXSwarm",
+      "texture": "thaumcraft:textures/misc/particles.png",
+      "model": "30 steering particles",
+      "id": "taint_swarm"
+    },
+    {
+      "renderer": "RenderHomingShard",
+      "texture": "thaumcraft:textures/misc/particles.png",
+      "model": "animated billboard and 6 point beam",
+      "id": "homing_shard"
+    },
+    {
+      "renderer": "RenderRiftBlast",
+      "texture": "minecraft:textures/entity/end_portal.png",
+      "model": "3 sided polycone and literal ender shader",
+      "id": "rift_blast"
+    }
+  ]
+}

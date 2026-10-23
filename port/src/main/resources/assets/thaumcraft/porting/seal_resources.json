@@ -1,0 +1,197 @@
+{
+  "format": 1,
+  "source": "TC6.1.BETA26 ConfigItems.preInitSeals:343–358, source ItemSealPlacer metadata0–16",
+  "registered_seal_count": 16,
+  "items": [
+    "blank",
+    "pickup",
+    "pickup_advanced",
+    "fill",
+    "fill_advanced",
+    "empty",
+    "empty_advanced",
+    "harvest",
+    "butcher",
+    "guard",
+    "guard_advanced",
+    "lumber",
+    "breaker",
+    "use",
+    "provider",
+    "stock",
+    "breaker_advanced"
+  ],
+  "files": [
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/seal_blank.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/seals/seal_blank"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/seal_pickup.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/seals/seal_pickup"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/seal_pickup_advanced.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/seals/seal_pickup_advanced"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/seal_fill.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/seals/seal_fill"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/seal_fill_advanced.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/seals/seal_fill_advanced"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/seal_empty.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/seals/seal_empty"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/seal_empty_advanced.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/seals/seal_empty_advanced"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/seal_harvest.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/seals/seal_harvest"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/seal_butcher.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/seals/seal_butcher"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/seal_guard.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/seals/seal_guard"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/seal_guard_advanced.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/seals/seal_guard_advanced"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/seal_lumber.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/seals/seal_lumber"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/seal_breaker.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/seals/seal_breaker"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/seal_use.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/seals/seal_use"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/seal_provider.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/seals/seal_provider"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/seal_stock.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/seals/seal_stock"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/seal_breaker_advanced.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/seals/seal_breaker_advanced"
+        }
+      }
+    }
+  ]
+}
+

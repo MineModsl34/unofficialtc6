@@ -1,0 +1,25 @@
+{
+  "source_order": 26,
+  "input": {
+    "legacy_ore": "oreGold",
+    "tag": "c:ores/gold"
+  },
+  "output": {
+    "id": "thaumcraft:nugget_rareearth",
+    "count": 1
+  },
+  "chance": 0.02,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nugget_rareearth"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ores/gold"
+      }
+    }
+  ]
+}

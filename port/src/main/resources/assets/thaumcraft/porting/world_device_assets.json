@@ -1,0 +1,1856 @@
+{
+  "format": 1,
+  "source": "reference/tc6/src/assets/thaumcraft",
+  "entries": [
+    {
+      "path": "blockstates/vis_generator.json",
+      "payload": {
+        "variants": {
+          "enabled=false,facing=down": {
+            "model": "thaumcraft:block/stage6_vis_generator",
+            "x": 180
+          },
+          "enabled=false,facing=up": {
+            "model": "thaumcraft:block/stage6_vis_generator"
+          },
+          "enabled=false,facing=east": {
+            "model": "thaumcraft:block/stage6_vis_generator",
+            "x": 90,
+            "y": 90
+          },
+          "enabled=false,facing=west": {
+            "model": "thaumcraft:block/stage6_vis_generator",
+            "x": 90,
+            "y": 270
+          },
+          "enabled=false,facing=north": {
+            "model": "thaumcraft:block/stage6_vis_generator",
+            "x": 90
+          },
+          "enabled=false,facing=south": {
+            "model": "thaumcraft:block/stage6_vis_generator",
+            "x": 90,
+            "y": 180
+          },
+          "enabled=true,facing=down": {
+            "model": "thaumcraft:block/stage6_vis_generator",
+            "x": 180
+          },
+          "enabled=true,facing=up": {
+            "model": "thaumcraft:block/stage6_vis_generator"
+          },
+          "enabled=true,facing=east": {
+            "model": "thaumcraft:block/stage6_vis_generator",
+            "x": 90,
+            "y": 90
+          },
+          "enabled=true,facing=west": {
+            "model": "thaumcraft:block/stage6_vis_generator",
+            "x": 90,
+            "y": 270
+          },
+          "enabled=true,facing=north": {
+            "model": "thaumcraft:block/stage6_vis_generator",
+            "x": 90
+          },
+          "enabled=true,facing=south": {
+            "model": "thaumcraft:block/stage6_vis_generator",
+            "x": 90,
+            "y": 180
+          }
+        }
+      }
+    },
+    {
+      "path": "models/item/vis_generator.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_vis_generator"
+      }
+    },
+    {
+      "path": "models/block/stage6_vis_battery_variant_0.json",
+      "payload": {
+        "parent": "minecraft:block/cube_all",
+        "textures": {
+          "all": "thaumcraft:block/vis_battery_0"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_vis_battery_variant_1.json",
+      "payload": {
+        "parent": "minecraft:block/cube_all",
+        "textures": {
+          "all": "thaumcraft:block/vis_battery_0"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_vis_battery_variant_2.json",
+      "payload": {
+        "parent": "minecraft:block/cube_all",
+        "textures": {
+          "all": "thaumcraft:block/vis_battery_1"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_vis_battery_variant_3.json",
+      "payload": {
+        "parent": "minecraft:block/cube_all",
+        "textures": {
+          "all": "thaumcraft:block/vis_battery_1"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_vis_battery_variant_4.json",
+      "payload": {
+        "parent": "minecraft:block/cube_all",
+        "textures": {
+          "all": "thaumcraft:block/vis_battery_1"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_vis_battery_variant_5.json",
+      "payload": {
+        "parent": "minecraft:block/cube_all",
+        "textures": {
+          "all": "thaumcraft:block/vis_battery_2"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_vis_battery_variant_6.json",
+      "payload": {
+        "parent": "minecraft:block/cube_all",
+        "textures": {
+          "all": "thaumcraft:block/vis_battery_2"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_vis_battery_variant_7.json",
+      "payload": {
+        "parent": "minecraft:block/cube_all",
+        "textures": {
+          "all": "thaumcraft:block/vis_battery_2"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_vis_battery_variant_8.json",
+      "payload": {
+        "parent": "minecraft:block/cube_all",
+        "textures": {
+          "all": "thaumcraft:block/vis_battery_3"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_vis_battery_variant_9.json",
+      "payload": {
+        "parent": "minecraft:block/cube_all",
+        "textures": {
+          "all": "thaumcraft:block/vis_battery_3"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_vis_battery_variant_10.json",
+      "payload": {
+        "parent": "minecraft:block/cube_all",
+        "textures": {
+          "all": "thaumcraft:block/vis_battery_3"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_vis_battery_variant_11.json",
+      "payload": {
+        "parent": "minecraft:block/cube_all",
+        "textures": {
+          "all": "thaumcraft:block/vis_battery_4"
+        }
+      }
+    },
+    {
+      "path": "blockstates/vis_battery.json",
+      "payload": {
+        "variants": {
+          "charge=0": {
+            "model": "thaumcraft:block/stage6_vis_battery_variant_1"
+          },
+          "charge=1": {
+            "model": "thaumcraft:block/stage6_vis_battery_variant_2"
+          },
+          "charge=2": {
+            "model": "thaumcraft:block/stage6_vis_battery_variant_3"
+          },
+          "charge=3": {
+            "model": "thaumcraft:block/stage6_vis_battery_variant_4"
+          },
+          "charge=4": {
+            "model": "thaumcraft:block/stage6_vis_battery_variant_5"
+          },
+          "charge=5": {
+            "model": "thaumcraft:block/stage6_vis_battery_variant_6"
+          },
+          "charge=6": {
+            "model": "thaumcraft:block/stage6_vis_battery_variant_7"
+          },
+          "charge=7": {
+            "model": "thaumcraft:block/stage6_vis_battery_variant_8"
+          },
+          "charge=8": {
+            "model": "thaumcraft:block/stage6_vis_battery_variant_9"
+          },
+          "charge=9": {
+            "model": "thaumcraft:block/stage6_vis_battery_variant_10"
+          },
+          "charge=10": {
+            "model": "thaumcraft:block/stage6_vis_battery_variant_11"
+          }
+        }
+      }
+    },
+    {
+      "path": "models/item/vis_battery.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_vis_battery_variant_0"
+      }
+    },
+    {
+      "path": "blockstates/recharge_pedestal.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/stage6_recharge_pedestal"
+          }
+        }
+      }
+    },
+    {
+      "path": "models/item/recharge_pedestal.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_recharge_pedestal"
+      }
+    },
+    {
+      "path": "blockstates/levitator.json",
+      "payload": {
+        "variants": {
+          "enabled=false,facing=down": {
+            "model": "thaumcraft:block/stage6_levitator_off",
+            "x": 180
+          },
+          "enabled=false,facing=up": {
+            "model": "thaumcraft:block/stage6_levitator_off"
+          },
+          "enabled=false,facing=east": {
+            "model": "thaumcraft:block/stage6_levitator_off",
+            "x": 90,
+            "y": 90
+          },
+          "enabled=false,facing=west": {
+            "model": "thaumcraft:block/stage6_levitator_off",
+            "x": 90,
+            "y": 270
+          },
+          "enabled=false,facing=north": {
+            "model": "thaumcraft:block/stage6_levitator_off",
+            "x": 90
+          },
+          "enabled=false,facing=south": {
+            "model": "thaumcraft:block/stage6_levitator_off",
+            "x": 90,
+            "y": 180
+          },
+          "enabled=true,facing=down": {
+            "model": "thaumcraft:block/stage6_levitator_on",
+            "x": 180
+          },
+          "enabled=true,facing=up": {
+            "model": "thaumcraft:block/stage6_levitator_on"
+          },
+          "enabled=true,facing=east": {
+            "model": "thaumcraft:block/stage6_levitator_on",
+            "x": 90,
+            "y": 90
+          },
+          "enabled=true,facing=west": {
+            "model": "thaumcraft:block/stage6_levitator_on",
+            "x": 90,
+            "y": 270
+          },
+          "enabled=true,facing=north": {
+            "model": "thaumcraft:block/stage6_levitator_on",
+            "x": 90
+          },
+          "enabled=true,facing=south": {
+            "model": "thaumcraft:block/stage6_levitator_on",
+            "x": 90,
+            "y": 180
+          }
+        }
+      }
+    },
+    {
+      "path": "models/item/levitator.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_levitator_off"
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_arcane_variant_12.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp",
+        "textures": {
+          "particle": "thaumcraft:block/lamp_off",
+          "side": "thaumcraft:block/lamp_off"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_arcane_variant_13.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp",
+        "textures": {
+          "particle": "thaumcraft:block/lamp_off",
+          "side": "thaumcraft:block/lamp_on"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_arcane_variant_14.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp",
+        "textures": {
+          "particle": "thaumcraft:block/lamp_off",
+          "side": "thaumcraft:block/lamp_off"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_arcane_variant_15.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp_stand",
+        "textures": {
+          "side": "thaumcraft:block/base_metal"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_arcane_variant_16.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp_stand",
+        "textures": {
+          "side": "thaumcraft:block/base_metal"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_arcane_variant_17.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp_stand",
+        "textures": {
+          "side": "thaumcraft:block/base_metal"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_arcane_variant_18.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp_stand",
+        "textures": {
+          "side": "thaumcraft:block/base_metal"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_arcane_variant_19.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp_stand",
+        "textures": {
+          "side": "thaumcraft:block/base_metal"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_arcane_variant_20.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp_stand",
+        "textures": {
+          "side": "thaumcraft:block/base_metal"
+        }
+      }
+    },
+    {
+      "path": "blockstates/lamp_arcane.json",
+      "payload": {
+        "multipart": [
+          {
+            "when": {
+              "enabled": "true"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_lamp_arcane_variant_13"
+            }
+          },
+          {
+            "when": {
+              "enabled": "false"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_lamp_arcane_variant_14"
+            }
+          },
+          {
+            "when": {
+              "facing": "up"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_lamp_arcane_variant_15",
+              "x": 180
+            }
+          },
+          {
+            "when": {
+              "facing": "down"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_lamp_arcane_variant_16"
+            }
+          },
+          {
+            "when": {
+              "facing": "north"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_lamp_arcane_variant_17",
+              "x": 90,
+              "y": 180
+            }
+          },
+          {
+            "when": {
+              "facing": "south"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_lamp_arcane_variant_18",
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "facing": "east"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_lamp_arcane_variant_19",
+              "x": 90,
+              "y": 270
+            }
+          },
+          {
+            "when": {
+              "facing": "west"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_lamp_arcane_variant_20",
+              "x": 90,
+              "y": 90
+            }
+          }
+        ]
+      }
+    },
+    {
+      "path": "models/item/lamp_arcane.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp_arcane_variant_12"
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_growth_variant_21.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp",
+        "textures": {
+          "particle": "thaumcraft:block/lamp_grow_off",
+          "side": "thaumcraft:block/lamp_grow_off"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_growth_variant_22.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp",
+        "textures": {
+          "particle": "thaumcraft:block/lamp_grow_off",
+          "side": "thaumcraft:block/lamp_grow_on"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_growth_variant_23.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp",
+        "textures": {
+          "particle": "thaumcraft:block/lamp_grow_off",
+          "side": "thaumcraft:block/lamp_grow_off"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_growth_variant_24.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp_stand",
+        "textures": {
+          "side": "thaumcraft:block/base_metal"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_growth_variant_25.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp_stand",
+        "textures": {
+          "side": "thaumcraft:block/base_metal"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_growth_variant_26.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp_stand",
+        "textures": {
+          "side": "thaumcraft:block/base_metal"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_growth_variant_27.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp_stand",
+        "textures": {
+          "side": "thaumcraft:block/base_metal"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_growth_variant_28.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp_stand",
+        "textures": {
+          "side": "thaumcraft:block/base_metal"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_growth_variant_29.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp_stand",
+        "textures": {
+          "side": "thaumcraft:block/base_metal"
+        }
+      }
+    },
+    {
+      "path": "blockstates/lamp_growth.json",
+      "payload": {
+        "multipart": [
+          {
+            "when": {
+              "enabled": "true"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_lamp_growth_variant_22"
+            }
+          },
+          {
+            "when": {
+              "enabled": "false"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_lamp_growth_variant_23"
+            }
+          },
+          {
+            "when": {
+              "facing": "up"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_lamp_growth_variant_24",
+              "x": 180
+            }
+          },
+          {
+            "when": {
+              "facing": "down"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_lamp_growth_variant_25"
+            }
+          },
+          {
+            "when": {
+              "facing": "north"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_lamp_growth_variant_26",
+              "x": 90,
+              "y": 180
+            }
+          },
+          {
+            "when": {
+              "facing": "south"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_lamp_growth_variant_27",
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "facing": "east"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_lamp_growth_variant_28",
+              "x": 90,
+              "y": 270
+            }
+          },
+          {
+            "when": {
+              "facing": "west"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_lamp_growth_variant_29",
+              "x": 90,
+              "y": 90
+            }
+          }
+        ]
+      }
+    },
+    {
+      "path": "models/item/lamp_growth.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp_growth_variant_21"
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_fertility_variant_30.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp",
+        "textures": {
+          "particle": "thaumcraft:block/lamp_fert_off",
+          "side": "thaumcraft:block/lamp_fert_off"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_fertility_variant_31.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp",
+        "textures": {
+          "particle": "thaumcraft:block/lamp_fert_off",
+          "side": "thaumcraft:block/lamp_fert_on"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_fertility_variant_32.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp",
+        "textures": {
+          "particle": "thaumcraft:block/lamp_fert_off",
+          "side": "thaumcraft:block/lamp_fert_off"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_fertility_variant_33.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp_stand",
+        "textures": {
+          "side": "thaumcraft:block/base_metal"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_fertility_variant_34.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp_stand",
+        "textures": {
+          "side": "thaumcraft:block/base_metal"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_fertility_variant_35.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp_stand",
+        "textures": {
+          "side": "thaumcraft:block/base_metal"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_fertility_variant_36.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp_stand",
+        "textures": {
+          "side": "thaumcraft:block/base_metal"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_fertility_variant_37.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp_stand",
+        "textures": {
+          "side": "thaumcraft:block/base_metal"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_lamp_fertility_variant_38.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp_stand",
+        "textures": {
+          "side": "thaumcraft:block/base_metal"
+        }
+      }
+    },
+    {
+      "path": "blockstates/lamp_fertility.json",
+      "payload": {
+        "multipart": [
+          {
+            "when": {
+              "enabled": "true"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_lamp_fertility_variant_31"
+            }
+          },
+          {
+            "when": {
+              "enabled": "false"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_lamp_fertility_variant_32"
+            }
+          },
+          {
+            "when": {
+              "facing": "up"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_lamp_fertility_variant_33",
+              "x": 180
+            }
+          },
+          {
+            "when": {
+              "facing": "down"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_lamp_fertility_variant_34"
+            }
+          },
+          {
+            "when": {
+              "facing": "north"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_lamp_fertility_variant_35",
+              "x": 90,
+              "y": 180
+            }
+          },
+          {
+            "when": {
+              "facing": "south"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_lamp_fertility_variant_36",
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "facing": "east"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_lamp_fertility_variant_37",
+              "x": 90,
+              "y": 270
+            }
+          },
+          {
+            "when": {
+              "facing": "west"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_lamp_fertility_variant_38",
+              "x": 90,
+              "y": 90
+            }
+          }
+        ]
+      }
+    },
+    {
+      "path": "models/item/lamp_fertility.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_lamp_fertility_variant_30"
+      }
+    },
+    {
+      "path": "blockstates/everfull_urn.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/stage6_everfull_urn"
+          }
+        }
+      }
+    },
+    {
+      "path": "models/item/everfull_urn.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_everfull_urn"
+      }
+    },
+    {
+      "path": "models/block/stage6_hungry_chest_variant_39.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_chest",
+        "textures": {
+          "particle": "thaumcraft:models/chesthungry",
+          "texture": "thaumcraft:models/chesthungry"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_hungry_chest_variant_40.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_chest",
+        "textures": {
+          "particle": "thaumcraft:models/chesthungry",
+          "texture": "thaumcraft:models/chesthungry"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_hungry_chest_variant_41.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_chest",
+        "textures": {
+          "particle": "thaumcraft:models/chesthungry",
+          "texture": "thaumcraft:models/chesthungry"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_hungry_chest_variant_42.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_chest",
+        "textures": {
+          "particle": "thaumcraft:models/chesthungry",
+          "texture": "thaumcraft:models/chesthungry"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_hungry_chest_variant_43.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_chest",
+        "textures": {
+          "particle": "thaumcraft:models/chesthungry",
+          "texture": "thaumcraft:models/chesthungry"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_hungry_chest_variant_44.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_chest",
+        "textures": {
+          "particle": "thaumcraft:models/chesthungry",
+          "texture": "thaumcraft:models/chesthungry"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_hungry_chest_variant_45.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_chest",
+        "textures": {
+          "particle": "thaumcraft:models/chesthungry",
+          "texture": "thaumcraft:models/chesthungry"
+        }
+      }
+    },
+    {
+      "path": "blockstates/hungry_chest.json",
+      "payload": {
+        "variants": {
+          "facing=up": {
+            "model": "thaumcraft:block/stage6_hungry_chest_variant_40"
+          },
+          "facing=down": {
+            "model": "thaumcraft:block/stage6_hungry_chest_variant_41"
+          },
+          "facing=west": {
+            "model": "thaumcraft:block/stage6_hungry_chest_variant_42"
+          },
+          "facing=south": {
+            "model": "thaumcraft:block/stage6_hungry_chest_variant_43"
+          },
+          "facing=north": {
+            "model": "thaumcraft:block/stage6_hungry_chest_variant_44"
+          },
+          "facing=east": {
+            "model": "thaumcraft:block/stage6_hungry_chest_variant_45"
+          }
+        }
+      }
+    },
+    {
+      "path": "models/item/hungry_chest.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_hungry_chest_variant_39"
+      }
+    },
+    {
+      "path": "blockstates/jar_brain.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/jar_normal"
+          }
+        }
+      }
+    },
+    {
+      "path": "models/item/jar_brain.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_jar_brain_item"
+      }
+    },
+    {
+      "path": "blockstates/arcane_ear.json",
+      "payload": {
+        "variants": {
+          "enabled=false,facing=down": {
+            "model": "thaumcraft:block/stage6_arcane_ear_off",
+            "x": 180
+          },
+          "enabled=false,facing=up": {
+            "model": "thaumcraft:block/stage6_arcane_ear_off"
+          },
+          "enabled=false,facing=east": {
+            "model": "thaumcraft:block/stage6_arcane_ear_off",
+            "x": 90,
+            "y": 90
+          },
+          "enabled=false,facing=west": {
+            "model": "thaumcraft:block/stage6_arcane_ear_off",
+            "x": 90,
+            "y": 270
+          },
+          "enabled=false,facing=north": {
+            "model": "thaumcraft:block/stage6_arcane_ear_off",
+            "x": 90
+          },
+          "enabled=false,facing=south": {
+            "model": "thaumcraft:block/stage6_arcane_ear_off",
+            "x": 90,
+            "y": 180
+          },
+          "enabled=true,facing=down": {
+            "model": "thaumcraft:block/stage6_arcane_ear_on",
+            "x": 180
+          },
+          "enabled=true,facing=up": {
+            "model": "thaumcraft:block/stage6_arcane_ear_on"
+          },
+          "enabled=true,facing=east": {
+            "model": "thaumcraft:block/stage6_arcane_ear_on",
+            "x": 90,
+            "y": 90
+          },
+          "enabled=true,facing=west": {
+            "model": "thaumcraft:block/stage6_arcane_ear_on",
+            "x": 90,
+            "y": 270
+          },
+          "enabled=true,facing=north": {
+            "model": "thaumcraft:block/stage6_arcane_ear_on",
+            "x": 90
+          },
+          "enabled=true,facing=south": {
+            "model": "thaumcraft:block/stage6_arcane_ear_on",
+            "x": 90,
+            "y": 180
+          }
+        }
+      }
+    },
+    {
+      "path": "models/item/arcane_ear.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_arcane_ear_off"
+      }
+    },
+    {
+      "path": "models/block/stage6_arcane_ear_toggle_variant_46.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_arcane_ear_off",
+        "textures": {
+          "side": "thaumcraft:block/arcane_ear_toggle_off"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_arcane_ear_toggle_variant_47.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_arcane_ear_off",
+        "textures": {
+          "side": "thaumcraft:block/arcane_ear_toggle_off",
+          "particle": "thaumcraft:block/arcane_ear_toggle_off"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_arcane_ear_toggle_variant_48.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_arcane_ear_off",
+        "textures": {
+          "side": "thaumcraft:block/arcane_ear_toggle_off",
+          "particle": "thaumcraft:block/arcane_ear_toggle_off"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_arcane_ear_toggle_variant_49.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_arcane_ear_off",
+        "textures": {
+          "side": "thaumcraft:block/arcane_ear_toggle_off",
+          "particle": "thaumcraft:block/arcane_ear_toggle_off"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_arcane_ear_toggle_variant_50.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_arcane_ear_off",
+        "textures": {
+          "side": "thaumcraft:block/arcane_ear_toggle_off",
+          "particle": "thaumcraft:block/arcane_ear_toggle_off"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_arcane_ear_toggle_variant_51.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_arcane_ear_off",
+        "textures": {
+          "side": "thaumcraft:block/arcane_ear_toggle_off",
+          "particle": "thaumcraft:block/arcane_ear_toggle_off"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_arcane_ear_toggle_variant_52.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_arcane_ear_off",
+        "textures": {
+          "side": "thaumcraft:block/arcane_ear_toggle_off",
+          "particle": "thaumcraft:block/arcane_ear_toggle_off"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_arcane_ear_toggle_variant_53.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_arcane_ear_on",
+        "textures": {
+          "side": "thaumcraft:block/arcane_ear_toggle_on",
+          "particle": "thaumcraft:block/arcane_ear_toggle_on"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_arcane_ear_toggle_variant_54.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_arcane_ear_on",
+        "textures": {
+          "side": "thaumcraft:block/arcane_ear_toggle_on",
+          "particle": "thaumcraft:block/arcane_ear_toggle_on"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_arcane_ear_toggle_variant_55.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_arcane_ear_on",
+        "textures": {
+          "side": "thaumcraft:block/arcane_ear_toggle_on",
+          "particle": "thaumcraft:block/arcane_ear_toggle_on"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_arcane_ear_toggle_variant_56.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_arcane_ear_on",
+        "textures": {
+          "side": "thaumcraft:block/arcane_ear_toggle_on",
+          "particle": "thaumcraft:block/arcane_ear_toggle_on"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_arcane_ear_toggle_variant_57.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_arcane_ear_on",
+        "textures": {
+          "side": "thaumcraft:block/arcane_ear_toggle_on",
+          "particle": "thaumcraft:block/arcane_ear_toggle_on"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_arcane_ear_toggle_variant_58.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_arcane_ear_on",
+        "textures": {
+          "side": "thaumcraft:block/arcane_ear_toggle_on",
+          "particle": "thaumcraft:block/arcane_ear_toggle_on"
+        }
+      }
+    },
+    {
+      "path": "blockstates/arcane_ear_toggle.json",
+      "payload": {
+        "variants": {
+          "enabled=false,facing=down": {
+            "model": "thaumcraft:block/stage6_arcane_ear_toggle_variant_47",
+            "x": 180
+          },
+          "enabled=false,facing=up": {
+            "model": "thaumcraft:block/stage6_arcane_ear_toggle_variant_48"
+          },
+          "enabled=false,facing=east": {
+            "model": "thaumcraft:block/stage6_arcane_ear_toggle_variant_49",
+            "x": 90,
+            "y": 90
+          },
+          "enabled=false,facing=west": {
+            "model": "thaumcraft:block/stage6_arcane_ear_toggle_variant_50",
+            "x": 90,
+            "y": 270
+          },
+          "enabled=false,facing=north": {
+            "model": "thaumcraft:block/stage6_arcane_ear_toggle_variant_51",
+            "x": 90
+          },
+          "enabled=false,facing=south": {
+            "model": "thaumcraft:block/stage6_arcane_ear_toggle_variant_52",
+            "x": 90,
+            "y": 180
+          },
+          "enabled=true,facing=down": {
+            "model": "thaumcraft:block/stage6_arcane_ear_toggle_variant_53",
+            "x": 180
+          },
+          "enabled=true,facing=up": {
+            "model": "thaumcraft:block/stage6_arcane_ear_toggle_variant_54"
+          },
+          "enabled=true,facing=east": {
+            "model": "thaumcraft:block/stage6_arcane_ear_toggle_variant_55",
+            "x": 90,
+            "y": 90
+          },
+          "enabled=true,facing=west": {
+            "model": "thaumcraft:block/stage6_arcane_ear_toggle_variant_56",
+            "x": 90,
+            "y": 270
+          },
+          "enabled=true,facing=north": {
+            "model": "thaumcraft:block/stage6_arcane_ear_toggle_variant_57",
+            "x": 90
+          },
+          "enabled=true,facing=south": {
+            "model": "thaumcraft:block/stage6_arcane_ear_toggle_variant_58",
+            "x": 90,
+            "y": 180
+          }
+        }
+      }
+    },
+    {
+      "path": "models/item/arcane_ear_toggle.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_arcane_ear_toggle_variant_46"
+      }
+    },
+    {
+      "path": "blockstates/redstone_relay.json",
+      "payload": {
+        "variants": {
+          "enabled=false,facing=east": {
+            "model": "thaumcraft:block/stage6_redstone_relay_off",
+            "y": 270
+          },
+          "enabled=false,facing=west": {
+            "model": "thaumcraft:block/stage6_redstone_relay_off",
+            "y": 90
+          },
+          "enabled=false,facing=north": {
+            "model": "thaumcraft:block/stage6_redstone_relay_off",
+            "y": 180
+          },
+          "enabled=false,facing=south": {
+            "model": "thaumcraft:block/stage6_redstone_relay_off"
+          },
+          "enabled=true,facing=east": {
+            "model": "thaumcraft:block/stage6_redstone_relay_on",
+            "y": 270
+          },
+          "enabled=true,facing=west": {
+            "model": "thaumcraft:block/stage6_redstone_relay_on",
+            "y": 90
+          },
+          "enabled=true,facing=north": {
+            "model": "thaumcraft:block/stage6_redstone_relay_on",
+            "y": 180
+          },
+          "enabled=true,facing=south": {
+            "model": "thaumcraft:block/stage6_redstone_relay_on"
+          },
+          "enabled=false,facing=up": {
+            "model": "thaumcraft:block/stage6_redstone_relay_off",
+            "y": 180
+          },
+          "enabled=false,facing=down": {
+            "model": "thaumcraft:block/stage6_redstone_relay_off",
+            "y": 180
+          },
+          "enabled=true,facing=up": {
+            "model": "thaumcraft:block/stage6_redstone_relay_on",
+            "y": 180
+          },
+          "enabled=true,facing=down": {
+            "model": "thaumcraft:block/stage6_redstone_relay_on",
+            "y": 180
+          }
+        }
+      }
+    },
+    {
+      "path": "models/item/redstone_relay.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_redstone_relay_off"
+      }
+    },
+    {
+      "path": "models/block/stage6_dioptra_variant_59.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_dioptra",
+        "textures": {
+          "particle": "thaumcraft:block/dioptra_side_on",
+          "side": "thaumcraft:block/dioptra_side_on",
+          "top": "thaumcraft:block/dioptra_top",
+          "bottom": "thaumcraft:block/arcane_stone_1"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_dioptra_variant_60.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_dioptra",
+        "textures": {
+          "particle": "thaumcraft:block/dioptra_side_off",
+          "side": "thaumcraft:block/dioptra_side_off",
+          "top": "thaumcraft:block/dioptra_top",
+          "bottom": "thaumcraft:block/arcane_stone_1"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_dioptra_variant_61.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_dioptra",
+        "textures": {
+          "particle": "thaumcraft:block/dioptra_side_on",
+          "side": "thaumcraft:block/dioptra_side_on",
+          "top": "thaumcraft:block/dioptra_top",
+          "bottom": "thaumcraft:block/arcane_stone_1"
+        }
+      }
+    },
+    {
+      "path": "blockstates/dioptra.json",
+      "payload": {
+        "variants": {
+          "enabled=false": {
+            "model": "thaumcraft:block/stage6_dioptra_variant_60"
+          },
+          "enabled=true": {
+            "model": "thaumcraft:block/stage6_dioptra_variant_61"
+          }
+        }
+      }
+    },
+    {
+      "path": "models/item/dioptra.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_dioptra_variant_59"
+      }
+    },
+    {
+      "path": "models/block/stage6_spa_variant_62.json",
+      "payload": {
+        "parent": "minecraft:block/cube",
+        "textures": {
+          "north": "thaumcraft:block/spa_side",
+          "south": "thaumcraft:block/spa_side",
+          "east": "thaumcraft:block/spa_side",
+          "west": "thaumcraft:block/spa_side",
+          "particle": "thaumcraft:block/spa_side",
+          "up": "thaumcraft:block/spa_top",
+          "down": "minecraft:block/furnace_top"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_spa_variant_63.json",
+      "payload": {
+        "parent": "minecraft:block/cube",
+        "textures": {
+          "north": "thaumcraft:block/spa_side",
+          "south": "thaumcraft:block/spa_side",
+          "east": "thaumcraft:block/spa_side",
+          "west": "thaumcraft:block/spa_side",
+          "particle": "thaumcraft:block/spa_side",
+          "up": "thaumcraft:block/spa_top",
+          "down": "minecraft:block/furnace_top"
+        }
+      }
+    },
+    {
+      "path": "blockstates/spa.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/stage6_spa_variant_63"
+          }
+        }
+      }
+    },
+    {
+      "path": "models/item/spa.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_spa_variant_62"
+      }
+    },
+    {
+      "path": "models/block/stage6_potion_sprayer_variant_64.json",
+      "payload": {
+        "parent": "minecraft:block/cube_bottom_top",
+        "textures": {
+          "bottom": "thaumcraft:block/potion_sprayer_bottom",
+          "top": "thaumcraft:block/potion_sprayer_top",
+          "side": "thaumcraft:block/potion_sprayer_side"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_potion_sprayer_variant_65.json",
+      "payload": {
+        "parent": "minecraft:block/cube_bottom_top",
+        "textures": {
+          "bottom": "thaumcraft:block/potion_sprayer_bottom",
+          "top": "thaumcraft:block/potion_sprayer_top",
+          "side": "thaumcraft:block/potion_sprayer_side"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_potion_sprayer_variant_66.json",
+      "payload": {
+        "parent": "minecraft:block/cube_bottom_top",
+        "textures": {
+          "bottom": "thaumcraft:block/potion_sprayer_bottom",
+          "top": "thaumcraft:block/potion_sprayer_top",
+          "side": "thaumcraft:block/potion_sprayer_side"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_potion_sprayer_variant_67.json",
+      "payload": {
+        "parent": "minecraft:block/cube_bottom_top",
+        "textures": {
+          "bottom": "thaumcraft:block/potion_sprayer_bottom",
+          "top": "thaumcraft:block/potion_sprayer_top",
+          "side": "thaumcraft:block/potion_sprayer_side"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_potion_sprayer_variant_68.json",
+      "payload": {
+        "parent": "minecraft:block/cube_bottom_top",
+        "textures": {
+          "bottom": "thaumcraft:block/potion_sprayer_bottom",
+          "top": "thaumcraft:block/potion_sprayer_top",
+          "side": "thaumcraft:block/potion_sprayer_side"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_potion_sprayer_variant_69.json",
+      "payload": {
+        "parent": "minecraft:block/cube_bottom_top",
+        "textures": {
+          "bottom": "thaumcraft:block/potion_sprayer_bottom",
+          "top": "thaumcraft:block/potion_sprayer_top",
+          "side": "thaumcraft:block/potion_sprayer_side"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_potion_sprayer_variant_70.json",
+      "payload": {
+        "parent": "minecraft:block/cube_bottom_top",
+        "textures": {
+          "bottom": "thaumcraft:block/potion_sprayer_bottom",
+          "top": "thaumcraft:block/potion_sprayer_top",
+          "side": "thaumcraft:block/potion_sprayer_side"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_potion_sprayer_variant_71.json",
+      "payload": {
+        "parent": "minecraft:block/cube_bottom_top",
+        "textures": {
+          "bottom": "thaumcraft:block/potion_sprayer_bottom",
+          "top": "thaumcraft:block/potion_sprayer_top",
+          "side": "thaumcraft:block/potion_sprayer_side"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_potion_sprayer_variant_72.json",
+      "payload": {
+        "parent": "minecraft:block/cube_bottom_top",
+        "textures": {
+          "bottom": "thaumcraft:block/potion_sprayer_bottom",
+          "top": "thaumcraft:block/potion_sprayer_top",
+          "side": "thaumcraft:block/potion_sprayer_side"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_potion_sprayer_variant_73.json",
+      "payload": {
+        "parent": "minecraft:block/cube_bottom_top",
+        "textures": {
+          "bottom": "thaumcraft:block/potion_sprayer_bottom",
+          "top": "thaumcraft:block/potion_sprayer_top",
+          "side": "thaumcraft:block/potion_sprayer_side"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_potion_sprayer_variant_74.json",
+      "payload": {
+        "parent": "minecraft:block/cube_bottom_top",
+        "textures": {
+          "bottom": "thaumcraft:block/potion_sprayer_bottom",
+          "top": "thaumcraft:block/potion_sprayer_top",
+          "side": "thaumcraft:block/potion_sprayer_side"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_potion_sprayer_variant_75.json",
+      "payload": {
+        "parent": "minecraft:block/cube_bottom_top",
+        "textures": {
+          "bottom": "thaumcraft:block/potion_sprayer_bottom",
+          "top": "thaumcraft:block/potion_sprayer_top",
+          "side": "thaumcraft:block/potion_sprayer_side"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage6_potion_sprayer_variant_76.json",
+      "payload": {
+        "parent": "minecraft:block/cube_bottom_top",
+        "textures": {
+          "bottom": "thaumcraft:block/potion_sprayer_bottom",
+          "top": "thaumcraft:block/potion_sprayer_top",
+          "side": "thaumcraft:block/potion_sprayer_side"
+        }
+      }
+    },
+    {
+      "path": "blockstates/potion_sprayer.json",
+      "payload": {
+        "variants": {
+          "enabled=false,facing=down": {
+            "model": "thaumcraft:block/stage6_potion_sprayer_variant_65",
+            "x": 180
+          },
+          "enabled=false,facing=up": {
+            "model": "thaumcraft:block/stage6_potion_sprayer_variant_66"
+          },
+          "enabled=false,facing=east": {
+            "model": "thaumcraft:block/stage6_potion_sprayer_variant_67",
+            "x": 90,
+            "y": 90
+          },
+          "enabled=false,facing=west": {
+            "model": "thaumcraft:block/stage6_potion_sprayer_variant_68",
+            "x": 90,
+            "y": 270
+          },
+          "enabled=false,facing=north": {
+            "model": "thaumcraft:block/stage6_potion_sprayer_variant_69",
+            "x": 90
+          },
+          "enabled=false,facing=south": {
+            "model": "thaumcraft:block/stage6_potion_sprayer_variant_70",
+            "x": 90,
+            "y": 180
+          },
+          "enabled=true,facing=down": {
+            "model": "thaumcraft:block/stage6_potion_sprayer_variant_71",
+            "x": 180
+          },
+          "enabled=true,facing=up": {
+            "model": "thaumcraft:block/stage6_potion_sprayer_variant_72"
+          },
+          "enabled=true,facing=east": {
+            "model": "thaumcraft:block/stage6_potion_sprayer_variant_73",
+            "x": 90,
+            "y": 90
+          },
+          "enabled=true,facing=west": {
+            "model": "thaumcraft:block/stage6_potion_sprayer_variant_74",
+            "x": 90,
+            "y": 270
+          },
+          "enabled=true,facing=north": {
+            "model": "thaumcraft:block/stage6_potion_sprayer_variant_75",
+            "x": 90
+          },
+          "enabled=true,facing=south": {
+            "model": "thaumcraft:block/stage6_potion_sprayer_variant_76",
+            "x": 90,
+            "y": 180
+          }
+        }
+      }
+    },
+    {
+      "path": "models/item/potion_sprayer.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_potion_sprayer_variant_64"
+      }
+    },
+    {
+      "path": "blockstates/pattern_crafter.json",
+      "payload": {
+        "variants": {
+          "enabled=false,facing=east": {
+            "model": "thaumcraft:block/stage6_pattern_crafter",
+            "y": 90
+          },
+          "enabled=false,facing=west": {
+            "model": "thaumcraft:block/stage6_pattern_crafter",
+            "y": 270
+          },
+          "enabled=false,facing=north": {
+            "model": "thaumcraft:block/stage6_pattern_crafter"
+          },
+          "enabled=false,facing=south": {
+            "model": "thaumcraft:block/stage6_pattern_crafter",
+            "y": 180
+          },
+          "enabled=true,facing=east": {
+            "model": "thaumcraft:block/stage6_pattern_crafter",
+            "y": 90
+          },
+          "enabled=true,facing=west": {
+            "model": "thaumcraft:block/stage6_pattern_crafter",
+            "y": 270
+          },
+          "enabled=true,facing=north": {
+            "model": "thaumcraft:block/stage6_pattern_crafter"
+          },
+          "enabled=true,facing=south": {
+            "model": "thaumcraft:block/stage6_pattern_crafter",
+            "y": 180
+          },
+          "enabled=false,facing=up": {
+            "model": "thaumcraft:block/stage6_pattern_crafter"
+          },
+          "enabled=false,facing=down": {
+            "model": "thaumcraft:block/stage6_pattern_crafter"
+          },
+          "enabled=true,facing=up": {
+            "model": "thaumcraft:block/stage6_pattern_crafter"
+          },
+          "enabled=true,facing=down": {
+            "model": "thaumcraft:block/stage6_pattern_crafter"
+          }
+        }
+      }
+    },
+    {
+      "path": "models/item/pattern_crafter.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_pattern_crafter_inv"
+      }
+    },
+    {
+      "path": "models/block/stage6_condenser_variant_77.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_condenser",
+        "textures": {
+          "side": "thaumcraft:block/condenser_off"
+        }
+      }
+    },
+    {
+      "path": "blockstates/condenser.json",
+      "payload": {
+        "variants": {
+          "enabled=false": {
+            "model": "thaumcraft:block/stage6_condenser_variant_77"
+          },
+          "enabled=true": {
+            "model": "thaumcraft:block/stage6_condenser"
+          }
+        }
+      }
+    },
+    {
+      "path": "models/item/condenser.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_condenser"
+      }
+    },
+    {
+      "path": "blockstates/condenser_lattice.json",
+      "payload": {
+        "multipart": [
+          {
+            "when": {
+              "north": "true"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_condenser_lattice_side",
+              "y": 180,
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "south": "true"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_condenser_lattice_side",
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "east": "true"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_condenser_lattice_side",
+              "y": 270,
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "west": "true"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_condenser_lattice_side",
+              "y": 90,
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "up": "true"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_condenser_lattice_side",
+              "x": 180
+            }
+          },
+          {
+            "when": {
+              "down": "true"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_condenser_lattice_side"
+            }
+          },
+          {
+            "apply": {
+              "model": "thaumcraft:block/stage6_condenser_lattice_core"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "path": "models/item/condenser_lattice.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_condenser_lattice_core",
+        "display": {
+          "gui": {
+            "rotation": [
+              30,
+              135,
+              0
+            ],
+            "scale": [
+              0.625,
+              0.625,
+              0.625
+            ]
+          },
+          "fixed": {
+            "rotation": [
+              0,
+              90,
+              0
+            ],
+            "scale": [
+              0.5,
+              0.5,
+              0.5
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "blockstates/condenser_lattice_dirty.json",
+      "payload": {
+        "multipart": [
+          {
+            "when": {
+              "north": "true"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_condenser_lattice_side",
+              "y": 180,
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "south": "true"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_condenser_lattice_side",
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "east": "true"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_condenser_lattice_side",
+              "y": 270,
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "west": "true"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_condenser_lattice_side",
+              "y": 90,
+              "x": 90
+            }
+          },
+          {
+            "when": {
+              "up": "true"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_condenser_lattice_side",
+              "x": 180
+            }
+          },
+          {
+            "when": {
+              "down": "true"
+            },
+            "apply": {
+              "model": "thaumcraft:block/stage6_condenser_lattice_side"
+            }
+          },
+          {
+            "apply": {
+              "model": "thaumcraft:block/stage6_condenser_lattice_core_dirty"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "path": "models/item/condenser_lattice_dirty.json",
+      "payload": {
+        "parent": "thaumcraft:block/stage6_condenser_lattice_core_dirty",
+        "display": {
+          "gui": {
+            "rotation": [
+              30,
+              135,
+              0
+            ],
+            "scale": [
+              0.625,
+              0.625,
+              0.625
+            ]
+          },
+          "fixed": {
+            "rotation": [
+              0,
+              90,
+              0
+            ],
+            "scale": [
+              0.5,
+              0.5,
+              0.5
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

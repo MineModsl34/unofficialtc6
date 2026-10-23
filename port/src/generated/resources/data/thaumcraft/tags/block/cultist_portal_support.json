@@ -1,0 +1,377 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:andesite",
+    "minecraft:bedrock",
+    "minecraft:black_concrete",
+    "minecraft:black_concrete_powder",
+    "minecraft:black_glazed_terracotta",
+    "minecraft:black_shulker_box",
+    "minecraft:black_terracotta",
+    "minecraft:blue_concrete",
+    "minecraft:blue_concrete_powder",
+    "minecraft:blue_glazed_terracotta",
+    "minecraft:blue_shulker_box",
+    "minecraft:blue_terracotta",
+    "minecraft:bone_block",
+    "minecraft:brick_slab",
+    "minecraft:brick_stairs",
+    "minecraft:bricks",
+    "minecraft:brown_concrete",
+    "minecraft:brown_concrete_powder",
+    "minecraft:brown_glazed_terracotta",
+    "minecraft:brown_shulker_box",
+    "minecraft:brown_terracotta",
+    "minecraft:chiseled_quartz_block",
+    "minecraft:chiseled_red_sandstone",
+    "minecraft:chiseled_sandstone",
+    "minecraft:chiseled_stone_bricks",
+    "minecraft:coal_block",
+    "minecraft:coal_ore",
+    "minecraft:coarse_dirt",
+    "minecraft:cobblestone",
+    "minecraft:cobblestone_slab",
+    "minecraft:cobblestone_stairs",
+    "minecraft:cobblestone_wall",
+    "minecraft:cracked_stone_bricks",
+    "minecraft:cut_red_sandstone",
+    "minecraft:cut_sandstone",
+    "minecraft:cyan_concrete",
+    "minecraft:cyan_concrete_powder",
+    "minecraft:cyan_glazed_terracotta",
+    "minecraft:cyan_shulker_box",
+    "minecraft:cyan_terracotta",
+    "minecraft:dark_prismarine",
+    "minecraft:diamond_ore",
+    "minecraft:diorite",
+    "minecraft:dirt",
+    "minecraft:dirt_path",
+    "minecraft:dispenser",
+    "minecraft:dropper",
+    "minecraft:emerald_ore",
+    "minecraft:enchanting_table",
+    "minecraft:end_portal_frame",
+    "minecraft:end_stone",
+    "minecraft:end_stone_bricks",
+    "minecraft:ender_chest",
+    "minecraft:farmland",
+    "minecraft:furnace",
+    "minecraft:gold_ore",
+    "minecraft:granite",
+    "minecraft:gravel",
+    "minecraft:gray_concrete",
+    "minecraft:gray_concrete_powder",
+    "minecraft:gray_glazed_terracotta",
+    "minecraft:gray_shulker_box",
+    "minecraft:gray_terracotta",
+    "minecraft:green_concrete",
+    "minecraft:green_concrete_powder",
+    "minecraft:green_glazed_terracotta",
+    "minecraft:green_shulker_box",
+    "minecraft:green_terracotta",
+    "minecraft:iron_ore",
+    "minecraft:lapis_ore",
+    "minecraft:light_blue_concrete",
+    "minecraft:light_blue_concrete_powder",
+    "minecraft:light_blue_glazed_terracotta",
+    "minecraft:light_blue_shulker_box",
+    "minecraft:light_blue_terracotta",
+    "minecraft:light_gray_concrete",
+    "minecraft:light_gray_concrete_powder",
+    "minecraft:light_gray_glazed_terracotta",
+    "minecraft:light_gray_shulker_box",
+    "minecraft:light_gray_terracotta",
+    "minecraft:lime_concrete",
+    "minecraft:lime_concrete_powder",
+    "minecraft:lime_glazed_terracotta",
+    "minecraft:lime_shulker_box",
+    "minecraft:lime_terracotta",
+    "minecraft:magenta_concrete",
+    "minecraft:magenta_concrete_powder",
+    "minecraft:magenta_glazed_terracotta",
+    "minecraft:magenta_shulker_box",
+    "minecraft:magenta_terracotta",
+    "minecraft:magma_block",
+    "minecraft:mossy_cobblestone",
+    "minecraft:mossy_cobblestone_wall",
+    "minecraft:mossy_stone_bricks",
+    "minecraft:nether_brick_fence",
+    "minecraft:nether_brick_slab",
+    "minecraft:nether_brick_stairs",
+    "minecraft:nether_bricks",
+    "minecraft:nether_quartz_ore",
+    "minecraft:netherrack",
+    "minecraft:observer",
+    "minecraft:obsidian",
+    "minecraft:orange_concrete",
+    "minecraft:orange_concrete_powder",
+    "minecraft:orange_glazed_terracotta",
+    "minecraft:orange_shulker_box",
+    "minecraft:orange_terracotta",
+    "minecraft:petrified_oak_slab",
+    "minecraft:pink_concrete",
+    "minecraft:pink_concrete_powder",
+    "minecraft:pink_glazed_terracotta",
+    "minecraft:pink_shulker_box",
+    "minecraft:pink_terracotta",
+    "minecraft:podzol",
+    "minecraft:polished_andesite",
+    "minecraft:polished_diorite",
+    "minecraft:polished_granite",
+    "minecraft:prismarine",
+    "minecraft:prismarine_bricks",
+    "minecraft:purple_concrete",
+    "minecraft:purple_concrete_powder",
+    "minecraft:purple_glazed_terracotta",
+    "minecraft:purple_shulker_box",
+    "minecraft:purple_terracotta",
+    "minecraft:purpur_block",
+    "minecraft:purpur_pillar",
+    "minecraft:purpur_slab",
+    "minecraft:purpur_stairs",
+    "minecraft:quartz_block",
+    "minecraft:quartz_pillar",
+    "minecraft:quartz_slab",
+    "minecraft:quartz_stairs",
+    "minecraft:red_concrete",
+    "minecraft:red_concrete_powder",
+    "minecraft:red_glazed_terracotta",
+    "minecraft:red_nether_bricks",
+    "minecraft:red_sand",
+    "minecraft:red_sandstone",
+    "minecraft:red_sandstone_slab",
+    "minecraft:red_sandstone_stairs",
+    "minecraft:red_shulker_box",
+    "minecraft:red_terracotta",
+    "minecraft:redstone_ore",
+    "minecraft:sand",
+    "minecraft:sandstone",
+    "minecraft:sandstone_slab",
+    "minecraft:sandstone_stairs",
+    "minecraft:smooth_quartz",
+    "minecraft:smooth_red_sandstone",
+    "minecraft:smooth_sandstone",
+    "minecraft:smooth_stone",
+    "minecraft:smooth_stone_slab",
+    "minecraft:snow",
+    "minecraft:soul_sand",
+    "minecraft:spawner",
+    "minecraft:stone",
+    "minecraft:stone_brick_slab",
+    "minecraft:stone_brick_stairs",
+    "minecraft:stone_bricks",
+    "minecraft:stone_pressure_plate",
+    "minecraft:stone_slab",
+    "minecraft:terracotta",
+    "minecraft:white_concrete",
+    "minecraft:white_concrete_powder",
+    "minecraft:white_glazed_terracotta",
+    "minecraft:white_shulker_box",
+    "minecraft:white_terracotta",
+    "minecraft:yellow_concrete",
+    "minecraft:yellow_concrete_powder",
+    "minecraft:yellow_glazed_terracotta",
+    "minecraft:yellow_shulker_box",
+    "minecraft:yellow_terracotta",
+    {
+      "id": "thaumcraft:dioptra",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:everfull_urn",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:golem_builder",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:hole",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:infernal_furnace",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:infusion_matrix",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:loot_urn_common",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:loot_urn_rare",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:loot_urn_uncommon",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:matrix_cost",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:matrix_speed",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:ore_amber",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:ore_cinnabar",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:ore_quartz",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:paving_stone_barrier",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:paving_stone_travel",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:pedestal_ancient",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:pedestal_arcane",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:pedestal_eldritch",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:pillar_ancient",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:pillar_arcane",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:pillar_eldritch",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:placeholder_anvil",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:placeholder_bars",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:placeholder_brick",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:placeholder_cauldron",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:placeholder_obsidian",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:placeholder_table",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:recharge_pedestal",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:slab_ancient",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:slab_arcane_brick",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:slab_arcane_stone",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:slab_eldritch",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:spa",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:stabilizer",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:stairs_ancient",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:stairs_arcane",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:stairs_arcane_brick",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:stone_ancient",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:stone_ancient_doorway",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:stone_ancient_glyphed",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:stone_ancient_rock",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:stone_ancient_tile",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:stone_arcane",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:stone_arcane_brick",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:stone_eldritch_tile",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:stone_porous",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:table_stone",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:vis_battery",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:wand_workbench",
+      "required": false
+    }
+  ]
+}

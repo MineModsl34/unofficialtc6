@@ -1,0 +1,23 @@
+{
+  "source_order": 13,
+  "input": {
+    "items": [
+      "thaumcraft:cluster_silver"
+    ]
+  },
+  "output": {
+    "id": "thaumcraft:nugget_silver",
+    "count": 1
+  },
+  "chance": 0.33,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:cluster_silver"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nugget_silver"
+    }
+  ]
+}

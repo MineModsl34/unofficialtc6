@@ -1,0 +1,12 @@
+{
+  "loader": "neoforge:obj",
+  "model": "thaumcraft:models/block/thaumatorium.obj",
+  "automatic_culling": false,
+  "flip_v": true,
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "texture": "thaumcraft:block/thaumatorium",
+    "particle": "thaumcraft:block/thaumatorium"
+  }
+}
+

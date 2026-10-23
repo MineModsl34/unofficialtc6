@@ -1,0 +1,20 @@
+{
+  "type": "thaumcraft:crucible",
+  "research": "BASEALCHEMY",
+  "result": {
+    "id": "thaumcraft:crystal_essence",
+    "count": 1,
+    "components": {
+      "thaumcraft:aspects": {
+        "vitreus": 1
+      }
+    }
+  },
+  "catalyst": {
+    "tag": "c:nuggets/quartz"
+  },
+  "aspects": {
+    "vitreus": 2
+  },
+  "group": "thaumcraft:viscrystalgroup"
+}

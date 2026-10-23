@@ -1,0 +1,51 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "group": "minecraft:",
+  "research": "FOCUSPOUCH",
+  "vis": 25,
+  "crystals": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "result": {
+    "id": "thaumcraft:focus_pouch",
+    "count": 1
+  },
+  "pattern": [
+    "LGL",
+    "LBL",
+    "LLL"
+  ],
+  "key": {
+    "B": {
+      "item": "thaumcraft:girdle_mundane"
+    },
+    "L": {
+      "tag": "c:leathers"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:focus_pouch"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:girdle_mundane"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:leathers"
+      }
+    }
+  ]
+}

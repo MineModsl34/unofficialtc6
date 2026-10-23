@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "thaumcraft:inkwell",
+  "ingredients": [
+    {
+      "item": "thaumcraft:scribing_tools"
+    },
+    {
+      "tag": "thaumcraft:legacy_scribing_ink"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "thaumcraft:scribing_tools"
+  }
+}

@@ -1,0 +1,1167 @@
+{
+  "format": 1,
+  "source": "reference/tc6/src/assets/thaumcraft",
+  "blocks": [
+    "taint_crust",
+    "taint_soil",
+    "taint_rock",
+    "taint_geyser",
+    "taint_log",
+    "taint_feature"
+  ],
+  "entries": [
+    {
+      "path": "blockstates/taint_crust.json",
+      "source": "blockstates/taint_crust.json",
+      "payload": {
+        "variants": {
+          "": [
+            {
+              "model": "thaumcraft:block/stage8_taint_crust",
+              "weight": 8
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_crust",
+              "x": 90,
+              "weight": 8
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_crust",
+              "y": 90,
+              "weight": 8
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_crust",
+              "x": 90,
+              "y": 90,
+              "weight": 8
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_crust_1"
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_crust_1",
+              "x": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_crust_1",
+              "y": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_crust_1",
+              "x": 90,
+              "y": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_crust_2"
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_crust_2",
+              "x": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_crust_2",
+              "y": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_crust_2",
+              "x": 90,
+              "y": 90
+            }
+          ]
+        }
+      }
+    },
+    {
+      "path": "models/item/taint_crust.json",
+      "source": "blockstates/taint_crust.json#inventory",
+      "payload": {
+        "parent": "thaumcraft:block/stage8_taint_crust"
+      }
+    },
+    {
+      "path": "blockstates/taint_soil.json",
+      "source": "blockstates/taint_soil.json",
+      "payload": {
+        "variants": {
+          "": [
+            {
+              "model": "thaumcraft:block/stage8_taint_soil",
+              "weight": 16
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_soil",
+              "x": 90,
+              "weight": 16
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_soil",
+              "y": 90,
+              "weight": 16
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_soil",
+              "x": 90,
+              "y": 90,
+              "weight": 16
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_soil_1"
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_soil_1",
+              "x": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_soil_1",
+              "y": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_soil_1",
+              "x": 90,
+              "y": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_soil_2"
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_soil_2",
+              "x": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_soil_2",
+              "y": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_soil_2",
+              "x": 90,
+              "y": 90
+            }
+          ]
+        }
+      }
+    },
+    {
+      "path": "models/item/taint_soil.json",
+      "source": "blockstates/taint_soil.json#inventory",
+      "payload": {
+        "parent": "thaumcraft:block/stage8_taint_soil"
+      }
+    },
+    {
+      "path": "blockstates/taint_rock.json",
+      "source": "blockstates/taint_rock.json",
+      "payload": {
+        "variants": {
+          "": [
+            {
+              "model": "thaumcraft:block/stage8_taint_rock"
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_rock",
+              "x": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_rock",
+              "y": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_rock",
+              "x": 90,
+              "y": 90
+            }
+          ]
+        }
+      }
+    },
+    {
+      "path": "models/item/taint_rock.json",
+      "source": "blockstates/taint_rock.json#inventory",
+      "payload": {
+        "parent": "thaumcraft:block/stage8_taint_rock"
+      }
+    },
+    {
+      "path": "blockstates/taint_geyser.json",
+      "source": "blockstates/taint_geyser.json",
+      "payload": {
+        "variants": {
+          "": [
+            {
+              "model": "thaumcraft:block/stage8_taint_geyser"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "path": "models/item/taint_geyser.json",
+      "source": "blockstates/taint_geyser.json#inventory",
+      "payload": {
+        "parent": "thaumcraft:block/stage8_taint_geyser"
+      }
+    },
+    {
+      "path": "blockstates/taint_log.json",
+      "source": "blockstates/taint_log.json",
+      "payload": {
+        "variants": {
+          "axis=x": [
+            {
+              "model": "thaumcraft:block/stage8_taint_log",
+              "x": 90,
+              "y": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_log_1",
+              "x": 90,
+              "y": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_log_2",
+              "x": 90,
+              "y": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_log_3",
+              "x": 90,
+              "y": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_log_4",
+              "x": 90,
+              "y": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_log_5",
+              "x": 90,
+              "y": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_log_6",
+              "x": 90,
+              "y": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_log_7",
+              "x": 90,
+              "y": 90
+            }
+          ],
+          "axis=y": [
+            {
+              "model": "thaumcraft:block/stage8_taint_log"
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_log_1"
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_log_2"
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_log_3"
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_log_4"
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_log_5"
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_log_6"
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_log_7"
+            }
+          ],
+          "axis=z": [
+            {
+              "model": "thaumcraft:block/stage8_taint_log",
+              "x": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_log_1",
+              "x": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_log_2",
+              "x": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_log_3",
+              "x": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_log_4",
+              "x": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_log_5",
+              "x": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_log_6",
+              "x": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_log_7",
+              "x": 90
+            }
+          ]
+        }
+      }
+    },
+    {
+      "path": "models/item/taint_log.json",
+      "source": "blockstates/taint_log.json#inventory",
+      "payload": {
+        "parent": "thaumcraft:block/stage8_taint_log_8"
+      }
+    },
+    {
+      "path": "blockstates/taint_feature.json",
+      "source": "blockstates/taint_feature.json",
+      "payload": {
+        "variants": {
+          "facing=down": [
+            {
+              "model": "thaumcraft:block/stage8_taint_feature",
+              "x": 180
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_1",
+              "x": 180
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_2",
+              "x": 180
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature",
+              "x": 180,
+              "y": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_1",
+              "x": 180,
+              "y": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_2",
+              "x": 180,
+              "y": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature",
+              "x": 180,
+              "y": 180
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_1",
+              "x": 180,
+              "y": 180
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_2",
+              "x": 180,
+              "y": 180
+            }
+          ],
+          "facing=up": [
+            {
+              "model": "thaumcraft:block/stage8_taint_feature"
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_1"
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_2"
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature",
+              "y": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_1",
+              "y": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_2",
+              "y": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature",
+              "y": 180
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_1",
+              "y": 180
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_2",
+              "y": 180
+            }
+          ],
+          "facing=east": [
+            {
+              "model": "thaumcraft:block/stage8_taint_feature",
+              "x": 90,
+              "y": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_1",
+              "x": 90,
+              "y": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_2",
+              "x": 90,
+              "y": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature",
+              "x": 270,
+              "y": 270
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_1",
+              "x": 270,
+              "y": 270
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_2",
+              "x": 270,
+              "y": 270
+            }
+          ],
+          "facing=west": [
+            {
+              "model": "thaumcraft:block/stage8_taint_feature",
+              "x": 90,
+              "y": 270
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_1",
+              "x": 90,
+              "y": 270
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_2",
+              "x": 90,
+              "y": 270
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature",
+              "x": 270,
+              "y": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_1",
+              "x": 270,
+              "y": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_2",
+              "x": 270,
+              "y": 90
+            }
+          ],
+          "facing=north": [
+            {
+              "model": "thaumcraft:block/stage8_taint_feature",
+              "x": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_1",
+              "x": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_2",
+              "x": 90
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature",
+              "x": 270,
+              "y": 180
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_1",
+              "x": 270,
+              "y": 180
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_2",
+              "x": 270,
+              "y": 180
+            }
+          ],
+          "facing=south": [
+            {
+              "model": "thaumcraft:block/stage8_taint_feature",
+              "x": 90,
+              "y": 180
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_1",
+              "x": 90,
+              "y": 180
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_2",
+              "x": 90,
+              "y": 180
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature",
+              "x": 270
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_1",
+              "x": 270
+            },
+            {
+              "model": "thaumcraft:block/stage8_taint_feature_2",
+              "x": 270
+            }
+          ]
+        }
+      }
+    },
+    {
+      "path": "models/item/taint_feature.json",
+      "source": "blockstates/taint_feature.json#inventory",
+      "payload": {
+        "parent": "thaumcraft:block/stage8_taint_feature"
+      }
+    },
+    {
+      "path": "models/block/stage8_taint_crust.json",
+      "source": "blockstates/taint*.json + models/block/log_taintwood.json or taint_orb_[0-2].json",
+      "payload": {
+        "parent": "minecraft:block/cube_all",
+        "textures": {
+          "all": "thaumcraft:block/taint_crust_0"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage8_taint_crust_1.json",
+      "source": "blockstates/taint*.json + models/block/log_taintwood.json or taint_orb_[0-2].json",
+      "payload": {
+        "parent": "minecraft:block/cube_all",
+        "textures": {
+          "all": "thaumcraft:block/taint_crust_1"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage8_taint_crust_2.json",
+      "source": "blockstates/taint*.json + models/block/log_taintwood.json or taint_orb_[0-2].json",
+      "payload": {
+        "parent": "minecraft:block/cube_all",
+        "textures": {
+          "all": "thaumcraft:block/taint_crust_2"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage8_taint_soil.json",
+      "source": "blockstates/taint*.json + models/block/log_taintwood.json or taint_orb_[0-2].json",
+      "payload": {
+        "parent": "minecraft:block/cube_all",
+        "textures": {
+          "all": "thaumcraft:block/taint_soil_0"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage8_taint_soil_1.json",
+      "source": "blockstates/taint*.json + models/block/log_taintwood.json or taint_orb_[0-2].json",
+      "payload": {
+        "parent": "minecraft:block/cube_all",
+        "textures": {
+          "all": "thaumcraft:block/taint_soil_1"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage8_taint_soil_2.json",
+      "source": "blockstates/taint*.json + models/block/log_taintwood.json or taint_orb_[0-2].json",
+      "payload": {
+        "parent": "minecraft:block/cube_all",
+        "textures": {
+          "all": "thaumcraft:block/taint_soil_2"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage8_taint_rock.json",
+      "source": "blockstates/taint*.json + models/block/log_taintwood.json or taint_orb_[0-2].json",
+      "payload": {
+        "parent": "minecraft:block/cube_all",
+        "textures": {
+          "all": "thaumcraft:block/taint_rock"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage8_taint_geyser.json",
+      "source": "blockstates/taint*.json + models/block/log_taintwood.json or taint_orb_[0-2].json",
+      "payload": {
+        "parent": "minecraft:block/cube_bottom_top",
+        "textures": {
+          "particle": "thaumcraft:block/taint_geyser_side",
+          "bottom": "thaumcraft:block/log_taintwood_top",
+          "top": "thaumcraft:block/taint_geyser_top",
+          "side": "thaumcraft:block/taint_geyser_side"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage8_taint_log.json",
+      "source": "blockstates/taint*.json + models/block/log_taintwood.json or taint_orb_[0-2].json",
+      "payload": {
+        "parent": "minecraft:block/cube",
+        "textures": {
+          "all": "thaumcraft:block/log_taintwood_1",
+          "particle": "thaumcraft:block/log_taintwood_top",
+          "up": "thaumcraft:block/log_taintwood_top",
+          "down": "thaumcraft:block/log_taintwood_top",
+          "north": "thaumcraft:block/log_taintwood_1",
+          "south": "thaumcraft:block/log_taintwood_0",
+          "east": "thaumcraft:block/log_taintwood_0",
+          "west": "thaumcraft:block/log_taintwood_0"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage8_taint_log_1.json",
+      "source": "blockstates/taint*.json + models/block/log_taintwood.json or taint_orb_[0-2].json",
+      "payload": {
+        "parent": "minecraft:block/cube",
+        "textures": {
+          "all": "thaumcraft:block/log_taintwood_1",
+          "particle": "thaumcraft:block/log_taintwood_top",
+          "up": "thaumcraft:block/log_taintwood_top",
+          "down": "thaumcraft:block/log_taintwood_top",
+          "north": "thaumcraft:block/log_taintwood_0",
+          "south": "thaumcraft:block/log_taintwood_1",
+          "east": "thaumcraft:block/log_taintwood_0",
+          "west": "thaumcraft:block/log_taintwood_0"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage8_taint_log_2.json",
+      "source": "blockstates/taint*.json + models/block/log_taintwood.json or taint_orb_[0-2].json",
+      "payload": {
+        "parent": "minecraft:block/cube",
+        "textures": {
+          "all": "thaumcraft:block/log_taintwood_1",
+          "particle": "thaumcraft:block/log_taintwood_top",
+          "up": "thaumcraft:block/log_taintwood_top",
+          "down": "thaumcraft:block/log_taintwood_top",
+          "north": "thaumcraft:block/log_taintwood_0",
+          "south": "thaumcraft:block/log_taintwood_0",
+          "east": "thaumcraft:block/log_taintwood_1",
+          "west": "thaumcraft:block/log_taintwood_0"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage8_taint_log_3.json",
+      "source": "blockstates/taint*.json + models/block/log_taintwood.json or taint_orb_[0-2].json",
+      "payload": {
+        "parent": "minecraft:block/cube",
+        "textures": {
+          "all": "thaumcraft:block/log_taintwood_1",
+          "particle": "thaumcraft:block/log_taintwood_top",
+          "up": "thaumcraft:block/log_taintwood_top",
+          "down": "thaumcraft:block/log_taintwood_top",
+          "north": "thaumcraft:block/log_taintwood_0",
+          "south": "thaumcraft:block/log_taintwood_0",
+          "east": "thaumcraft:block/log_taintwood_0",
+          "west": "thaumcraft:block/log_taintwood_1"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage8_taint_log_4.json",
+      "source": "blockstates/taint*.json + models/block/log_taintwood.json or taint_orb_[0-2].json",
+      "payload": {
+        "parent": "minecraft:block/cube",
+        "textures": {
+          "all": "thaumcraft:block/log_taintwood_1",
+          "particle": "thaumcraft:block/log_taintwood_top",
+          "up": "thaumcraft:block/log_taintwood_top",
+          "down": "thaumcraft:block/log_taintwood_top",
+          "north": "thaumcraft:block/log_taintwood_2",
+          "south": "thaumcraft:block/log_taintwood_0",
+          "east": "thaumcraft:block/log_taintwood_0",
+          "west": "thaumcraft:block/log_taintwood_0"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage8_taint_log_5.json",
+      "source": "blockstates/taint*.json + models/block/log_taintwood.json or taint_orb_[0-2].json",
+      "payload": {
+        "parent": "minecraft:block/cube",
+        "textures": {
+          "all": "thaumcraft:block/log_taintwood_1",
+          "particle": "thaumcraft:block/log_taintwood_top",
+          "up": "thaumcraft:block/log_taintwood_top",
+          "down": "thaumcraft:block/log_taintwood_top",
+          "north": "thaumcraft:block/log_taintwood_0",
+          "south": "thaumcraft:block/log_taintwood_2",
+          "east": "thaumcraft:block/log_taintwood_0",
+          "west": "thaumcraft:block/log_taintwood_0"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage8_taint_log_6.json",
+      "source": "blockstates/taint*.json + models/block/log_taintwood.json or taint_orb_[0-2].json",
+      "payload": {
+        "parent": "minecraft:block/cube",
+        "textures": {
+          "all": "thaumcraft:block/log_taintwood_1",
+          "particle": "thaumcraft:block/log_taintwood_top",
+          "up": "thaumcraft:block/log_taintwood_top",
+          "down": "thaumcraft:block/log_taintwood_top",
+          "north": "thaumcraft:block/log_taintwood_0",
+          "south": "thaumcraft:block/log_taintwood_0",
+          "east": "thaumcraft:block/log_taintwood_2",
+          "west": "thaumcraft:block/log_taintwood_0"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage8_taint_log_7.json",
+      "source": "blockstates/taint*.json + models/block/log_taintwood.json or taint_orb_[0-2].json",
+      "payload": {
+        "parent": "minecraft:block/cube",
+        "textures": {
+          "all": "thaumcraft:block/log_taintwood_1",
+          "particle": "thaumcraft:block/log_taintwood_top",
+          "up": "thaumcraft:block/log_taintwood_top",
+          "down": "thaumcraft:block/log_taintwood_top",
+          "north": "thaumcraft:block/log_taintwood_0",
+          "south": "thaumcraft:block/log_taintwood_0",
+          "east": "thaumcraft:block/log_taintwood_0",
+          "west": "thaumcraft:block/log_taintwood_2"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage8_taint_log_8.json",
+      "source": "blockstates/taint*.json + models/block/log_taintwood.json or taint_orb_[0-2].json",
+      "payload": {
+        "parent": "minecraft:block/cube",
+        "textures": {
+          "all": "thaumcraft:block/log_taintwood_1",
+          "particle": "thaumcraft:block/log_taintwood_top",
+          "up": "thaumcraft:block/log_taintwood_top",
+          "down": "thaumcraft:block/log_taintwood_top",
+          "north": "thaumcraft:block/log_taintwood_0",
+          "south": "thaumcraft:block/log_taintwood_0",
+          "east": "thaumcraft:block/log_taintwood_0",
+          "west": "thaumcraft:block/log_taintwood_0"
+        }
+      }
+    },
+    {
+      "path": "models/block/stage8_taint_feature.json",
+      "source": "blockstates/taint*.json + models/block/log_taintwood.json or taint_orb_[0-2].json",
+      "payload": {
+        "textures": {
+          "particle": "thaumcraft:block/taint_growth_5",
+          "side1": "thaumcraft:block/taint_growth_5",
+          "side2": "thaumcraft:block/taint_growth_3"
+        },
+        "elements": [
+          {
+            "from": [
+              2,
+              0,
+              2
+            ],
+            "to": [
+              12,
+              10,
+              12
+            ],
+            "faces": {
+              "up": {
+                "uv": [
+                  0,
+                  0,
+                  10,
+                  10
+                ],
+                "texture": "#side1"
+              },
+              "west": {
+                "uv": [
+                  0,
+                  0,
+                  10,
+                  10
+                ],
+                "texture": "#side1"
+              },
+              "east": {
+                "uv": [
+                  0,
+                  0,
+                  10,
+                  10
+                ],
+                "texture": "#side1"
+              },
+              "north": {
+                "uv": [
+                  0,
+                  0,
+                  10,
+                  10
+                ],
+                "texture": "#side1"
+              },
+              "south": {
+                "uv": [
+                  0,
+                  0,
+                  10,
+                  10
+                ],
+                "texture": "#side1"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "path": "models/block/stage8_taint_feature_1.json",
+      "source": "blockstates/taint*.json + models/block/log_taintwood.json or taint_orb_[0-2].json",
+      "payload": {
+        "textures": {
+          "particle": "thaumcraft:block/taint_growth_5",
+          "side1": "thaumcraft:block/taint_growth_5",
+          "side2": "thaumcraft:block/taint_growth_3"
+        },
+        "elements": [
+          {
+            "from": [
+              2,
+              0,
+              3
+            ],
+            "to": [
+              10,
+              8,
+              11
+            ],
+            "faces": {
+              "up": {
+                "uv": [
+                  8,
+                  8,
+                  16,
+                  16
+                ],
+                "texture": "#side2"
+              },
+              "west": {
+                "uv": [
+                  8,
+                  8,
+                  16,
+                  16
+                ],
+                "texture": "#side2"
+              },
+              "east": {
+                "uv": [
+                  8,
+                  8,
+                  16,
+                  16
+                ],
+                "texture": "#side2"
+              },
+              "north": {
+                "uv": [
+                  8,
+                  8,
+                  16,
+                  16
+                ],
+                "texture": "#side2"
+              },
+              "south": {
+                "uv": [
+                  8,
+                  8,
+                  16,
+                  16
+                ],
+                "texture": "#side2"
+              }
+            }
+          },
+          {
+            "from": [
+              8,
+              0,
+              7
+            ],
+            "to": [
+              14,
+              6,
+              13
+            ],
+            "faces": {
+              "up": {
+                "uv": [
+                  10,
+                  0,
+                  16,
+                  6
+                ],
+                "texture": "#side1"
+              },
+              "west": {
+                "uv": [
+                  10,
+                  0,
+                  16,
+                  6
+                ],
+                "texture": "#side1"
+              },
+              "east": {
+                "uv": [
+                  10,
+                  0,
+                  16,
+                  6
+                ],
+                "texture": "#side1"
+              },
+              "north": {
+                "uv": [
+                  10,
+                  0,
+                  16,
+                  6
+                ],
+                "texture": "#side1"
+              },
+              "south": {
+                "uv": [
+                  10,
+                  0,
+                  16,
+                  6
+                ],
+                "texture": "#side1"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "path": "models/block/stage8_taint_feature_2.json",
+      "source": "blockstates/taint*.json + models/block/log_taintwood.json or taint_orb_[0-2].json",
+      "payload": {
+        "textures": {
+          "particle": "thaumcraft:block/taint_growth_5",
+          "side1": "thaumcraft:block/taint_growth_5",
+          "side2": "thaumcraft:block/taint_growth_3"
+        },
+        "elements": [
+          {
+            "from": [
+              9,
+              0,
+              9
+            ],
+            "to": [
+              15,
+              6,
+              15
+            ],
+            "faces": {
+              "up": {
+                "uv": [
+                  10,
+                  10,
+                  16,
+                  16
+                ],
+                "texture": "#side1"
+              },
+              "west": {
+                "uv": [
+                  10,
+                  10,
+                  16,
+                  16
+                ],
+                "texture": "#side1"
+              },
+              "east": {
+                "uv": [
+                  10,
+                  10,
+                  16,
+                  16
+                ],
+                "texture": "#side1"
+              },
+              "north": {
+                "uv": [
+                  10,
+                  10,
+                  16,
+                  16
+                ],
+                "texture": "#side1"
+              },
+              "south": {
+                "uv": [
+                  10,
+                  10,
+                  16,
+                  16
+                ],
+                "texture": "#side1"
+              }
+            }
+          },
+          {
+            "from": [
+              1,
+              0,
+              7
+            ],
+            "to": [
+              7,
+              6,
+              13
+            ],
+            "faces": {
+              "up": {
+                "uv": [
+                  0,
+                  10,
+                  6,
+                  16
+                ],
+                "texture": "#side1"
+              },
+              "west": {
+                "uv": [
+                  0,
+                  10,
+                  6,
+                  16
+                ],
+                "texture": "#side1"
+              },
+              "east": {
+                "uv": [
+                  0,
+                  10,
+                  6,
+                  16
+                ],
+                "texture": "#side1"
+              },
+              "north": {
+                "uv": [
+                  0,
+                  10,
+                  6,
+                  16
+                ],
+                "texture": "#side1"
+              },
+              "south": {
+                "uv": [
+                  0,
+                  10,
+                  6,
+                  16
+                ],
+                "texture": "#side1"
+              }
+            }
+          },
+          {
+            "from": [
+              8,
+              0,
+              1
+            ],
+            "to": [
+              14,
+              5,
+              7
+            ],
+            "faces": {
+              "up": {
+                "uv": [
+                  10,
+                  0,
+                  16,
+                  6
+                ],
+                "texture": "#side1"
+              },
+              "west": {
+                "uv": [
+                  10,
+                  0,
+                  16,
+                  5
+                ],
+                "texture": "#side1"
+              },
+              "east": {
+                "uv": [
+                  10,
+                  0,
+                  16,
+                  5
+                ],
+                "texture": "#side1"
+              },
+              "north": {
+                "uv": [
+                  10,
+                  0,
+                  16,
+                  5
+                ],
+                "texture": "#side1"
+              },
+              "south": {
+                "uv": [
+                  10,
+                  0,
+                  16,
+                  5
+                ],
+                "texture": "#side1"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

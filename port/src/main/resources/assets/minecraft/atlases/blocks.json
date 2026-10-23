@@ -1,0 +1,7 @@
+{
+  "sources": [
+    { "type": "minecraft:single", "resource": "thaumcraft:research/quill", "sprite": "thaumcraft:research/quill" },
+    { "type": "minecraft:single", "resource": "thaumcraft:entity/armor/caster_basic", "sprite": "thaumcraft:entity/armor/caster_basic" },
+    { "type": "minecraft:single", "resource": "thaumcraft:entity/armor/caster_advanced", "sprite": "thaumcraft:entity/armor/caster_advanced" }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "format": 1,
+  "source": "Thaumcraft6.1.BETA26",
+  "rawFileCount": 5,
+  "sourceProgramCount": 2,
+  "sketchActivation": "compiled, no source consumer",
+  "testFragmentActivation": "no source consumer",
+  "note": "Source texts normalized to LF; shaders compile through native resource reload. GPU visual acceptance deferred by user. Four source warp post chains remain existing owner WarpPostEffects.",
+  "sourceFiles": [
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/shader/ender.vert",
+      "sha256": "4bb03569aa2976e874f75b1de45d21e33854c08fb730925b2f4560c8290b1728"
+    },
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/shader/ender.frag",
+      "sha256": "934c5e86e1ac3cedfc0d9e5b4871ea7556c4f455667aa5e0377c799eb3ccbbc9"
+    },
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/shader/sketch.vert",
+      "sha256": "9c695503bbb7041bfff3568aaabdec4fab48812e4d29188154f97f07e08b6ecb"
+    },
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/shader/sketch.frag",
+      "sha256": "081da31aadee572abb885b767ef075681be0840613c02b19531bde410a9b9419"
+    },
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/shader/test.frag",
+      "sha256": "ee7a5c7c38f088bbbd4ea28cca85fbeca8bd3307d54cca65b563157eff2b293d"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/client/lib/ender/ShaderHelper.java",
+      "sha256": "b69a76ec030c35c89c7f42a97b78f17c1d73a09d5c35b863b7d97e16c2c9b4ba"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/client/lib/ender/ShaderCallback.java",
+      "sha256": "0c2bf6dc41b22e888ea21d985d7bbb90eaf6775e222a4514c9e2c34f1f467732"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/client/lib/events/ShaderHandler.java",
+      "sha256": "4e6ab281d1184d940348abcba8d1a22a0acbb2d990e475c2b5d5366f1cd460e2"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/client/renderers/entity/RenderFluxRift.java",
+      "sha256": "b263cd3e0a180db92c9707b11f80817505dcd6a3902a94d5e6438a8250dc790e"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/client/renderers/entity/projectile/RenderRiftBlast.java",
+      "sha256": "30397cbc076f31223345340587a2f77e8e2105a18fb26a0a75f38fb73c88bed9"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/client/renderers/entity/construct/RenderArcaneBore.java",
+      "sha256": "a23853354621d3bf67e6b3879a3755905be782bb258884bb555e95e9318d177e"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/client/renderers/tile/TileMirrorRenderer.java",
+      "sha256": "c6ada4452086f3720398cfeecdb602e3292862b6482e498a671c74a456939a8c"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/client/renderers/tile/TileInfusionMatrixRenderer.java",
+      "sha256": "c94bd6eb1aa15aeb038c55f59d0cbb442cc168591610fb006964753fd0b03fa7"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/client/renderers/tile/TileFocalManipulatorRenderer.java",
+      "sha256": "5d97bb74ce602f55d45db0b2d333aced56527fd4f35683d3a56c18f02d0a0610"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/client/renderers/tile/TileVoidSiphonRenderer.java",
+      "sha256": "36e32b81687e7e66bba1c357a99d0d2f6752539a129d326cacf25fae78673ee7"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/client/renderers/tile/TileHoleRenderer.java",
+      "sha256": "4f48a59c3625c3eed437e821d0045a9fe937819cd591179d98b3221d2798c618"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/client/renderers/models/ModelCube.java",
+      "sha256": "47e2c8a60c546bd1aea2f6e0b9099b4cbd9bd057716006c859bd641611d6b743"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/client/gui/GuiFocalManipulator.java",
+      "sha256": "9fe25e30685de4538d02cedc1579a9ecd717a64b2e1d34b54e0e4af7907afc74"
+    }
+  ],
+  "entries": [
+    {
+      "path": "assets/thaumcraft/shader/ender.vert",
+      "payload": "#version 120\n\nvarying vec3 position;\n\nvoid main()\n{\n\tgl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;\n\tposition = (gl_ModelViewMatrix * gl_Vertex).xyz;\n}\n",
+      "sha256": "73185e8dc7516e2ec3e63f3e1e8ca051bc340cbf1a39d06dfcfaa72397aaccb2"
+    },
+    {
+      "path": "assets/thaumcraft/shader/ender.frag",
+      "payload": "#version 120\n\n#define M_PI 3.1415926535897932384626433832795\n\nuniform sampler2D texture;\nuniform int time;\n\nuniform float yaw;\nuniform float pitch;\n\nvarying vec3 position;\n\nmat4 rotationMatrix(vec3 axis, float angle)\n{\n\n    axis = normalize(axis);\n    float s = sin(angle);\n    float c = cos(angle);\n    float oc = 1.0 - c;\n    \n    return mat4(oc * axis.x * axis.x + c,           oc * axis.x * axis.y - axis.z * s,  oc * axis.z * axis.x + axis.y * s,  0.0,\n                oc * axis.x * axis.y + axis.z * s,  oc * axis.y * axis.y + c,           oc * axis.y * axis.z - axis.x * s,  0.0,\n                oc * axis.z * axis.x - axis.y * s,  oc * axis.y * axis.z + axis.x * s,  oc * axis.z * axis.z + c,           0.0,\n                0.0,                                0.0,                                0.0,                                1.0);\n}\n\nvoid main() {\n    // background colour\n    vec4 col = vec4(0.044,0.036,0.063,1);\n    \n    // get ray from camera to fragment\n    vec4 dir = normalize(vec4( -position, 0));\n\n\t// rotate the ray to show the right bit of the sphere for the angle\n\tfloat sb = sin(pitch);\n\tfloat cb = cos(pitch);\n\tdir = normalize(vec4(dir.x, dir.y * cb - dir.z * sb, dir.y * sb + dir.z * cb, 0));\n\t\n\tfloat sa = sin(-yaw);\n\tfloat ca = cos(-yaw);\n\tdir = normalize(vec4(dir.z * sa + dir.x * ca, dir.y, dir.z * ca - dir.x * sa, 0));\n\t\n\tvec4 ray;\n\t\n\t// draw the layers\n\tfor (int i=0; i<16; i++) {\n\t\tint mult = 16-i;\n\t\n\t\t// get semi-random stuff\n\t\tint j = i + 7;\n\t\tfloat rand1 = (j * j * 4321 + j * 8) * 2.0F;\n\t\tint k = j + 1;\n\t\tfloat rand2 = (k * k * k * 239 + k * 37) * 3.6F;\n\t\tfloat rand3 = rand1 * 347.4 + rand2 * 63.4;\n\t\t\n\t\t// random rotation matrix by random rotation around random axis\n\t\tvec3 axis = normalize(vec3(sin(rand1), sin(rand2) , cos(rand3)));\n\t\t\n\t\t// apply\n\t\tray = dir * rotationMatrix(axis, mod(rand3, 2*M_PI));\n\t\t\n\t\t// calcuate the UVs from the final ray\n\t\tfloat u = 0.5 + (atan(ray.z,ray.x)/(2*M_PI));\n\t\tfloat v = 0.5 + (asin(ray.y)/M_PI);\n\t\t\n\t\t// get UV scaled for layers and offset by time;\n\t\tfloat scale = mult*0.5 + 2.75;\n\t\tvec2 tex = vec2( u * scale, (v + time * 0.00006) * scale * 0.6 );\n\t\t\n\t\t// sample the texture\n\t\tvec4 tcol = texture2D(texture, tex);\n\t\t\n\t\t// set the alpha, blending out at the bunched ends\n\t\tfloat a = tcol.r * (0.05 + (1.0/mult) * 0.65) * (1-smoothstep(0.15, 0.48, abs(v-0.5)));\n\t\t\n\t\t// get end-portal-y colours\n\t\tfloat r = (mod(rand1, 29.0)/29.0) * 0.5 + 0.1;\n    \tfloat g = (mod(rand2, 35.0)/35.0) * 0.5 + 0.4;\n    \tfloat b = (mod(rand1, 17.0)/17.0) * 0.5 + 0.5;\n\t\t\n\t\t// mix the colours\n\t\tcol = col*(1-a) + vec4(r,g,b,1)*a;\n\t}\n    \n    gl_FragColor = col;\n}\n",
+      "sha256": "934c5e86e1ac3cedfc0d9e5b4871ea7556c4f455667aa5e0377c799eb3ccbbc9"
+    },
+    {
+      "path": "assets/thaumcraft/shader/sketch.vert",
+      "payload": "#version 120\n\nattribute vec4 position;\n\nuniform mat4 ProjMat;\nuniform vec2 InSize;\nuniform vec2 OutSize;\n\nvarying vec2 texCoord;\nvarying vec2 oneTexel;\n\nvoid main(){\n    vec4 outPos = ProjMat * vec4(position.xy, 0.0, 1.0);\n    gl_Position = vec4(outPos.xy, 0.2, 1.0);\n\n    oneTexel = 1.0 / InSize;\n\n    texCoord = position.xy / OutSize;\n    texCoord.y = 1.0 - texCoord.y;    \n}\n",
+      "sha256": "78b624b620c48804530e64a777b94b9e889c4ca5561bc39a3f9187610c5c0910"
+    },
+    {
+      "path": "assets/thaumcraft/shader/sketch.frag",
+      "payload": "uniform sampler2D texture;\n\nvarying vec2 texCoord;\nvarying vec2 oneTexel;\n\nuniform float LumaRamp;\nuniform float LumaLevel;\n\nvoid main(){\n    vec4 center = texture2D(texture, texCoord);\n    vec4 up     = texture2D(texture, texCoord + vec2(        0.0, -oneTexel.y));\n    vec4 up2    = texture2D(texture, texCoord + vec2(        0.0, -oneTexel.y) * 2.0);\n    vec4 down   = texture2D(texture, texCoord + vec2( oneTexel.x,         0.0));\n    vec4 down2  = texture2D(texture, texCoord + vec2( oneTexel.x,         0.0) * 2.0);\n    vec4 left   = texture2D(texture, texCoord + vec2(-oneTexel.x,         0.0));\n    vec4 left2  = texture2D(texture, texCoord + vec2(-oneTexel.x,         0.0) * 2.0);\n    vec4 right  = texture2D(texture, texCoord + vec2(        0.0,  oneTexel.y));\n    vec4 right2 = texture2D(texture, texCoord + vec2(        0.0,  oneTexel.y) * 2.0);\n    vec4 uDiff = abs(center - up);\n    vec4 dDiff = abs(center - down);\n    vec4 lDiff = abs(center - left);\n    vec4 rDiff = abs(center - right);\n    vec4 u2Diff = abs(center - up2);\n    vec4 d2Diff = abs(center - down2);\n    vec4 l2Diff = abs(center - left2);\n    vec4 r2Diff = abs(center - right2);\n    vec4 sum = uDiff + dDiff + lDiff + rDiff + u2Diff + d2Diff + l2Diff + r2Diff;\n    vec4 gray = vec4(0.3, 0.59, 0.11, 0.0);\n    float sumLuma = 1.0 - dot(clamp(sum, 0.0, 1.0), gray);\n\n    // Get luminance of center pixel and adjust\n    float centerLuma = dot(center + (center - pow(center, vec4(LumaRamp))), gray);\n\n    // Quantize the luma value\n    centerLuma = centerLuma - fract(centerLuma * LumaLevel) / LumaLevel;\n\n    // Re-scale to full range\n    centerLuma = centerLuma * (LumaLevel / (LumaLevel - 1.0));\n\n    // Blend with outline\n    centerLuma = centerLuma * sumLuma;\n\n    gl_FragColor = vec4(centerLuma, centerLuma, centerLuma, 1.0);\n}\n",
+      "sha256": "0dab8a3eaa8f3ffe6b2f514d3d4c2997bdd4279bfc400f57db56f0a842b180ce"
+    },
+    {
+      "path": "assets/thaumcraft/shader/test.frag",
+      "payload": "#version 120\n\nuniform sampler2D texture;\nuniform int time;\n\nuniform float xpos;\nuniform float zpos;\n\nvoid main() {\n\tvec2 texcoord = vec2(gl_TexCoord[0]);\n    vec4 color = texture2D(texture, texcoord);\n    \n    float ix = xpos * 1000.0;\n    float iy = zpos * 1000.0;\n\n    vec4 col = vec4(0,0,0,1);\n    \n    for(int i=0; i<16; i++) {\n    \tfloat mult = 1.0/(16-i);\n    \tfloat imult = 1.0/(i+1);\n    \t\n    \tfloat angle = (i * i * 4321 + i * 8) * 2.0F;\n    \tfloat dx = sin(angle);\n    \tfloat dy = cos(angle);\n    \t\n    \tfloat ox = gl_FragCoord.x + ix * (1.5-mult*0.5) - (time * dx * 0.5) * mult;\n    \tfloat oy = gl_FragCoord.y + iy * (1.5-mult*0.5) + (time * dy * 0.5) * mult;\n    \t\n    \tfloat tx = (ox / 48) * imult + dx;\n    \tfloat ty = (oy / 48) * imult + dy;\n    \t\n    \tvec2 tex = vec2(tx*dy + ty*dx, ty*dy - tx*dx);\n    \t\n    \tvec4 tcol = texture2D(texture, tex);\n    \t\n    \tfloat a = tcol.r * (0.1 + mult * 0.9);\n    \t\n    \tfloat r = (mod(angle, 29.0)/29.0) * 0.5 + 0.1;\n    \tfloat g = (mod(angle, 35.0)/35.0) * 0.5 + 0.4;\n    \tfloat b = (mod(angle, 17.0)/17.0) * 0.5 + 0.5;\n    \t\n    \tcol = col*(1-a) + vec4(r,g,b,1)*a;\n    }\n    \n    gl_FragColor = col;\n}\n",
+      "sha256": "ccf12b01f1eca3d5a0be9f4ac3a59711c52c906560a9ba5b6cc11f15c7ab0264"
+    },
+    {
+      "path": "assets/thaumcraft/shaders/core/boss_ender.json",
+      "payload": "{\n  \"vertex\": \"thaumcraft:boss_ender\",\n  \"fragment\": \"thaumcraft:boss_ender\",\n  \"samplers\": [{\"name\": \"Sampler0\"}],\n  \"uniforms\": [\n    {\"name\": \"ModelViewMat\", \"type\": \"matrix4x4\", \"count\": 16, \"values\": [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]},\n    {\"name\": \"ProjMat\", \"type\": \"matrix4x4\", \"count\": 16, \"values\": [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]},\n    {\"name\": \"ShaderEnabled\", \"type\": \"int\", \"count\": 1, \"values\": [1]},\n    {\"name\": \"time\", \"type\": \"int\", \"count\": 1, \"values\": [0]},\n    {\"name\": \"yaw\", \"type\": \"float\", \"count\": 1, \"values\": [0]},\n    {\"name\": \"pitch\", \"type\": \"float\", \"count\": 1, \"values\": [0]}\n  ]\n}\n",
+      "sha256": "b55d0e6bd138af8f07a7d5f7047fe64243fc07655f92a3e4f7906ac324dcd02e"
+    },
+    {
+      "path": "assets/thaumcraft/shaders/core/boss_ender.vsh",
+      "payload": "#version 150\nin vec3 Position;\nin vec2 UV0;\nuniform mat4 ModelViewMat;\nuniform mat4 ProjMat;\nout vec3 position;\nout vec2 texCoord;\nvoid main() {\n    gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);\n    position = (ModelViewMat * vec4(Position, 1.0)).xyz;\n    texCoord = UV0;\n}\n",
+      "sha256": "79d0d7ed34f8966432f36f8a043ae3dd5da938dc5c1943915e7b635fba184c43"
+    },
+    {
+      "path": "assets/thaumcraft/shaders/core/boss_ender.fsh",
+      "payload": "#version 150\n\n#define M_PI 3.1415926535897932384626433832795\n\nuniform sampler2D Sampler0;\nuniform int time;\nuniform int ShaderEnabled;\n\nuniform float yaw;\nuniform float pitch;\n\nin vec3 position;\nin vec2 texCoord;\nout vec4 fragColor;\n\nmat4 rotationMatrix(vec3 axis, float angle)\n{\n\n    axis = normalize(axis);\n    float s = sin(angle);\n    float c = cos(angle);\n    float oc = 1.0 - c;\n    \n    return mat4(oc * axis.x * axis.x + c,           oc * axis.x * axis.y - axis.z * s,  oc * axis.z * axis.x + axis.y * s,  0.0,\n                oc * axis.x * axis.y + axis.z * s,  oc * axis.y * axis.y + c,           oc * axis.y * axis.z - axis.x * s,  0.0,\n                oc * axis.z * axis.x - axis.y * s,  oc * axis.y * axis.z + axis.x * s,  oc * axis.z * axis.z + c,           0.0,\n                0.0,                                0.0,                                0.0,                                1.0);\n}\n\nvoid main() {\n    // Source disableShaders left the fixed-function source UV texture active.\n    if (ShaderEnabled == 0) { fragColor = texture(Sampler0, texCoord); return; }\n    // background colour\n    vec4 col = vec4(0.044,0.036,0.063,1);\n    \n    // get ray from camera to fragment\n    vec4 dir = normalize(vec4( -position, 0));\n\n\t// rotate the ray to show the right bit of the sphere for the angle\n\tfloat sb = sin(pitch);\n\tfloat cb = cos(pitch);\n\tdir = normalize(vec4(dir.x, dir.y * cb - dir.z * sb, dir.y * sb + dir.z * cb, 0));\n\t\n\tfloat sa = sin(-yaw);\n\tfloat ca = cos(-yaw);\n\tdir = normalize(vec4(dir.z * sa + dir.x * ca, dir.y, dir.z * ca - dir.x * sa, 0));\n\t\n\tvec4 ray;\n\t\n\t// draw the layers\n\tfor (int i=0; i<16; i++) {\n\t\tint mult = 16-i;\n\t\n\t\t// get semi-random stuff\n\t\tint j = i + 7;\n\t\tfloat rand1 = (j * j * 4321 + j * 8) * 2.0;\n\t\tint k = j + 1;\n\t\tfloat rand2 = (k * k * k * 239 + k * 37) * 3.6;\n\t\tfloat rand3 = rand1 * 347.4 + rand2 * 63.4;\n\t\t\n\t\t// random rotation matrix by random rotation around random axis\n\t\tvec3 axis = normalize(vec3(sin(rand1), sin(rand2) , cos(rand3)));\n\t\t\n\t\t// apply\n\t\tray = dir * rotationMatrix(axis, mod(rand3, 2*M_PI));\n\t\t\n\t\t// calcuate the UVs from the final ray\n\t\tfloat u = 0.5 + (atan(ray.z,ray.x)/(2*M_PI));\n\t\tfloat v = 0.5 + (asin(ray.y)/M_PI);\n\t\t\n\t\t// get UV scaled for layers and offset by time;\n\t\tfloat scale = mult*0.5 + 2.75;\n\t\tvec2 tex = vec2( u * scale, (v + time * 0.00006) * scale * 0.6 );\n\t\t\n\t\t// sample the texture\n\t\tvec4 tcol = texture(Sampler0, tex);\n\t\t\n\t\t// set the alpha, blending out at the bunched ends\n\t\tfloat a = tcol.r * (0.05 + (1.0/mult) * 0.65) * (1-smoothstep(0.15, 0.48, abs(v-0.5)));\n\t\t\n\t\t// get end-portal-y colours\n\t\tfloat r = (mod(rand1, 29.0)/29.0) * 0.5 + 0.1;\n    \tfloat g = (mod(rand2, 35.0)/35.0) * 0.5 + 0.4;\n    \tfloat b = (mod(rand1, 17.0)/17.0) * 0.5 + 0.5;\n\t\t\n\t\t// mix the colours\n\t\tcol = col*(1-a) + vec4(r,g,b,1)*a;\n\t}\n    \n    fragColor = col;\n}\n",
+      "sha256": "4fe2dd71434ac3a7b870022b052b19dbdea9e0bc2954928d4c6de44ab1d6dac8"
+    },
+    {
+      "path": "assets/thaumcraft/shaders/core/source_mirror.json",
+      "payload": "{\"vertex\":\"thaumcraft:source_mirror\",\"fragment\":\"thaumcraft:source_mirror\",\"samplers\":[{\"name\":\"Sampler0\"}],\"uniforms\":[{\"name\":\"ModelViewMat\",\"type\":\"matrix4x4\",\"count\":16,\"values\":[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]},{\"name\":\"ProjMat\",\"type\":\"matrix4x4\",\"count\":16,\"values\":[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]}]}\n",
+      "sha256": "0298d924c0d43af928a0bdba8cb460fbb93c407805b64821125c2cc50682af56"
+    },
+    {
+      "path": "assets/thaumcraft/shaders/core/source_mirror.vsh",
+      "payload": "#version 150\nin vec3 Position;\nin vec4 Color;\nin vec2 UV0;\nin ivec2 UV1;\nuniform mat4 ModelViewMat;\nuniform mat4 ProjMat;\nout vec4 vertexColor;\nout vec3 projective;\nvoid main(){\n    gl_Position=ProjMat*ModelViewMat*vec4(Position,1.0);\n    vertexColor=Color;\n    // Native overlay SHORT fields carry raw bits of the source GL_EYE_LINEAR Q float.\n    // Preserve homogeneous interpolation and divide in the fragment, never quantize Q.\n    uint qbits=(uint(UV1.x)&65535u)|((uint(UV1.y)&65535u)<<16u);\n    // GLSL150/OpenGL3.2 does not require ARB_shader_bit_encoding. Decode IEEE754\n    // with integer masks and exp2 instead of a 3.3-only uintBitsToFloat intrinsic.\n    uint exponent=(qbits>>23u)&255u;\n    float mantissa=float(qbits&8388607u);\n    float q=exponent==0u?mantissa*exp2(-149.0):(1.0+mantissa/8388608.0)*exp2(float(exponent)-127.0);\n    if((qbits&2147483648u)!=0u)q=-q;\n    projective=vec3(UV0,q);\n}\n",
+      "sha256": "0d4d18f51e5c15aa293121c707761ca69b2ae4f22d3c4736da8184f16c0740d1"
+    },
+    {
+      "path": "assets/thaumcraft/shaders/core/source_mirror.fsh",
+      "payload": "#version 150\nuniform sampler2D Sampler0;\nin vec4 vertexColor;\nin vec3 projective;\nout vec4 fragColor;\nvoid main(){fragColor=textureProj(Sampler0,projective)*vertexColor;}\n",
+      "sha256": "a1a478f7490218c6aa00d929b47a8c05dee8a501955144b306cb3a783050669b"
+    },
+    {
+      "path": "assets/thaumcraft/shaders/core/source_sketch.json",
+      "payload": "{\"vertex\":\"thaumcraft:source_sketch\",\"fragment\":\"thaumcraft:source_sketch\",\"samplers\":[{\"name\":\"Sampler0\"}],\"uniforms\":[{\"name\":\"ProjMat\",\"type\":\"matrix4x4\",\"count\":16,\"values\":[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]},{\"name\":\"InSize\",\"type\":\"float\",\"count\":2,\"values\":[1,1]},{\"name\":\"OutSize\",\"type\":\"float\",\"count\":2,\"values\":[1,1]},{\"name\":\"LumaRamp\",\"type\":\"float\",\"count\":1,\"values\":[0.5]},{\"name\":\"LumaLevel\",\"type\":\"float\",\"count\":1,\"values\":[4]}]}\n",
+      "sha256": "4bb0c2b5787e2737f6220435cd1d98d4740c35bb1c9b7fba6f9961c0ddf96290"
+    },
+    {
+      "path": "assets/thaumcraft/shaders/core/source_sketch.vsh",
+      "payload": "#version 150\nin vec3 Position;\nuniform mat4 ProjMat;\nuniform vec2 InSize;\nuniform vec2 OutSize;\nout vec2 texCoord;\nout vec2 oneTexel;\nvoid main(){\n    vec4 outPos=ProjMat*vec4(Position.xy,0.0,1.0);\n    gl_Position=vec4(outPos.xy,0.2,1.0);\n    oneTexel=1.0/InSize;\n    texCoord=Position.xy/OutSize;\n    texCoord.y=1.0-texCoord.y;\n}\n",
+      "sha256": "bfd51842bd10134122acf6e5778b605fac195f86457d5d2e09f3b7f31de34820"
+    },
+    {
+      "path": "assets/thaumcraft/shaders/core/source_sketch.fsh",
+      "payload": "#version 150\nout vec4 fragColor;\nuniform sampler2D Sampler0;\n\nin vec2 texCoord;\nin vec2 oneTexel;\n\nuniform float LumaRamp;\nuniform float LumaLevel;\n\nvoid main(){\n    vec4 center = texture(Sampler0, texCoord);\n    vec4 up     = texture(Sampler0, texCoord + vec2(        0.0, -oneTexel.y));\n    vec4 up2    = texture(Sampler0, texCoord + vec2(        0.0, -oneTexel.y) * 2.0);\n    vec4 down   = texture(Sampler0, texCoord + vec2( oneTexel.x,         0.0));\n    vec4 down2  = texture(Sampler0, texCoord + vec2( oneTexel.x,         0.0) * 2.0);\n    vec4 left   = texture(Sampler0, texCoord + vec2(-oneTexel.x,         0.0));\n    vec4 left2  = texture(Sampler0, texCoord + vec2(-oneTexel.x,         0.0) * 2.0);\n    vec4 right  = texture(Sampler0, texCoord + vec2(        0.0,  oneTexel.y));\n    vec4 right2 = texture(Sampler0, texCoord + vec2(        0.0,  oneTexel.y) * 2.0);\n    vec4 uDiff = abs(center - up);\n    vec4 dDiff = abs(center - down);\n    vec4 lDiff = abs(center - left);\n    vec4 rDiff = abs(center - right);\n    vec4 u2Diff = abs(center - up2);\n    vec4 d2Diff = abs(center - down2);\n    vec4 l2Diff = abs(center - left2);\n    vec4 r2Diff = abs(center - right2);\n    vec4 sum = uDiff + dDiff + lDiff + rDiff + u2Diff + d2Diff + l2Diff + r2Diff;\n    vec4 gray = vec4(0.3, 0.59, 0.11, 0.0);\n    float sumLuma = 1.0 - dot(clamp(sum, 0.0, 1.0), gray);\n\n    // Get luminance of center pixel and adjust\n    float centerLuma = dot(center + (center - pow(center, vec4(LumaRamp))), gray);\n\n    // Quantize the luma value\n    centerLuma = centerLuma - fract(centerLuma * LumaLevel) / LumaLevel;\n\n    // Re-scale to full range\n    centerLuma = centerLuma * (LumaLevel / (LumaLevel - 1.0));\n\n    // Blend with outline\n    centerLuma = centerLuma * sumLuma;\n\n    fragColor = vec4(centerLuma, centerLuma, centerLuma, 1.0);\n}\n",
+      "sha256": "0999f0cb11ed3da7cb84e30d3623f687d0c2d25f9b2bbf1ed4a47dfceaf942f0"
+    },
+    {
+      "path": "assets/thaumcraft/shaders/core/source_test_unused.fsh",
+      "payload": "#version 150\nin vec2 texCoord;\nout vec4 fragColor;\n\nuniform sampler2D Sampler0;\nuniform int time;\n\nuniform float xpos;\nuniform float zpos;\n\nvoid main() {\n\tvec2 texcoord = texCoord;\n    vec4 color = texture(Sampler0, texcoord);\n    \n    float ix = xpos * 1000.0;\n    float iy = zpos * 1000.0;\n\n    vec4 col = vec4(0,0,0,1);\n    \n    for(int i=0; i<16; i++) {\n    \tfloat mult = 1.0/(16-i);\n    \tfloat imult = 1.0/(i+1);\n    \t\n    \tfloat angle = (i * i * 4321 + i * 8) * 2.0;\n    \tfloat dx = sin(angle);\n    \tfloat dy = cos(angle);\n    \t\n    \tfloat ox = gl_FragCoord.x + ix * (1.5-mult*0.5) - (time * dx * 0.5) * mult;\n    \tfloat oy = gl_FragCoord.y + iy * (1.5-mult*0.5) + (time * dy * 0.5) * mult;\n    \t\n    \tfloat tx = (ox / 48) * imult + dx;\n    \tfloat ty = (oy / 48) * imult + dy;\n    \t\n    \tvec2 tex = vec2(tx*dy + ty*dx, ty*dy - tx*dx);\n    \t\n    \tvec4 tcol = texture(Sampler0, tex);\n    \t\n    \tfloat a = tcol.r * (0.1 + mult * 0.9);\n    \t\n    \tfloat r = (mod(angle, 29.0)/29.0) * 0.5 + 0.1;\n    \tfloat g = (mod(angle, 35.0)/35.0) * 0.5 + 0.4;\n    \tfloat b = (mod(angle, 17.0)/17.0) * 0.5 + 0.5;\n    \t\n    \tcol = col*(1-a) + vec4(r,g,b,1)*a;\n    }\n    \n    fragColor = col;\n}\n",
+      "sha256": "54d6ec800b5d949b70af73f29a45516c3a9f4ab6644e306188c47014245b428d"
+    }
+  ]
+}

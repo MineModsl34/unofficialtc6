@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "thaumcraft:cultist_knight", "required": false },
+    { "id": "thaumcraft:cultist_cleric", "required": false },
+    { "id": "thaumcraft:cultist_leader", "required": false }
+  ]
+}

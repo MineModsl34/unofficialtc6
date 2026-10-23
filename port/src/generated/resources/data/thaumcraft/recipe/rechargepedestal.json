@@ -1,0 +1,61 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "group": "minecraft:",
+  "research": "RECHARGEPEDESTAL",
+  "vis": 100,
+  "crystals": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+  ],
+  "result": {
+    "id": "thaumcraft:recharge_pedestal",
+    "count": 1
+  },
+  "pattern": [
+    " R ",
+    "DID",
+    "SSS"
+  ],
+  "key": {
+    "I": {
+      "tag": "c:ingots/gold"
+    },
+    "D": {
+      "tag": "c:gems/diamond"
+    },
+    "R": {
+      "item": "thaumcraft:vis_resonator"
+    },
+    "S": {
+      "item": "minecraft:stone"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:recharge_pedestal"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:vis_resonator"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:gems/diamond"
+      }
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ingots/gold"
+      }
+    }
+  ]
+}

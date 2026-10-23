@@ -1,0 +1,25 @@
+{
+  "type": "thaumcraft:crucible",
+  "research": "SEALGUARD&&MINDBIOTHAUMIC",
+  "result": {
+    "id": "thaumcraft:seal_guard_advanced",
+    "count": 1
+  },
+  "catalyst": {
+    "item": "thaumcraft:seal_guard"
+  },
+  "aspects": {
+    "sensus": 20,
+    "cognitio": 20
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:seal_guard"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:seal_guard_advanced"
+    }
+  ]
+}

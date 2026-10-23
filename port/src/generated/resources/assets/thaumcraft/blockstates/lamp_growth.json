@@ -1,0 +1,76 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "enabled": "true"
+      },
+      "apply": {
+        "model": "thaumcraft:block/stage6_lamp_growth_variant_22"
+      }
+    },
+    {
+      "when": {
+        "enabled": "false"
+      },
+      "apply": {
+        "model": "thaumcraft:block/stage6_lamp_growth_variant_23"
+      }
+    },
+    {
+      "when": {
+        "facing": "up"
+      },
+      "apply": {
+        "model": "thaumcraft:block/stage6_lamp_growth_variant_24",
+        "x": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "down"
+      },
+      "apply": {
+        "model": "thaumcraft:block/stage6_lamp_growth_variant_25"
+      }
+    },
+    {
+      "when": {
+        "facing": "north"
+      },
+      "apply": {
+        "model": "thaumcraft:block/stage6_lamp_growth_variant_26",
+        "x": 90,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south"
+      },
+      "apply": {
+        "model": "thaumcraft:block/stage6_lamp_growth_variant_27",
+        "x": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east"
+      },
+      "apply": {
+        "model": "thaumcraft:block/stage6_lamp_growth_variant_28",
+        "x": 90,
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west"
+      },
+      "apply": {
+        "model": "thaumcraft:block/stage6_lamp_growth_variant_29",
+        "x": 90,
+        "y": 90
+      }
+    }
+  ]
+}

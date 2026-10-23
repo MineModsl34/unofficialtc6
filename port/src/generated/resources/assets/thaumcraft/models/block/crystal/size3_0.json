@@ -1,0 +1,21 @@
+{
+  "automatic_culling": false,
+  "flip_v": true,
+  "loader": "neoforge:obj",
+  "model": "thaumcraft:models/obj/crystal.obj",
+  "render_type": "minecraft:translucent",
+  "textures": {
+    "crystal": "thaumcraft:block/crystal",
+    "particle": "thaumcraft:block/crystal"
+  },
+  "visibility": {
+    "s014": false,
+    "s015": true,
+    "s016": true,
+    "s017": true,
+    "s018": true,
+    "s019": false,
+    "s024": false,
+    "s026": false
+  }
+}

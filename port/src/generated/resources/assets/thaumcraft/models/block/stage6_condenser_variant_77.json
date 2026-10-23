@@ -1,0 +1,6 @@
+{
+  "parent": "thaumcraft:block/stage6_condenser",
+  "textures": {
+    "side": "thaumcraft:block/condenser_off"
+  }
+}

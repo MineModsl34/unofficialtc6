@@ -1,0 +1,138 @@
+{
+  "format": 1,
+  "source": "TC6 BETA26 blockstates/turret.json; Forge 1.12 Block.canSilkHarvest / TC block overrides",
+  "files": [
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/turret_basic.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/turret_basic"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/turret_advanced.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/turret_advanced"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/turret_bore.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/turret_bore"
+        }
+      }
+    },
+    {
+      "target": "data_pack",
+      "path": "thaumcraft/tags/block/bore_silk_allowed.json",
+      "payload": {
+        "replace": false,
+        "values": [
+          {
+            "id": "thaumcraft:loot_crate_common",
+            "required": false
+          },
+          {
+            "id": "thaumcraft:loot_crate_uncommon",
+            "required": false
+          },
+          {
+            "id": "thaumcraft:loot_crate_rare",
+            "required": false
+          },
+          {
+            "id": "thaumcraft:loot_urn_common",
+            "required": false
+          },
+          {
+            "id": "thaumcraft:loot_urn_uncommon",
+            "required": false
+          },
+          {
+            "id": "thaumcraft:loot_urn_rare",
+            "required": false
+          },
+          {
+            "id": "thaumcraft:taint_crust",
+            "required": false
+          },
+          {
+            "id": "thaumcraft:taint_soil",
+            "required": false
+          },
+          {
+            "id": "thaumcraft:taint_rock",
+            "required": false
+          },
+          {
+            "id": "thaumcraft:taint_geyser",
+            "required": false
+          },
+          {
+            "id": "thaumcraft:taint_feature",
+            "required": false
+          }
+        ]
+      }
+    },
+    {
+      "target": "data_pack",
+      "path": "thaumcraft/tags/block/bore_silk_denied.json",
+      "payload": {
+        "replace": false,
+        "values": [
+          {
+            "id": "thaumcraft:crystal_air",
+            "required": false
+          },
+          {
+            "id": "thaumcraft:crystal_earth",
+            "required": false
+          },
+          {
+            "id": "thaumcraft:crystal_fire",
+            "required": false
+          },
+          {
+            "id": "thaumcraft:crystal_water",
+            "required": false
+          },
+          {
+            "id": "thaumcraft:crystal_order",
+            "required": false
+          },
+          {
+            "id": "thaumcraft:crystal_entropy",
+            "required": false
+          },
+          {
+            "id": "thaumcraft:crystal_taint",
+            "required": false
+          },
+          {
+            "id": "thaumcraft:taint_fibre",
+            "required": false
+          },
+          {
+            "id": "thaumcraft:placeholder",
+            "required": false
+          },
+          {
+            "id": "thaumcraft:placeholder_bars",
+            "required": false
+          }
+        ]
+      }
+    }
+  ]
+}

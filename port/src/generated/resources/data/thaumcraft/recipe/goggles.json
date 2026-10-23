@@ -1,0 +1,58 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "group": "minecraft:",
+  "research": "UNLOCKARTIFICE",
+  "vis": 50,
+  "crystals": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "result": {
+    "id": "thaumcraft:goggles",
+    "count": 1
+  },
+  "pattern": [
+    "LGL",
+    "L L",
+    "TGT"
+  ],
+  "key": {
+    "T": {
+      "item": "thaumcraft:thaumometer"
+    },
+    "G": {
+      "tag": "c:ingots/brass"
+    },
+    "L": {
+      "tag": "c:leathers"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:goggles"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:thaumometer"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ingots/brass"
+      }
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:leathers"
+      }
+    }
+  ]
+}

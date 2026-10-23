@@ -1,0 +1,29 @@
+package thaumcraft.api.casters;
+import java.util.*;
+import net.minecraft.nbt.*;
+import net.minecraft.resources.*;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.level.Level;
+import net.neoforged.neoforge.server.ServerLifecycleHooks;
+/** Source package, including terminal nested-package serialization and shared cast UUID. */
+public class FocusPackage implements IFocusElement {
+    private static final ThreadLocal<Integer> DESERIALIZE_DEPTH=ThreadLocal.withInitial(()->0);
+    public Level world;private LivingEntity caster;private UUID casterUUID;private float power=1;private int complexity;int index;UUID uid;
+    public List<IFocusElement> nodes=Collections.synchronizedList(new ArrayList<>());
+    public FocusPackage(){}public FocusPackage(LivingEntity caster){this.caster=caster;world=caster.level();casterUUID=caster.getUUID();}
+    public String getResearch(){return null;}public String getKey(){return "thaumcraft.PACKAGE";}public EnumUnitType getType(){return EnumUnitType.PACKAGE;}
+    public int getComplexity(){return complexity;}public void setComplexity(int value){complexity=value;}public UUID getUniqueID(){return uid;}public void setUniqueID(UUID id){uid=id;}
+    public int getExecutionIndex(){return index;}public void setExecutionIndex(int idx){index=idx;}public void addNode(IFocusElement element){nodes.add(element);}
+    public UUID getCasterUUID(){return caster!=null?caster.getUUID():casterUUID;}public void setCasterUUID(UUID id){casterUUID=id;}
+    public LivingEntity getCaster(){if(caster!=null&&caster.isAlive())return caster;if(world==null||casterUUID==null)return null;if(world instanceof ServerLevel server&&server.getEntity(casterUUID) instanceof LivingEntity found)caster=found;else caster=world.getPlayerByUUID(casterUUID);return caster;}
+    public FocusEffect[] getFocusEffects(){var effects=new ArrayList<FocusEffect>();collect(this,effects,0);return effects.toArray(FocusEffect[]::new);}
+    private static void collect(FocusPackage p,List<FocusEffect> result,int depth){if(depth>32)return;for(var node:p.nodes)if(node instanceof FocusEffect effect)result.add(effect);else if(node instanceof FocusPackage child)collect(child,result,depth+1);else if(node instanceof FocusModSplit split)for(var child:split.getSplitPackages())collect(child,result,depth+1);}
+    public void deserialize(CompoundTag tag){int depth=DESERIALIZE_DEPTH.get();if(depth>=32||depth==0&&!FocusSerializationRules.isBounded(tag)){nodes.clear();return;}DESERIALIZE_DEPTH.set(depth+1);try{deserialize(tag,depth);}finally{if(depth==0)DESERIALIZE_DEPTH.remove();else DESERIALIZE_DEPTH.set(depth);}}
+    private void deserialize(CompoundTag tag,int depth){if(depth>32)throw new IllegalArgumentException("Focus package nesting");uid=tag.hasUUID("uid")?tag.getUUID("uid"):null;index=tag.getInt("index");casterUUID=tag.hasUUID("casterUUID")?tag.getUUID("casterUUID"):null;power=tag.contains("power")?tag.getFloat("power"):1;complexity=tag.getInt("complexity");var server=ServerLifecycleHooks.getCurrentServer();if(server!=null){var dimension=ResourceLocation.tryParse(tag.contains("dimension")?tag.getString("dimension"):switch(tag.getInt("dim")){case -1->"minecraft:the_nether";case 1->"minecraft:the_end";default->"minecraft:overworld";});if(dimension!=null)world=server.getLevel(ResourceKey.create(Registries.DIMENSION,dimension));}var list=tag.getList("nodes",Tag.TAG_COMPOUND);nodes.clear();for(int i=0;i<Math.min(256,list.size());i++){var n=list.getCompound(i);EnumUnitType type;try{type=EnumUnitType.valueOf(n.getString("type"));}catch(IllegalArgumentException ignored){continue;}if(type==EnumUnitType.PACKAGE){var child=new FocusPackage();child.deserialize(n.getCompound("package"),depth+1);nodes.add(child);break;}var element=FocusEngine.getElement(n.getString("key"));if(element instanceof FocusNode node){for(var key:node.getSettingList())node.getSetting(key).setValue(n.getInt("setting."+key));if(node instanceof FocusModSplit split)split.deserialize(n.getCompound("packages"));}if(element!=null)nodes.add(element);}}
+    public CompoundTag serialize(){var tag=new CompoundTag();if(uid!=null)tag.putUUID("uid",uid);tag.putInt("index",index);if(getCasterUUID()!=null)tag.putUUID("casterUUID",getCasterUUID());if(world!=null)tag.putString("dimension",world.dimension().location().toString());tag.putFloat("power",power);tag.putInt("complexity",complexity);var list=new ListTag();synchronized(nodes){for(var element:nodes){if(element==null||element.getType()==null)continue;var n=new CompoundTag();n.putString("type",element.getType().name());n.putString("key",element.getKey());if(element instanceof FocusPackage child){n.put("package",child.serialize());list.add(n);break;}if(element instanceof FocusNode node)for(var key:node.getSettingList())n.putInt("setting."+key,node.getSettingValue(key));if(element instanceof FocusModSplit split)n.put("packages",split.serialize());list.add(n);}}tag.put("nodes",list);return tag;}
+    public float getPower(){return power;}public void multiplyPower(float value){power*=value;}public FocusPackage copy(LivingEntity caster){var p=new FocusPackage(caster);p.deserialize(serialize());p.world=caster.level();p.caster=caster;p.casterUUID=caster.getUUID();return p;}
+    public void initialize(LivingEntity caster){this.caster=caster;casterUUID=caster.getUUID();world=caster.level();if(!nodes.isEmpty()&&nodes.get(0) instanceof FocusMediumRoot root&&root.supplyTargets()==null)root.setupFromCaster(caster);}
+    public int getSortingHelper(){String value="";for(var node:nodes){value+=node.getKey();if(node instanceof FocusNode focus)for(var key:focus.getSettingList())value+=focus.getSettingValue(key);}return value.hashCode();}
+}

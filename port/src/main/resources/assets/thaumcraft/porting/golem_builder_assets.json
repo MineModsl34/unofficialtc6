@@ -1,0 +1,594 @@
+{
+  "format": 1,
+  "source": "TC6 6.1.BETA26",
+  "catalog": {
+    "byteOrder": "BIG_ENDIAN",
+    "materials": [
+      "WOOD",
+      "IRON",
+      "CLAY",
+      "BRASS",
+      "THAUMIUM",
+      "VOID"
+    ],
+    "heads": [
+      "BASIC",
+      "SMART",
+      "SMART_ARMORED",
+      "SCOUT",
+      "SMART_SCOUT"
+    ],
+    "arms": [
+      "BASIC",
+      "FINE",
+      "CLAWS",
+      "BREAKERS",
+      "DARTS"
+    ],
+    "legs": [
+      "WALKER",
+      "ROLLER",
+      "CLIMBER",
+      "FLYER"
+    ],
+    "addons": [
+      "NONE",
+      "ARMORED",
+      "FIGHTER",
+      "HAULER"
+    ],
+    "rankByte": 5,
+    "reservedBytes": [
+      6,
+      7
+    ],
+    "traitOpposites": [
+      [
+        "CLUMSY",
+        "DEFT"
+      ],
+      [
+        "HEAVY",
+        "LIGHT"
+      ],
+      [
+        "FRAGILE",
+        "ARMORED"
+      ]
+    ]
+  },
+  "sourceFiles": [
+    {
+      "path": "reference/tc6/src/thaumcraft/api/golems/IGolemProperties.java",
+      "sha256": "558324414969181ca04348c3327d2dfad2045224f25e44301979f548df2a9be4"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/api/golems/EnumGolemTrait.java",
+      "sha256": "a80190ab8f6b32f07593a71b71baeef071e84ec911c9426c1c13e8a6ddc6a6ba"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/api/golems/parts/PartModel.java",
+      "sha256": "45b7399f8baddc29404089380a0cc2e449832a7c582e448909c6f03e36b83f1c"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/api/golems/parts/IGenericFunction.java",
+      "sha256": "decb42b64b6d9fe05586189ea451272b237a3363d299f77e1021c2f3fff8e499"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/api/golems/parts/GolemMaterial.java",
+      "sha256": "0bf6b70a7ebdd19e960d0ad13dcedf959127acd3125178b3c9b11011c5e38ff8"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/api/golems/parts/GolemHead.java",
+      "sha256": "f995b8f41a85a8faab17917365fcb62f520fc3559a8d1d178ccf9e1de155edbc"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/api/golems/parts/GolemArm.java",
+      "sha256": "6bbe8684754b0b50e28b2361b00a0705458ae7509f927753398cd9362c4279ee"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/api/golems/parts/GolemLeg.java",
+      "sha256": "209f5d6b4962967bcadf814b2bca960ddc142abf3379f107a93ee311b1e5c5cf"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/api/golems/parts/GolemAddon.java",
+      "sha256": "f257566e7fb77bb53462abcc26f8707a2a0e7c8e1c57ddbb74973db35e771396"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/common/golems/GolemProperties.java",
+      "sha256": "ab06d421aff8b268f648f40ea605bb9af6fe905451927e3785151b936bbcbeb9"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/common/golems/ItemGolemPlacer.java",
+      "sha256": "b22046340f67b6d389d72d7a575952bb24fd6b785294458fd8f395fe8b8dbb87"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/common/golems/ItemGolemBell.java",
+      "sha256": "260dbb5fd84a44fcf54258969e634d67a76115029759663e6e2c2288f0da506c"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/common/golems/parts/GolemArmDart.java",
+      "sha256": "8c887d998c1aa75cf3fe0267978832d58d37e81e3d8e0a87e52b5d6579c69f74"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/common/golems/parts/GolemLegWheels.java",
+      "sha256": "add3723b3ed37438fe4c672a7d7664dd0ac850ec349d9c41baab5e0681044bd4"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/common/golems/parts/GolemLegLevitator.java",
+      "sha256": "3384919cb5ddec8fa289b7f048a2c52408b27a3af891464c6b08c3352e093bb4"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/common/tiles/crafting/TileGolemBuilder.java",
+      "sha256": "a4acbdc6a7c28f696c53e06788814deb3c7d96ad921f35d0bea1695b05421623"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/common/blocks/crafting/BlockGolemBuilder.java",
+      "sha256": "f66618825cc4151bda4a2f1c446f2f8f8ca159bb7b21d9dee7547a1815e525d1"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/common/blocks/misc/BlockPlaceholder.java",
+      "sha256": "552806511e4d5d89829af64c29b00ebcd9eb435e6dc042e4673352abf8afad61"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/common/container/ContainerGolemBuilder.java",
+      "sha256": "9d22f6276e788b179a130f23bb7820215e42ef79eb5326081c425cc12752a563"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/client/gui/GuiGolemBuilder.java",
+      "sha256": "a9bab029e94380bf078dac2accfabea802f5d832b983d6862eb1fe41651462fc"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/client/renderers/tile/TileGolemBuilderRenderer.java",
+      "sha256": "112f1391933d95df07a9c3b32a21825d431adff751936308d8597dbe401c1af7"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/common/golems/client/RenderThaumcraftGolem.java",
+      "sha256": "bdc174c5d114ab9e48cf83e3177b1c198a6fc06e685971ac3a12641a9f1ee875"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/common/golems/client/PartModelClaws.java",
+      "sha256": "c5518095fa8c1ec331904cf573f56c03f3d450fd78df15d898d543ec77c34f44"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/common/golems/client/PartModelBreakers.java",
+      "sha256": "836d7c87f9cb68fd02ef65088bee9765d9208bda22563f89a1ca3add5401718d"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/common/golems/client/PartModelDarts.java",
+      "sha256": "24f7fc68aa7716274a87094d9ed2275e0899075bafea288fa5c07942af5d611a"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/common/golems/client/PartModelWheel.java",
+      "sha256": "97b65b223f081ad0ec97ca15f4ad379cda53f604e3c662206b1a35498643cbed"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/common/golems/client/PartModelHauler.java",
+      "sha256": "a7a2db23f9bd78ac89262084af7410eb39df6769790660e9100716c0c26945a9"
+    }
+  ],
+  "models": [
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/models/obj/golem_armor.obj",
+      "sha256": "f12e4898219aba6d8f0984aecdd823646e2a666aa6e07f4e8201c9fa77ac53d8",
+      "vertices": 48,
+      "faces": 72,
+      "groups": [
+        "bm_armor"
+      ]
+    },
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/models/obj/golem_arms_basic.obj",
+      "sha256": "e085828e8064ddaaf9d1d01add1e7523550789e140047e0672ea12e3a49e66e2",
+      "vertices": 26,
+      "faces": 46,
+      "groups": [
+        "bm_hand"
+      ]
+    },
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/models/obj/golem_arms_breakers.obj",
+      "sha256": "9a9a59215570546a1186838e0f21412e628d43760066ee3c7b10eec8e2ab4160",
+      "vertices": 50,
+      "faces": 88,
+      "groups": [
+        "base",
+        "grinder",
+        "axle"
+      ]
+    },
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/models/obj/golem_arms_claws.obj",
+      "sha256": "059dc244451cef54b7b52f985bb06a7de7e9fe3ef0a961fd9046e2ecfce074c9",
+      "vertices": 20,
+      "faces": 28,
+      "groups": [
+        "base",
+        "claw001",
+        "claw002"
+      ]
+    },
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/models/obj/golem_arms_darter.obj",
+      "sha256": "6f680a8e021494bdcdcd191919470c1180f55c2b8a36d255207e0fa4384376fd",
+      "vertices": 16,
+      "faces": 22,
+      "groups": [
+        "barrel",
+        "base"
+      ]
+    },
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/models/obj/golem_arms_fine.obj",
+      "sha256": "a6c67e49ce4450dd045c1c9031c8d1d7d6b51c384336489bad7ed3e4f3df2614",
+      "vertices": 48,
+      "faces": 88,
+      "groups": [
+        "bm_fine002",
+        "bm_fine001"
+      ]
+    },
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/models/obj/golem_base.obj",
+      "sha256": "91fa8e6f13a6d026723bef24050d3ae65de8727209fccff685ad2dda7d7e41ed",
+      "vertices": 28,
+      "faces": 36,
+      "groups": [
+        "arm",
+        "chest",
+        "waist",
+        "flag"
+      ]
+    },
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/models/obj/golem_hauler.obj",
+      "sha256": "f6b7677e46e0af0ba474baec877670ced3f9f6616f238774efbef8e5c05ef6bf",
+      "vertices": 68,
+      "faces": 116,
+      "groups": [
+        "straps"
+      ]
+    },
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/models/obj/golem_head_basic.obj",
+      "sha256": "39e664d38075999698d8a97a693aa19e175bfd6e1fef6f8b16d74b5dc5e6c272",
+      "vertices": 8,
+      "faces": 12,
+      "groups": [
+        "bm_head"
+      ]
+    },
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/models/obj/golem_head_scout_smart.obj",
+      "sha256": "1d96f415d640963e88460a70884479742453432131226debaa40d1d480c7ccf6",
+      "vertices": 40,
+      "faces": 56,
+      "groups": [
+        "bm_head",
+        "ear001",
+        "ear002",
+        "brain",
+        "dome"
+      ]
+    },
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/models/obj/golem_head_scout.obj",
+      "sha256": "9030aec2e92d07700a3b132460f1af4ad8e70315bd9679bfd84e07a0966afcc7",
+      "vertices": 24,
+      "faces": 36,
+      "groups": [
+        "bm_head",
+        "ear001",
+        "ear002"
+      ]
+    },
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/models/obj/golem_head_smart_armor.obj",
+      "sha256": "d7ef024a20bbe03f89e6a94c888b08280152871cea1f74296465522d31de8a5a",
+      "vertices": 16,
+      "faces": 22,
+      "groups": [
+        "bm_head",
+        "bm_dome"
+      ]
+    },
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/models/obj/golem_head_smart.obj",
+      "sha256": "63234db561dd60db539489f33e28c70575d35aa60a2cf25a7e1c1fa98b633237",
+      "vertices": 24,
+      "faces": 32,
+      "groups": [
+        "bm_head",
+        "brain",
+        "dome"
+      ]
+    },
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/models/obj/golem_legs_climber.obj",
+      "sha256": "f9b9d405e3ef6e61b7dd117eb7693a090d5bf4207654dc4ad9955daeaf30be3f",
+      "vertices": 30,
+      "faces": 44,
+      "groups": [
+        "bm_leg",
+        "Pyramid001",
+        "Pyramid002",
+        "Pyramid003"
+      ]
+    },
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/models/obj/golem_legs_floater.obj",
+      "sha256": "40c99a9d0107f95f4343efd132686b3ff9cbd8f902acb0c1421b5edddbf345a8",
+      "vertices": 16,
+      "faces": 22,
+      "groups": [
+        "levitator",
+        "port"
+      ]
+    },
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/models/obj/golem_legs_walker.obj",
+      "sha256": "20e30e69ba14516d2f5d8da01fa82213b6a41cae2e8f39a7f70005b93610452e",
+      "vertices": 12,
+      "faces": 20,
+      "groups": [
+        "bm_leg"
+      ]
+    },
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/models/obj/golem_legs_wheel.obj",
+      "sha256": "d5e04391a2c97f77b00e8b0a8fdafd18678ae45163c9c74586e6738b919d976f",
+      "vertices": 74,
+      "faces": 144,
+      "groups": [
+        "wheel",
+        "frame"
+      ]
+    },
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/models/block/golembuilder.obj",
+      "sha256": "ee701ec3bcfa64597806d2cf8750d768b6018a1a25c227140b368abf18196048",
+      "vertices": 178,
+      "faces": 316,
+      "groups": [
+        "table",
+        "press",
+        "anvil",
+        "box"
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "path": "assets/thaumcraft/models/item/golem.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/golem"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/golem_bell.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/golem_bell"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/block/golem_builder.json",
+      "payload": {
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "thaumcraft:block/golembuilder"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/blockstates/golem_builder.json",
+      "payload": {
+        "variants": {
+          "facing=north": {
+            "model": "thaumcraft:block/golem_builder"
+          },
+          "facing=east": {
+            "model": "thaumcraft:block/golem_builder"
+          },
+          "facing=south": {
+            "model": "thaumcraft:block/golem_builder"
+          },
+          "facing=west": {
+            "model": "thaumcraft:block/golem_builder"
+          }
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/golem_builder.json",
+      "payload": {
+        "parent": "minecraft:builtin/entity",
+        "textures": {
+          "particle": "thaumcraft:block/golembuilder"
+        },
+        "display": {
+          "gui": {
+            "rotation": [
+              30,
+              225,
+              0
+            ],
+            "translation": [
+              0,
+              -1,
+              0
+            ],
+            "scale": [
+              0.48,
+              0.48,
+              0.48
+            ]
+          },
+          "ground": {
+            "translation": [
+              0,
+              2,
+              0
+            ],
+            "scale": [
+              0.35,
+              0.35,
+              0.35
+            ]
+          },
+          "fixed": {
+            "rotation": [
+              0,
+              180,
+              0
+            ],
+            "scale": [
+              0.4,
+              0.4,
+              0.4
+            ]
+          },
+          "firstperson_righthand": {
+            "rotation": [
+              0,
+              45,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              0
+            ],
+            "scale": [
+              0.4,
+              0.4,
+              0.4
+            ]
+          },
+          "thirdperson_righthand": {
+            "rotation": [
+              75,
+              45,
+              0
+            ],
+            "translation": [
+              0,
+              2.5,
+              0
+            ],
+            "scale": [
+              0.35,
+              0.35,
+              0.35
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/block/placeholder_bars.json",
+      "payload": {
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "minecraft:block/iron_bars"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/blockstates/placeholder_bars.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/placeholder_bars"
+          }
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/placeholder_bars.json",
+      "payload": {
+        "parent": "minecraft:item/iron_bars"
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/block/placeholder_anvil.json",
+      "payload": {
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "minecraft:block/anvil"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/blockstates/placeholder_anvil.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/placeholder_anvil"
+          }
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/placeholder_anvil.json",
+      "payload": {
+        "parent": "minecraft:item/anvil"
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/block/placeholder_cauldron.json",
+      "payload": {
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "minecraft:block/cauldron_side"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/blockstates/placeholder_cauldron.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/placeholder_cauldron"
+          }
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/placeholder_cauldron.json",
+      "payload": {
+        "parent": "minecraft:item/cauldron"
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/block/placeholder_table.json",
+      "payload": {
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "minecraft:block/stone"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/blockstates/placeholder_table.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/placeholder_table"
+          }
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/placeholder_table.json",
+      "payload": {
+        "parent": "thaumcraft:item/table_stone"
+      }
+    }
+  ]
+}

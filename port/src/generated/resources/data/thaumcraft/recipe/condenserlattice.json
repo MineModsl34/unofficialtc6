@@ -1,0 +1,58 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "group": "minecraft:",
+  "research": "FLUXCLEANUP",
+  "vis": 100,
+  "crystals": [
+    3,
+    0,
+    0,
+    3,
+    0,
+    0
+  ],
+  "result": {
+    "id": "thaumcraft:condenser_lattice",
+    "count": 1
+  },
+  "pattern": [
+    "QTQ",
+    "QFQ",
+    "QTQ"
+  ],
+  "key": {
+    "T": {
+      "tag": "c:plates/thaumium"
+    },
+    "F": {
+      "item": "thaumcraft:filter"
+    },
+    "Q": {
+      "tag": "c:gems/quartz"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:condenser_lattice"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:filter"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:gems/quartz"
+      }
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:plates/thaumium"
+      }
+    }
+  ]
+}

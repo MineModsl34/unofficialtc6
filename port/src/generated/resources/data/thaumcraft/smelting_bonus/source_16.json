@@ -1,0 +1,19 @@
+{
+  "source_order": 16,
+  "input": {
+    "items": [
+      "minecraft:beef"
+    ]
+  },
+  "output": {
+    "id": "thaumcraft:chunk_beef",
+    "count": 1
+  },
+  "chance": 0.33,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:chunk_beef"
+    }
+  ]
+}

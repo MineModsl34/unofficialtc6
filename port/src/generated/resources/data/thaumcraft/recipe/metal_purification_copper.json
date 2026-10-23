@@ -1,0 +1,24 @@
+{
+  "type": "thaumcraft:crucible",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ores/copper"
+      }
+    }
+  ],
+  "research": "METALPURIFICATION",
+  "result": {
+    "id": "thaumcraft:cluster_copper",
+    "count": 1
+  },
+  "catalyst": {
+    "tag": "c:ores/copper"
+  },
+  "aspects": {
+    "metallum": 5,
+    "ordo": 5
+  }
+}

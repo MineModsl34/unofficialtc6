@@ -1,0 +1,204 @@
+{
+  "format": 1,
+  "source": "TC6 BETA26",
+  "sourceFiles": [
+    {
+      "path": "thaumcraft/common/entities/monster/EntityBrainyZombie.java",
+      "sha256": "1050317de3ac67962585b7e3b013e59dde6d1b5b43625dfeab52d00e755ebdcd"
+    },
+    {
+      "path": "thaumcraft/common/entities/monster/EntityGiantBrainyZombie.java",
+      "sha256": "a66468ccf4e1e51f43a8c9fb139b8a25b67dd05a46774c1f68f4e7d45bf2b015"
+    },
+    {
+      "path": "thaumcraft/common/entities/monster/EntityInhabitedZombie.java",
+      "sha256": "76e94d16c95c7ff646568bcd91da8fc344846f237205645104dd83ae49bce3b9"
+    },
+    {
+      "path": "thaumcraft/common/entities/monster/EntityEldritchCrab.java",
+      "sha256": "355058cd4dd1e6cf7abc4b653d34e5ccf41b06f4b979f94dd4e2283d30311a6c"
+    },
+    {
+      "path": "thaumcraft/common/entities/monster/EntityWisp.java",
+      "sha256": "ca11cf7f5a892403582e29d67c06694061c4c71b640e20ff9006a86091bc95aa"
+    },
+    {
+      "path": "thaumcraft/common/entities/monster/EntityFireBat.java",
+      "sha256": "9b53a7b2769d3c09398dfca779ba30aef8a3e59804b6fc200cc7a0158cb6e997"
+    },
+    {
+      "path": "thaumcraft/common/entities/monster/EntityPech.java",
+      "sha256": "36fd329f2694bf03ba7984f31dd10000d2026c46f1d853ade3ee9dcbf204bd2e"
+    },
+    {
+      "path": "thaumcraft/common/config/ConfigEntities.java",
+      "sha256": "36f5b0f69b0434b11013294590f7f0566b8e5b827aae2e3440c85b441276c2a8"
+    },
+    {
+      "path": "thaumcraft/common/container/ContainerPech.java",
+      "sha256": "fe460b166c60a1c496fd3872d2f27c2728ac65e1529d471b9a36d81728d9dd45"
+    },
+    {
+      "path": "thaumcraft/client/renderers/models/entity/ModelPech.java",
+      "sha256": "e32770d4ba60fd400651bdd0e6d774550a76389fa8278f9379ecccb38f6eb4e2"
+    },
+    {
+      "path": "thaumcraft/client/renderers/models/entity/ModelFireBat.java",
+      "sha256": "a7f59a4c11e625ffc03b54d34b1c8f1143dfc6b7e0429843583fbc4993baf88c"
+    },
+    {
+      "path": "thaumcraft/client/renderers/models/entity/ModelEldritchCrab.java",
+      "sha256": "613d95c8301e4d60f0e5495d802b2bda4a95ff453946691e5398116ce3935cec"
+    },
+    {
+      "path": "assets/thaumcraft/loot_tables/pech.json",
+      "sha256": "af8ec0bd18076b99ccd57d7268d9534156c23832823fb40d969522b216ffa5e7"
+    }
+  ],
+  "entities": [
+    "brainy_zombie",
+    "giant_brainy_zombie",
+    "inhabited_zombie",
+    "eldritch_crab",
+    "wisp",
+    "firebat",
+    "pech"
+  ],
+  "models": [
+    {
+      "name": "Pech",
+      "texture": [
+        128,
+        64
+      ],
+      "parts": 9,
+      "cuboids": 9
+    },
+    {
+      "name": "FireBat",
+      "texture": [
+        64,
+        64
+      ],
+      "parts": 8,
+      "cuboids": 9
+    },
+    {
+      "name": "EldritchCrab",
+      "texture": [
+        128,
+        64
+      ],
+      "parts": 21,
+      "cuboids": 21
+    }
+  ],
+  "entries": [
+    {
+      "path": "assets/thaumcraft/models/item/brainy_zombie_spawn_egg.json",
+      "payload": {
+        "parent": "minecraft:item/template_spawn_egg"
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/giant_brainy_zombie_spawn_egg.json",
+      "payload": {
+        "parent": "minecraft:item/template_spawn_egg"
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/inhabited_zombie_spawn_egg.json",
+      "payload": {
+        "parent": "minecraft:item/template_spawn_egg"
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/eldritch_crab_spawn_egg.json",
+      "payload": {
+        "parent": "minecraft:item/template_spawn_egg"
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/wisp_spawn_egg.json",
+      "payload": {
+        "parent": "minecraft:item/template_spawn_egg"
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/firebat_spawn_egg.json",
+      "payload": {
+        "parent": "minecraft:item/template_spawn_egg"
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/pech_spawn_egg.json",
+      "payload": {
+        "parent": "minecraft:item/template_spawn_egg"
+      }
+    },
+    {
+      "path": "data/thaumcraft/loot_table/entities/pech.json",
+      "payload": {
+        "type": "minecraft:entity",
+        "pools": [
+          {
+            "name": "main_pech",
+            "rolls": 1,
+            "entries": [
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:gold_nugget",
+                "weight": 1,
+                "functions": [
+                  {
+                    "function": "minecraft:set_count",
+                    "count": {
+                      "type": "minecraft:uniform",
+                      "min": 0,
+                      "max": 2
+                    }
+                  },
+                  {
+                    "function": "minecraft:enchanted_count_increase",
+                    "enchantment": "minecraft:looting",
+                    "count": {
+                      "type": "minecraft:uniform",
+                      "min": 0,
+                      "max": 1
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "special",
+            "conditions": [
+              {
+                "condition": "minecraft:killed_by_player"
+              },
+              {
+                "condition": "minecraft:random_chance_with_enchanted_bonus",
+                "enchantment": "minecraft:looting",
+                "unenchanted_chance": 0.0125,
+                "enchanted_chance": {
+                  "type": "minecraft:linear",
+                  "base": 0.0225,
+                  "per_level_above_first": 0.01
+                }
+              }
+            ],
+            "rolls": 1,
+            "entries": [
+              {
+                "type": "minecraft:item",
+                "name": "thaumcraft:curio_knowledge",
+                "weight": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

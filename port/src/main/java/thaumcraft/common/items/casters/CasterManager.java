@@ -1,0 +1,32 @@
+package thaumcraft.common.items.casters;
+import java.util.*;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.*;
+import net.minecraft.world.item.component.CustomData;
+import net.minecraft.world.level.Level;
+import net.neoforged.neoforge.items.IItemHandler;
+import thaumcraft.api.casters.*;
+import thaumcraft.common.lib.crafting.ArcaneWorkbenchCosts;
+import top.theillusivec4.curios.api.CuriosApi;
+/** Source wall-clock cooldown and sorted focus switching over18-slot pouches, Curios belt and36 inventory slots. */
+public final class CasterManager {
+    private static final Map<Integer,Long> cooldownServer=new HashMap<>(),cooldownClient=new HashMap<>();
+    private CasterManager(){}
+    public static float getTotalVisDiscount(Player player){return ArcaneWorkbenchCosts.discount(player);}
+    public static boolean consumeVisFromInventory(Player player,float cost){for(int i=35;i>=0;i--){var stack=player.getInventory().getItem(i);if(stack.getItem() instanceof ICaster caster&&caster.consumeVis(stack,player,cost,true,false))return true;}return false;}
+    private record Source(ItemStack item,Runnable remove){}
+    public static SortedMap<String,ItemStack> getAvailableFoci(Player player){var result=new TreeMap<String,ItemStack>();sources(player,new ArrayList<>()).forEach((key,source)->result.put(key,source.item.copy()));return result;}
+    private static TreeMap<String,Source> sources(Player player,List<ItemStack> pouches){var result=new TreeMap<String,Source>();var curios=CuriosApi.getCuriosInventory(player);if(curios.isPresent()){var equipped=curios.get().getEquippedCurios();for(int i=0;i<equipped.getSlots();i++){var stack=equipped.getStackInSlot(i);if(stack.getItem() instanceof ItemFocusPouch){pouches.add(stack);pouchSources(stack,result);}}}for(int i=0;i<36;i++){int slot=i;var stack=player.getInventory().getItem(i);if(stack.getItem() instanceof ItemFocus focus){String key=focus.getSortingHelper(stack);if(key!=null)result.put(key,new Source(stack,()->player.getInventory().setItem(slot,ItemStack.EMPTY)));}else if(stack.getItem() instanceof ItemFocusPouch){pouches.add(stack);pouchSources(stack,result);}}return result;}
+    private static void pouchSources(ItemStack pouch,TreeMap<String,Source> result){var item=(ItemFocusPouch)pouch.getItem();var contents=item.getInventory(pouch);for(int i=0;i<18;i++){int slot=i;var stack=contents.get(i);if(stack.getItem() instanceof ItemFocus focus){String key=focus.getSortingHelper(stack);if(key!=null)result.put(key,new Source(stack,()->{var live=item.getInventory(pouch);live.set(slot,ItemStack.EMPTY);item.setInventory(pouch,live);}));}}}
+    private static boolean store(Player player,ItemStack focus,List<ItemStack> pouches){for(var pouch:pouches){var item=(ItemFocusPouch)pouch.getItem();var contents=item.getInventory(pouch);for(int i=0;i<18;i++)if(contents.get(i).isEmpty()){contents.set(i,focus.copy());item.setInventory(pouch,contents);return true;}}return player.getInventory().add(focus.copy());}
+    public static void changeFocus(ItemStack stack,Level level,Player player,String requested){if(level.isClientSide||!(stack.getItem() instanceof ICaster caster)||requested==null||requested.length()>1024)return;var pouches=new ArrayList<ItemStack>();var foci=sources(player,pouches);var old=caster.getFocusStack(stack);if(requested.equals("REMOVE")||foci.isEmpty()){if(old!=null&&!old.isEmpty()&&store(player,old,pouches)){caster.setFocus(stack,null);player.playSound(thaumcraft.common.lib.SoundsTC.ticks,.3F,.9F);player.getInventory().setChanged();player.inventoryMenu.broadcastChanges();}return;}String key=foci.containsKey(requested)?requested:foci.higherKey(requested);if(key==null)key=foci.firstKey();var selected=foci.get(key);var replacement=selected.item.copy();selected.remove.run();if(old==null||old.isEmpty()||store(player,old,pouches))caster.setFocus(stack,replacement);else if(!store(player,replacement,pouches))player.drop(replacement,false);player.playSound(thaumcraft.common.lib.SoundsTC.ticks,.3F,1);player.getInventory().setChanged();player.inventoryMenu.broadcastChanges();}
+    public static boolean isOnCooldown(LivingEntity entity){return (entity.level().isClientSide?cooldownClient:cooldownServer).getOrDefault(entity.getId(),0L)>System.currentTimeMillis();}
+    public static float getCooldown(LivingEntity entity){return entity.level().isClientSide&&cooldownClient.containsKey(entity.getId())?(cooldownClient.get(entity.getId())-System.currentTimeMillis())/1000F:0;}
+    public static void setCooldown(LivingEntity entity,int ticks){if(ticks==0){cooldownClient.remove(entity.getId());cooldownServer.remove(entity.getId());}else(entity.level().isClientSide?cooldownClient:cooldownServer).put(entity.getId(),System.currentTimeMillis()+ticks*50L);}
+    private static int area(ItemStack stack,String key,int fallback,int max){var data=stack.getOrDefault(DataComponents.CUSTOM_DATA,CustomData.EMPTY).copyTag();return data.contains(key)?Math.min(max,Math.max(0,data.getInt(key))):fallback;}
+    public static int getAreaDim(ItemStack stack){return area(stack,"aread",0,3);}public static int getAreaX(ItemStack stack){return area(stack,"areax",3,3);}public static int getAreaY(ItemStack stack){return area(stack,"areay",3,3);}public static int getAreaZ(ItemStack stack){return area(stack,"areaz",3,3);}
+    public static void setAreaX(ItemStack stack,int value){set(stack,"areax",value);}public static void setAreaY(ItemStack stack,int value){set(stack,"areay",value);}public static void setAreaZ(ItemStack stack,int value){set(stack,"areaz",value);}public static void setAreaDim(ItemStack stack,int value){set(stack,"aread",value);}private static void set(ItemStack stack,String key,int value){CustomData.update(DataComponents.CUSTOM_DATA,stack,tag->tag.putInt(key,value));}
+    public static void toggleMisc(ItemStack stack,Level level,Player player,int mod){if(!(stack.getItem() instanceof ICaster caster)||!FocusEngine.doesPackageContainElement(ItemFocus.getPackage(caster.getFocusStack(stack)),"thaumcraft.PLAN"))return;int dimension=getAreaDim(stack);if(mod==1)setAreaDim(stack,(dimension+1)%4);else if(mod==0){if(dimension==0||dimension==1)setAreaX(stack,(getAreaX(stack)+1)%4);if(dimension==0||dimension==2)setAreaZ(stack,(getAreaZ(stack)+1)%4);if(dimension==0||dimension==3)setAreaY(stack,(getAreaY(stack)+1)%4);}}
+}

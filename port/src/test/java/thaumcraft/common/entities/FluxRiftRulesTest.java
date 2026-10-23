@@ -1,0 +1,11 @@
+package thaumcraft.common.entities;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+public class FluxRiftRulesTest {
+    @Test void sourceStabilityBoundaries(){assertEquals(0,FluxRiftRules.category(50.01F));assertEquals(1,FluxRiftRules.category(50));assertEquals(1,FluxRiftRules.category(0));assertEquals(2,FluxRiftRules.category(-.01F));assertEquals(3,FluxRiftRules.category(-25));assertEquals(-100,FluxRiftRules.stability(-101));assertEquals(100,FluxRiftRules.stability(101));assertEquals(0,FluxRiftRules.stability(Float.NaN));}
+    @Test void sourceGrowthAndCollapseArithmetic(){for(int i=0;i<4096;i++){assertEquals(Math.sqrt(i*2),FluxRiftRules.growthCost(i));assertEquals((int)Math.sqrt(i),FluxRiftRules.collapseSeeds(i));}assertEquals(5,FluxRiftRules.initialSize(10));assertEquals(6,FluxRiftRules.initialSize(12));}
+    @Test void sourceSquaredDistanceQuirkIsNotSilentlyNormalized(){assertEquals(25,FluxRiftRules.collapseExposure(0,25));assertEquals(12,FluxRiftRules.collapseExposure(16,25));assertEquals(0,FluxRiftRules.collapseExposure(32,25));assertTrue(FluxRiftRules.collapseExposure(1024,25)<0);}
+    @Test void sourceSiphonTruncatesEveryRiftAndChargesStabilityBeforeShrink(){int work=0;for(int i=0;i<3;i++)work=FluxRiftRules.siphonProgress(work,2);assertEquals(3,work);assertEquals(4,(int)(Math.sqrt(2)*3));assertEquals((float)(-10-Math.sqrt(16)/15),FluxRiftRules.siphonStability(-10,16));assertEquals(2001,FluxRiftRules.siphonProgress(1998,9));}
+    @Test void sourceWeightedEventsAndNoReimbursementForCloudOrCollapse(){assertArrayEquals(new int[]{50,10,20,20,1},FluxRiftRules.EVENT_WEIGHTS);assertArrayEquals(new int[]{5,0,10,10,0},FluxRiftRules.EVENT_COSTS);assertEquals(0,FluxRiftRules.event(0));assertEquals(0,FluxRiftRules.event(50/101D));assertEquals(1,FluxRiftRules.event(50.5/101D));assertEquals(2,FluxRiftRules.event(70/101D));assertEquals(3,FluxRiftRules.event(90/101D));assertEquals(4,FluxRiftRules.event(100.5/101D));}
+    @Test void maliciousSaveSizeIsBoundedWithoutChangingNormalGrowthRange(){assertEquals(0,FluxRiftRules.boundedSize(-1));assertEquals(4096,FluxRiftRules.boundedSize(Integer.MAX_VALUE));assertEquals(100,FluxRiftRules.boundedSize(100));}
+}

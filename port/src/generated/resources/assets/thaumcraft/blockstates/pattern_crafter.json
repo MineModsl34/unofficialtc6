@@ -1,0 +1,46 @@
+{
+  "variants": {
+    "enabled=false,facing=east": {
+      "model": "thaumcraft:block/stage6_pattern_crafter",
+      "y": 90
+    },
+    "enabled=false,facing=west": {
+      "model": "thaumcraft:block/stage6_pattern_crafter",
+      "y": 270
+    },
+    "enabled=false,facing=north": {
+      "model": "thaumcraft:block/stage6_pattern_crafter"
+    },
+    "enabled=false,facing=south": {
+      "model": "thaumcraft:block/stage6_pattern_crafter",
+      "y": 180
+    },
+    "enabled=true,facing=east": {
+      "model": "thaumcraft:block/stage6_pattern_crafter",
+      "y": 90
+    },
+    "enabled=true,facing=west": {
+      "model": "thaumcraft:block/stage6_pattern_crafter",
+      "y": 270
+    },
+    "enabled=true,facing=north": {
+      "model": "thaumcraft:block/stage6_pattern_crafter"
+    },
+    "enabled=true,facing=south": {
+      "model": "thaumcraft:block/stage6_pattern_crafter",
+      "y": 180
+    },
+    "enabled=false,facing=up": {
+      "model": "thaumcraft:block/stage6_pattern_crafter"
+    },
+    "enabled=false,facing=down": {
+      "model": "thaumcraft:block/stage6_pattern_crafter"
+    },
+    "enabled=true,facing=up": {
+      "model": "thaumcraft:block/stage6_pattern_crafter"
+    },
+    "enabled=true,facing=down": {
+      "model": "thaumcraft:block/stage6_pattern_crafter"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "parent": "thaumcraft:block/infernal_furnace",
+  "display": {
+    "gui": {
+      "rotation": [
+        300,
+        0,
+        45
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.275,
+        0.275,
+        0.275
+      ]
+    }
+  }
+}
+

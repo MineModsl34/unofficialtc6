@@ -1,0 +1,106 @@
+{
+  "variants": {
+    "axis=x": [
+      {
+        "model": "thaumcraft:block/stage8_taint_log",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_log_1",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_log_2",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_log_3",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_log_4",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_log_5",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_log_6",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_log_7",
+        "x": 90,
+        "y": 90
+      }
+    ],
+    "axis=y": [
+      {
+        "model": "thaumcraft:block/stage8_taint_log"
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_log_1"
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_log_2"
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_log_3"
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_log_4"
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_log_5"
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_log_6"
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_log_7"
+      }
+    ],
+    "axis=z": [
+      {
+        "model": "thaumcraft:block/stage8_taint_log",
+        "x": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_log_1",
+        "x": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_log_2",
+        "x": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_log_3",
+        "x": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_log_4",
+        "x": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_log_5",
+        "x": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_log_6",
+        "x": 90
+      },
+      {
+        "model": "thaumcraft:block/stage8_taint_log_7",
+        "x": 90
+      }
+    ]
+  }
+}

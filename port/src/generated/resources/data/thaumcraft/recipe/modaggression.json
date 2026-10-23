@@ -1,0 +1,9 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "crystals": [0, 1, 0, 0, 0, 0],
+  "key": {"R": {"tag": "c:glass_panes"}, "T": {"item": "minecraft:blaze_powder"}, "P": {"tag": "c:plates/brass"}, "G": {"item": "thaumcraft:mechanism_simple"}},
+  "pattern": [" R ", "RTR", "PGP"],
+  "research": "SEALGUARD",
+  "result": {"count": 1, "id": "thaumcraft:module_aggression"},
+  "vis": 50
+}

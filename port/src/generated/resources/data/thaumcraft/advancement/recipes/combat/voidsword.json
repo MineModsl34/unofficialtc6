@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ingot_void": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:ingots/void"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "thaumcraft:voidsword"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ingot_void"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "thaumcraft:voidsword"
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "group": "minecraft:",
+  "research": "ARCANELAMP",
+  "vis": 50,
+  "crystals": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    0
+  ],
+  "result": {
+    "id": "thaumcraft:lamp_arcane",
+    "count": 1
+  },
+  "pattern": [
+    " I ",
+    "IAI",
+    " I "
+  ],
+  "key": {
+    "A": {
+      "item": "thaumcraft:amber_block"
+    },
+    "I": {
+      "tag": "c:plates/iron"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:amber_block"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:lamp_arcane"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:plates/iron"
+      }
+    }
+  ]
+}

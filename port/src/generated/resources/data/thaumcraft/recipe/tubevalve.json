@@ -1,0 +1,36 @@
+{
+  "type": "thaumcraft:arcane_shapeless",
+  "group": "minecraft:",
+  "research": "TUBES",
+  "vis": 10,
+  "crystals": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "result": {
+    "id": "thaumcraft:tube_valve",
+    "count": 1
+  },
+  "ingredients": [
+    {
+      "item": "thaumcraft:tube"
+    },
+    {
+      "item": "minecraft:lever"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:tube"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:tube_valve"
+    }
+  ]
+}

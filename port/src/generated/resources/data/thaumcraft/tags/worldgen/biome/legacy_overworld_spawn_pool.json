@@ -1,0 +1,7 @@
+{
+  "values": [
+    "minecraft:forest", "minecraft:dark_forest", "minecraft:windswept_hills",
+    "minecraft:plains", "minecraft:birch_forest", "minecraft:swamp", "minecraft:taiga",
+    "minecraft:snowy_plains", "minecraft:snowy_taiga", "thaumcraft:magical_forest"
+  ]
+}

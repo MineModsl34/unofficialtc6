@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "minecraft:smooth_stone_slab"
+    },
+    "W": {
+      "tag": "c:stones"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "W W"
+  ],
+  "result": {
+    "count": 1,
+    "id": "thaumcraft:table_stone"
+  }
+}

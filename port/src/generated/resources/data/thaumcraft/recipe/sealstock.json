@@ -1,0 +1,25 @@
+{
+  "type": "thaumcraft:crucible",
+  "research": "SEALSTOCK",
+  "result": {
+    "id": "thaumcraft:seal_stock",
+    "count": 1
+  },
+  "catalyst": {
+    "item": "thaumcraft:seal_fill"
+  },
+  "aspects": {
+    "cognitio": 10,
+    "desiderium": 10
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:seal_fill"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:seal_stock"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# Preserve imported assets and SHA-256-audited source/tool bytes on every host.
+# Text diffs still work; only automatic line-ending conversion is disabled.
+* -text

@@ -1,0 +1,22 @@
+{
+  "type": "thaumcraft:crucible",
+  "research": "LIQUIDDEATH",
+  "result": {
+    "id": "thaumcraft:liquid_death_bucket",
+    "count": 1
+  },
+  "catalyst": {
+    "item": "minecraft:bucket"
+  },
+  "aspects": {
+    "mortuus": 100,
+    "alkimia": 20,
+    "perditio": 50
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:liquid_death_bucket"
+    }
+  ]
+}

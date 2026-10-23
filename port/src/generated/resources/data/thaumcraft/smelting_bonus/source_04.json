@@ -1,0 +1,25 @@
+{
+  "source_order": 4,
+  "input": {
+    "legacy_ore": "oreTin",
+    "tag": "c:ores/tin"
+  },
+  "output": {
+    "id": "thaumcraft:nugget_tin",
+    "count": 1
+  },
+  "chance": 0.33,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nugget_tin"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ores/tin"
+      }
+    }
+  ]
+}

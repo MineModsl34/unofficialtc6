@@ -1,0 +1,13 @@
+package thaumcraft.client.renderers.models.entity;
+import net.minecraft.client.model.HierarchicalModel;
+import net.minecraft.client.model.geom.*;
+import net.minecraft.client.model.geom.builders.*;
+import net.minecraft.util.Mth;
+import thaumcraft.common.entities.monster.EntityFireBat;
+public final class ModelFireBat extends HierarchicalModel<EntityFireBat> {
+    private final ModelPart root,head,body,right,left,rightOuter,leftOuter;
+    public ModelFireBat(ModelPart root){this.root=root;head=root.getChild("head");body=root.getChild("body");right=body.getChild("right_wing");left=body.getChild("left_wing");rightOuter=right.getChild("outer");leftOuter=left.getChild("outer");}
+    public static LayerDefinition createBodyLayer(){MeshDefinition mesh=new MeshDefinition();PartDefinition root=mesh.getRoot();var head=root.addOrReplaceChild("head",CubeListBuilder.create().texOffs(0,0).addBox(-3,-3,-3,6,6,6),PartPose.ZERO);head.addOrReplaceChild("right_ear",CubeListBuilder.create().texOffs(24,0).addBox(-4,-6,-2,3,4,1),PartPose.ZERO);head.addOrReplaceChild("left_ear",CubeListBuilder.create().texOffs(24,0).mirror().addBox(1,-6,-2,3,4,1),PartPose.ZERO);var body=root.addOrReplaceChild("body",CubeListBuilder.create().texOffs(0,16).addBox(-3,4,-3,6,12,6).texOffs(0,34).addBox(-5,16,0,10,6,1),PartPose.ZERO);var right=body.addOrReplaceChild("right_wing",CubeListBuilder.create().texOffs(42,0).addBox(-12,1,1.5F,10,16,1),PartPose.ZERO);right.addOrReplaceChild("outer",CubeListBuilder.create().texOffs(24,16).addBox(-8,1,0,8,12,1),PartPose.offset(-12,1,1.5F));var left=body.addOrReplaceChild("left_wing",CubeListBuilder.create().texOffs(42,0).mirror().addBox(2,1,1.5F,10,16,1),PartPose.ZERO);left.addOrReplaceChild("outer",CubeListBuilder.create().texOffs(24,16).mirror().addBox(0,1,0,8,12,1),PartPose.offset(12,1,1.5F));return LayerDefinition.create(mesh,64,64);}
+    @Override public ModelPart root(){return root;}
+    @Override public void setupAnim(EntityFireBat entity,float limb,float amount,float age,float yaw,float pitch){head.xRot=pitch*Mth.DEG_TO_RAD;if(entity.getIsBatHanging()){head.yRot=Mth.PI-yaw*Mth.DEG_TO_RAD;head.zRot=Mth.PI;head.setPos(0,-2,0);right.setPos(-3,0,3);left.setPos(3,0,3);body.xRot=Mth.PI;right.xRot=-Mth.PI/20;right.yRot=-Mth.PI*2/5;rightOuter.yRot=-1.7278761F;left.xRot=right.xRot;left.yRot=-right.yRot;leftOuter.yRot=-rightOuter.yRot;}else{head.yRot=yaw*Mth.DEG_TO_RAD;head.zRot=0;head.setPos(0,0,0);right.setPos(0,0,0);left.setPos(0,0,0);body.xRot=Mth.PI/4+Mth.cos(age*.1F)*.15F;body.yRot=0;right.yRot=Mth.cos(age*1.3F)*Mth.PI*.25F;left.yRot=-right.yRot;rightOuter.yRot=right.yRot*.5F;leftOuter.yRot=-right.yRot*.5F;}}
+}

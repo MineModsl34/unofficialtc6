@@ -1,0 +1,73 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "PRIMALCRUSHER",
+  "result": {
+    "id": "thaumcraft:primal_crusher",
+    "count": 1,
+    "components": {
+      "thaumcraft:infusion_enchantments": [
+        {
+          "id": 1,
+          "lvl": 1
+        },
+        {
+          "id": 4,
+          "lvl": 1
+        }
+      ]
+    }
+  },
+  "instability": 6,
+  "aspects": {
+    "terra": 75,
+    "instrumentum": 75,
+    "perditio": 50,
+    "vacuos": 50,
+    "aversio": 50,
+    "alienis": 50,
+    "desiderium": 50
+  },
+  "central": {
+    "item": "thaumcraft:primordial_pearl"
+  },
+  "components": [
+    {
+      "item": "thaumcraft:void_pick"
+    },
+    {
+      "item": "thaumcraft:void_shovel"
+    },
+    {
+      "item": "thaumcraft:elemental_pick"
+    },
+    {
+      "item": "thaumcraft:elemental_shovel"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:elemental_pick"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:elemental_shovel"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:primal_crusher"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:primordial_pearl"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:void_pick"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:void_shovel"
+    }
+  ]
+}

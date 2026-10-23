@@ -1,0 +1,7 @@
+{
+  "type": "thaumcraft:greatwood_tree",
+  "config": {
+    "natural": true,
+    "spiders": true
+  }
+}

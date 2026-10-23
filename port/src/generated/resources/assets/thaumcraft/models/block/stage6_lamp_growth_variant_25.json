@@ -1,0 +1,6 @@
+{
+  "parent": "thaumcraft:block/stage6_lamp_stand",
+  "textures": {
+    "side": "thaumcraft:block/base_metal"
+  }
+}

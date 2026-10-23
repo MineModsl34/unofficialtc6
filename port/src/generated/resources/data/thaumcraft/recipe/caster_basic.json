@@ -1,0 +1,7 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "pattern": ["III", "LRL", "LTL"],
+  "key": {"I": {"tag": "c:ingots/iron"}, "L": {"tag": "c:leathers"}, "R": {"item": "thaumcraft:vis_resonator"}, "T": {"item": "thaumcraft:thaumometer"}},
+  "result": {"id": "thaumcraft:caster_basic"},
+  "research": "UNLOCKAUROMANCY@2", "vis": 100, "crystals": [1, 1, 1, 1, 1, 1]
+}

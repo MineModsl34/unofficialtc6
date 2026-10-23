@@ -1,0 +1,258 @@
+{
+  "format": 1,
+  "source": "Thaumcraft 6.1.BETA26 ConfigBlocks/source models; modern link predicate and native fluid bucket",
+  "files": [
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/activator_rail_active_raised_sw.json",
+      "payload": {
+        "parent": "block/rail_raised_sw",
+        "textures": {
+          "rail": "thaumcraft:block/rail_activator_powered"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/activator_rail_active_raised_ne.json",
+      "payload": {
+        "parent": "block/rail_raised_ne",
+        "textures": {
+          "rail": "thaumcraft:block/rail_activator_powered"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/activator_rail_raised_sw.json",
+      "payload": {
+        "parent": "block/rail_raised_sw",
+        "textures": {
+          "rail": "thaumcraft:block/rail_activator"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/activator_rail_active_flat.json",
+      "payload": {
+        "parent": "block/rail_flat",
+        "textures": {
+          "rail": "thaumcraft:block/rail_activator_powered"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/activator_rail_flat.json",
+      "payload": {
+        "parent": "block/rail_flat",
+        "textures": {
+          "rail": "thaumcraft:block/rail_activator"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/activator_rail_raised_ne.json",
+      "payload": {
+        "parent": "block/rail_raised_ne",
+        "textures": {
+          "rail": "thaumcraft:block/rail_activator"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/activator_rail.json",
+      "payload": {
+        "variants": {
+          "powered=false,shape=north_south": {
+            "model": "thaumcraft:block/activator_rail_flat"
+          },
+          "powered=false,shape=east_west": {
+            "model": "thaumcraft:block/activator_rail_flat",
+            "y": 90
+          },
+          "powered=false,shape=ascending_east": {
+            "model": "thaumcraft:block/activator_rail_raised_ne",
+            "y": 90
+          },
+          "powered=false,shape=ascending_west": {
+            "model": "thaumcraft:block/activator_rail_raised_sw",
+            "y": 90
+          },
+          "powered=false,shape=ascending_north": {
+            "model": "thaumcraft:block/activator_rail_raised_ne"
+          },
+          "powered=false,shape=ascending_south": {
+            "model": "thaumcraft:block/activator_rail_raised_sw"
+          },
+          "powered=true,shape=north_south": {
+            "model": "thaumcraft:block/activator_rail_active_flat"
+          },
+          "powered=true,shape=east_west": {
+            "model": "thaumcraft:block/activator_rail_active_flat",
+            "y": 90
+          },
+          "powered=true,shape=ascending_east": {
+            "model": "thaumcraft:block/activator_rail_active_raised_ne",
+            "y": 90
+          },
+          "powered=true,shape=ascending_west": {
+            "model": "thaumcraft:block/activator_rail_active_raised_sw",
+            "y": 90
+          },
+          "powered=true,shape=ascending_north": {
+            "model": "thaumcraft:block/activator_rail_active_raised_ne"
+          },
+          "powered=true,shape=ascending_south": {
+            "model": "thaumcraft:block/activator_rail_active_raised_sw"
+          }
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/activator_rail.json",
+      "payload": {
+        "parent": "item/generated",
+        "textures": {
+          "layer0": "thaumcraft:block/rail_activator"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/mirror.json",
+      "payload": {
+        "parent": "item/generated",
+        "textures": {
+          "layer0": "thaumcraft:block/mirrorframe",
+          "layer1": "thaumcraft:block/mirrorpane"
+        },
+        "overrides": [
+          {
+            "predicate": {
+              "thaumcraft:linked": 1
+            },
+            "model": "thaumcraft:item/mirror_on"
+          }
+        ]
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/mirror_on.json",
+      "payload": {
+        "parent": "item/generated",
+        "textures": {
+          "layer0": "thaumcraft:block/mirrorframe",
+          "layer1": "thaumcraft:block/mirrorpaneopen"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/mirror.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/mirror"
+          }
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/mirror.json",
+      "payload": {
+        "textures": {
+          "particle": "thaumcraft:block/mirrorframe"
+        },
+        "elements": []
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/mirror_essentia.json",
+      "payload": {
+        "parent": "item/generated",
+        "textures": {
+          "layer0": "thaumcraft:block/mirrorframe2",
+          "layer1": "thaumcraft:block/mirrorpane"
+        },
+        "overrides": [
+          {
+            "predicate": {
+              "thaumcraft:linked": 1
+            },
+            "model": "thaumcraft:item/mirror_essentia_on"
+          }
+        ]
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/mirror_essentia_on.json",
+      "payload": {
+        "parent": "item/generated",
+        "textures": {
+          "layer0": "thaumcraft:block/mirrorframe2",
+          "layer1": "thaumcraft:block/mirrorpaneopen"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/mirror_essentia.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/mirror_essentia"
+          }
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/mirror_essentia.json",
+      "payload": {
+        "textures": {
+          "particle": "thaumcraft:block/mirrorframe2"
+        },
+        "elements": []
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/purifying_fluid.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/purifying_fluid"
+          }
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/purifying_fluid.json",
+      "payload": {
+        "textures": {
+          "particle": "minecraft:block/water_still"
+        },
+        "elements": []
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/purifying_fluid_bucket.json",
+      "payload": {
+        "parent": "neoforge:item/bucket",
+        "loader": "neoforge:fluid_container",
+        "fluid": "thaumcraft:purifying_fluid"
+      }
+    }
+  ]
+}

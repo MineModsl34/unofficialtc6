@@ -1,0 +1,331 @@
+{
+  "format": 1,
+  "source": "reference/tc6/src",
+  "entries": [
+    {
+      "path": "assets/thaumcraft/models/item/cloth_chest.json",
+      "source": "models/item/cloth_chest.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/cloth_chest",
+          "layer1": "thaumcraft:item/cloth_chest_over"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/cloth_legs.json",
+      "source": "models/item/cloth_legs.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/cloth_legs",
+          "layer1": "thaumcraft:item/cloth_legs_over"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/cloth_boots.json",
+      "source": "models/item/cloth_boots.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/cloth_boots",
+          "layer1": "thaumcraft:item/cloth_boots_over"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/fortress_helm.json",
+      "source": "models/item/fortress_helm.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/fortress_helm"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/fortress_chest.json",
+      "source": "models/item/fortress_chest.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/fortress_chest"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/fortress_legs.json",
+      "source": "models/item/fortress_legs.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/fortress_legs"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/void_robe_helm.json",
+      "source": "models/item/void_robe_helm.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/void_robe_helm"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/void_robe_chest.json",
+      "source": "models/item/void_robe_chest.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/void_robe_chest_over",
+          "layer1": "thaumcraft:item/void_robe_chest"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/void_robe_legs.json",
+      "source": "models/item/void_robe_legs.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/void_robe_legs_over",
+          "layer1": "thaumcraft:item/void_robe_legs"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/goggles.json",
+      "source": "models/item/goggles.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/goggles"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/traveller_boots.json",
+      "source": "models/item/traveller_boots.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/traveller_boots"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/crimson_praetor_helm.json",
+      "source": "models/item/crimson_praetor_helm.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/crimson_praetor_helm"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/crimson_praetor_chest.json",
+      "source": "models/item/crimson_praetor_chest.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/crimson_praetor_chest"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/crimson_praetor_legs.json",
+      "source": "models/item/crimson_praetor_legs.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/crimson_praetor_legs"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/verdant_charm.json",
+      "source": "models/item/verdant_charm.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "overrides": [
+          {
+            "predicate": {
+              "type": 0
+            },
+            "model": "thaumcraft:item/verdant_charm_0"
+          },
+          {
+            "predicate": {
+              "type": 1
+            },
+            "model": "thaumcraft:item/verdant_charm_1"
+          },
+          {
+            "predicate": {
+              "type": 2
+            },
+            "model": "thaumcraft:item/verdant_charm_2"
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/verdant_charm_0.json",
+      "source": "models/item/verdant_charm_0.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/verdant_charm",
+          "layer1": "thaumcraft:item/verdant_charm_over_0"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/verdant_charm_1.json",
+      "source": "models/item/verdant_charm_1.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/verdant_charm",
+          "layer1": "thaumcraft:item/verdant_charm_over_1"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/verdant_charm_2.json",
+      "source": "models/item/verdant_charm_2.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/verdant_charm",
+          "layer1": "thaumcraft:item/verdant_charm_over_2"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/voidseer_charm.json",
+      "source": "models/item/voidseer_charm.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/voidseer_charm"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/curiosity_band.json",
+      "source": "models/item/curiosity_band.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/curiosity_band"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/cloud_ring.json",
+      "source": "models/item/cloud_ring.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/cloud_ring"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/charm_undying.json",
+      "source": "models/item/charm_undying.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/charm_undying"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/amulet_vis_crafted.json",
+      "source": "ItemAmuletVis metadata1 -> amulet_vis animated source texture",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/amulet_vis"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/goggles_worn.json",
+      "source": "source goggles IRenderBauble worn atlas",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/goggles_bauble"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/curiosity_band_worn.json",
+      "source": "source curiosity_band IRenderBauble worn atlas",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/curiosity_band_worn"
+        }
+      }
+    },
+    {
+      "path": "data/thaumcraft/curios/slots/head.json",
+      "source": "BaubleType source slot layout",
+      "payload": {
+        "size": 1,
+        "order": 4
+      }
+    },
+    {
+      "path": "data/thaumcraft/curios/slots/charm.json",
+      "source": "BaubleType source slot layout",
+      "payload": {
+        "size": 1,
+        "order": 6
+      }
+    },
+    {
+      "path": "data/thaumcraft/curios/entities/wearables.json",
+      "source": "real new head/charm slots for source wearer",
+      "payload": {
+        "entities": [
+          "minecraft:player"
+        ],
+        "slots": [
+          "head",
+          "charm"
+        ]
+      }
+    },
+    {
+      "path": "data/curios/tags/item/head.json",
+      "source": "source HEAD BaubleType",
+      "payload": {
+        "values": [
+          "thaumcraft:goggles",
+          "thaumcraft:curiosity_band"
+        ]
+      }
+    },
+    {
+      "path": "data/curios/tags/item/charm.json",
+      "source": "source CHARM BaubleType",
+      "payload": {
+        "values": [
+          "thaumcraft:verdant_charm",
+          "thaumcraft:voidseer_charm",
+          "thaumcraft:charm_undying"
+        ]
+      }
+    }
+  ]
+}

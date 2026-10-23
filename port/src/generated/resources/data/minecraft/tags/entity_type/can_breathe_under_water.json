@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "thaumcraft:turret_basic",
+    "thaumcraft:turret_advanced",
+    "thaumcraft:arcane_bore",
+    "thaumcraft:golem"
+  ]
+}

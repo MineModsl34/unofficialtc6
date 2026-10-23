@@ -1,0 +1,22 @@
+{
+  "source_order": 19,
+  "input": {
+    "items": [
+      "minecraft:cod",
+      "minecraft:salmon",
+      "minecraft:tropical_fish",
+      "minecraft:pufferfish"
+    ]
+  },
+  "output": {
+    "id": "thaumcraft:chunk_fish",
+    "count": 1
+  },
+  "chance": 0.33,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:chunk_fish"
+    }
+  ]
+}

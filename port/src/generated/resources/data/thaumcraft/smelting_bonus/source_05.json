@@ -1,0 +1,25 @@
+{
+  "source_order": 5,
+  "input": {
+    "legacy_ore": "oreSilver",
+    "tag": "c:ores/silver"
+  },
+  "output": {
+    "id": "thaumcraft:nugget_silver",
+    "count": 1
+  },
+  "chance": 0.33,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nugget_silver"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ores/silver"
+      }
+    }
+  ]
+}

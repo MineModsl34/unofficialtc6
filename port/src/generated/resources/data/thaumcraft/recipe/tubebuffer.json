@@ -1,0 +1,69 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "group": "minecraft:",
+  "research": "TUBES",
+  "vis": 25,
+  "crystals": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "result": {
+    "id": "thaumcraft:tube_buffer",
+    "count": 1
+  },
+  "pattern": [
+    "PVP",
+    "TWT",
+    "PRP"
+  ],
+  "key": {
+    "T": {
+      "item": "thaumcraft:tube"
+    },
+    "V": {
+      "item": "thaumcraft:tube_valve"
+    },
+    "W": {
+      "tag": "c:plates/iron"
+    },
+    "R": {
+      "item": "thaumcraft:tube_restrict"
+    },
+    "P": {
+      "item": "thaumcraft:phial_empty"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:phial_empty"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:tube"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:tube_buffer"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:tube_restrict"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:tube_valve"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:plates/iron"
+      }
+    }
+  ]
+}

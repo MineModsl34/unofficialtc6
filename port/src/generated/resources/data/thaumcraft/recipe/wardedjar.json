@@ -1,0 +1,5 @@
+{
+  "type": "thaumcraft:arcane_shaped", "pattern": ["GWG", "G G", "GGG"],
+  "key": {"W": {"tag": "minecraft:wooden_slabs"}, "G": {"tag": "c:glass_panes"}},
+  "result": {"id": "thaumcraft:jar_normal"}, "research": "WARDEDJARS", "vis": 5, "crystals": [0, 0, 0, 0, 0, 0]
+}

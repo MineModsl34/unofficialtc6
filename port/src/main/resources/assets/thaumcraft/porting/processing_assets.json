@@ -1,0 +1,288 @@
+{
+  "format": 1,
+  "source": "reference/tc6/src/assets/thaumcraft",
+  "notes": "Source JSON geometry with texture-path flattening. Thaumatorium OBJ is copied verbatim with normalized MTL via import_models.py. Empty invisible shells are source non-BE multiblock parts, never stand-in machines. Bellows rendering uses real TileBellowsRenderer.",
+  "entries": [
+    {
+      "path": "blockstates/infernal_furnace.json",
+      "payload": {
+        "variants": {
+          "facing=north": {
+            "model": "thaumcraft:block/infernal_furnace"
+          },
+          "facing=south": {
+            "model": "thaumcraft:block/infernal_furnace",
+            "y": 180
+          },
+          "facing=east": {
+            "model": "thaumcraft:block/infernal_furnace",
+            "y": 90
+          },
+          "facing=west": {
+            "model": "thaumcraft:block/infernal_furnace",
+            "y": 270
+          }
+        }
+      }
+    },
+    {
+      "path": "models/item/infernal_furnace.json",
+      "payload": {
+        "parent": "thaumcraft:block/infernal_furnace",
+        "display": {
+          "gui": {
+            "rotation": [
+              300,
+              0,
+              45
+            ],
+            "translation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              0.275,
+              0.275,
+              0.275
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "blockstates/smelter_aux.json",
+      "payload": {
+        "variants": {
+          "facing=north": {
+            "model": "thaumcraft:block/smelter_aux"
+          },
+          "facing=south": {
+            "model": "thaumcraft:block/smelter_aux",
+            "y": 180
+          },
+          "facing=east": {
+            "model": "thaumcraft:block/smelter_aux",
+            "y": 90
+          },
+          "facing=west": {
+            "model": "thaumcraft:block/smelter_aux",
+            "y": 270
+          }
+        }
+      }
+    },
+    {
+      "path": "models/item/smelter_aux.json",
+      "payload": {
+        "parent": "thaumcraft:block/smelter_aux"
+      }
+    },
+    {
+      "path": "blockstates/smelter_vent.json",
+      "payload": {
+        "variants": {
+          "facing=north": {
+            "model": "thaumcraft:block/smelter_vent"
+          },
+          "facing=south": {
+            "model": "thaumcraft:block/smelter_vent",
+            "y": 180
+          },
+          "facing=east": {
+            "model": "thaumcraft:block/smelter_vent",
+            "y": 90
+          },
+          "facing=west": {
+            "model": "thaumcraft:block/smelter_vent",
+            "y": 270
+          }
+        }
+      }
+    },
+    {
+      "path": "models/item/smelter_vent.json",
+      "payload": {
+        "parent": "thaumcraft:block/smelter_vent"
+      }
+    },
+    {
+      "path": "blockstates/brain_box.json",
+      "payload": {
+        "variants": {
+          "facing=up": {
+            "model": "thaumcraft:block/brain_box",
+            "x": 180
+          },
+          "facing=down": {
+            "model": "thaumcraft:block/brain_box"
+          },
+          "facing=west": {
+            "model": "thaumcraft:block/brain_box",
+            "x": 90,
+            "y": 90
+          },
+          "facing=east": {
+            "model": "thaumcraft:block/brain_box",
+            "x": 90,
+            "y": 270
+          },
+          "facing=south": {
+            "model": "thaumcraft:block/brain_box",
+            "x": 90
+          },
+          "facing=north": {
+            "model": "thaumcraft:block/brain_box",
+            "x": 90,
+            "y": 180
+          }
+        }
+      }
+    },
+    {
+      "path": "models/item/brain_box.json",
+      "payload": {
+        "parent": "thaumcraft:block/brain_box"
+      }
+    },
+    {
+      "path": "blockstates/bellows.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/bellows"
+          }
+        }
+      }
+    },
+    {
+      "path": "models/item/bellows.json",
+      "payload": {
+        "parent": "thaumcraft:block/bellows"
+      }
+    },
+    {
+      "path": "models/block/thaumatorium.json",
+      "payload": {
+        "loader": "neoforge:obj",
+        "model": "thaumcraft:models/block/thaumatorium.obj",
+        "automatic_culling": false,
+        "flip_v": true,
+        "render_type": "minecraft:cutout",
+        "textures": {
+          "texture": "thaumcraft:block/thaumatorium",
+          "particle": "thaumcraft:block/thaumatorium"
+        }
+      }
+    },
+    {
+      "path": "models/block/processing_empty.json",
+      "payload": {
+        "textures": {
+          "particle": "thaumcraft:block/thaumatorium"
+        },
+        "elements": []
+      }
+    },
+    {
+      "path": "blockstates/thaumatorium.json",
+      "payload": {
+        "variants": {
+          "facing=west": {
+            "model": "thaumcraft:block/thaumatorium",
+            "x": 90
+          },
+          "facing=south": {
+            "model": "thaumcraft:block/thaumatorium",
+            "x": 90,
+            "y": 270
+          },
+          "facing=north": {
+            "model": "thaumcraft:block/thaumatorium",
+            "x": 90,
+            "y": 90
+          },
+          "facing=east": {
+            "model": "thaumcraft:block/thaumatorium",
+            "x": 90,
+            "y": 180
+          }
+        }
+      }
+    },
+    {
+      "path": "models/item/thaumatorium.json",
+      "payload": {
+        "parent": "thaumcraft:block/thaumatorium",
+        "display": {
+          "gui": {
+            "rotation": [
+              300,
+              0,
+              45
+            ],
+            "translation": [
+              0,
+              -0.25,
+              0
+            ],
+            "scale": [
+              0.65,
+              0.65,
+              0.65
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "blockstates/thaumatorium_top.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/processing_empty"
+          }
+        }
+      }
+    },
+    {
+      "path": "models/item/thaumatorium_top.json",
+      "payload": {
+        "parent": "thaumcraft:block/thaumatorium"
+      }
+    },
+    {
+      "path": "blockstates/placeholder_brick.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/processing_empty"
+          }
+        }
+      }
+    },
+    {
+      "path": "models/item/placeholder_brick.json",
+      "payload": {
+        "parent": "minecraft:block/nether_bricks"
+      }
+    },
+    {
+      "path": "blockstates/placeholder_obsidian.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/processing_empty"
+          }
+        }
+      }
+    },
+    {
+      "path": "models/item/placeholder_obsidian.json",
+      "payload": {
+        "parent": "minecraft:block/obsidian"
+      }
+    }
+  ]
+}
+

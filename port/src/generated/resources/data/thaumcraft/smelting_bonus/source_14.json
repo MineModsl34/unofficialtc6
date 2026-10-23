@@ -1,0 +1,23 @@
+{
+  "source_order": 14,
+  "input": {
+    "items": [
+      "thaumcraft:cluster_lead"
+    ]
+  },
+  "output": {
+    "id": "thaumcraft:nugget_lead",
+    "count": 1
+  },
+  "chance": 0.33,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:cluster_lead"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nugget_lead"
+    }
+  ]
+}

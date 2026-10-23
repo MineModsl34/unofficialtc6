@@ -1,0 +1,23 @@
+{
+  "source_order": 10,
+  "input": {
+    "items": [
+      "thaumcraft:cluster_cinnabar"
+    ]
+  },
+  "output": {
+    "id": "thaumcraft:nugget_quicksilver",
+    "count": 1
+  },
+  "chance": 0.33,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:cluster_cinnabar"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nugget_quicksilver"
+    }
+  ]
+}

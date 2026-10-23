@@ -1,0 +1,218 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "RIFTCLOSER",
+  "result": {
+    "id": "thaumcraft:causality_collapser",
+    "count": 1
+  },
+  "instability": 8,
+  "aspects": {
+    "alienis": 50,
+    "vitium": 50
+  },
+  "central": {
+    "item": "minecraft:tnt"
+  },
+  "components": [
+    {
+      "item": "thaumcraft:morphic_resonator"
+    },
+    {
+      "item": "minecraft:redstone_block"
+    },
+    {
+      "item": "thaumcraft:alumentum"
+    },
+    [
+      {
+        "item": "thaumcraft:nitor_white"
+      },
+      {
+        "item": "thaumcraft:nitor_orange"
+      },
+      {
+        "item": "thaumcraft:nitor_magenta"
+      },
+      {
+        "item": "thaumcraft:nitor_light_blue"
+      },
+      {
+        "item": "thaumcraft:nitor_yellow"
+      },
+      {
+        "item": "thaumcraft:nitor_lime"
+      },
+      {
+        "item": "thaumcraft:nitor_pink"
+      },
+      {
+        "item": "thaumcraft:nitor_gray"
+      },
+      {
+        "item": "thaumcraft:nitor_light_gray"
+      },
+      {
+        "item": "thaumcraft:nitor_cyan"
+      },
+      {
+        "item": "thaumcraft:nitor_purple"
+      },
+      {
+        "item": "thaumcraft:nitor_blue"
+      },
+      {
+        "item": "thaumcraft:nitor_brown"
+      },
+      {
+        "item": "thaumcraft:nitor_green"
+      },
+      {
+        "item": "thaumcraft:nitor_red"
+      },
+      {
+        "item": "thaumcraft:nitor_black"
+      }
+    ],
+    {
+      "item": "thaumcraft:vis_resonator"
+    },
+    {
+      "item": "minecraft:redstone_block"
+    },
+    {
+      "item": "thaumcraft:alumentum"
+    },
+    [
+      {
+        "item": "thaumcraft:nitor_white"
+      },
+      {
+        "item": "thaumcraft:nitor_orange"
+      },
+      {
+        "item": "thaumcraft:nitor_magenta"
+      },
+      {
+        "item": "thaumcraft:nitor_light_blue"
+      },
+      {
+        "item": "thaumcraft:nitor_yellow"
+      },
+      {
+        "item": "thaumcraft:nitor_lime"
+      },
+      {
+        "item": "thaumcraft:nitor_pink"
+      },
+      {
+        "item": "thaumcraft:nitor_gray"
+      },
+      {
+        "item": "thaumcraft:nitor_light_gray"
+      },
+      {
+        "item": "thaumcraft:nitor_cyan"
+      },
+      {
+        "item": "thaumcraft:nitor_purple"
+      },
+      {
+        "item": "thaumcraft:nitor_blue"
+      },
+      {
+        "item": "thaumcraft:nitor_brown"
+      },
+      {
+        "item": "thaumcraft:nitor_green"
+      },
+      {
+        "item": "thaumcraft:nitor_red"
+      },
+      {
+        "item": "thaumcraft:nitor_black"
+      }
+    ]
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:alumentum"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:causality_collapser"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:morphic_resonator"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nitor_black"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nitor_blue"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nitor_brown"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nitor_cyan"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nitor_gray"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nitor_green"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nitor_light_blue"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nitor_light_gray"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nitor_lime"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nitor_magenta"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nitor_orange"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nitor_pink"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nitor_purple"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nitor_red"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nitor_white"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nitor_yellow"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:vis_resonator"
+    }
+  ]
+}

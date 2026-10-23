@@ -1,0 +1,6 @@
+{
+  "parent": "thaumcraft:block/stage6_arcane_ear_off",
+  "textures": {
+    "side": "thaumcraft:block/arcane_ear_toggle_off"
+  }
+}

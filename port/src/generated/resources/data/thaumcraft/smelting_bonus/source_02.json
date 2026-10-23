@@ -1,0 +1,25 @@
+{
+  "source_order": 2,
+  "input": {
+    "legacy_ore": "oreCinnabar",
+    "tag": "c:ores/cinnabar"
+  },
+  "output": {
+    "id": "thaumcraft:nugget_quicksilver",
+    "count": 1
+  },
+  "chance": 0.33,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nugget_quicksilver"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ores/cinnabar"
+      }
+    }
+  ]
+}

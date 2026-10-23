@@ -1,0 +1,14 @@
+{
+  "type": "thaumcraft:robedye",
+  "category": "misc",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:or",
+      "values": [
+        { "type": "neoforge:item_exists", "item": "thaumcraft:cloth_chest" },
+        { "type": "neoforge:item_exists", "item": "thaumcraft:cloth_legs" },
+        { "type": "neoforge:item_exists", "item": "thaumcraft:cloth_boots" }
+      ]
+    }
+  ]
+}

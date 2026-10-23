@@ -1,0 +1,23 @@
+{
+  "source_order": 15,
+  "input": {
+    "items": [
+      "thaumcraft:cluster_quartz"
+    ]
+  },
+  "output": {
+    "id": "thaumcraft:nugget_quartz",
+    "count": 1
+  },
+  "chance": 0.33,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:cluster_quartz"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nugget_quartz"
+    }
+  ]
+}

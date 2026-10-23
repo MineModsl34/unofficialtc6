@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_scribing_tools": {
+      "conditions": {
+        "items": [
+          {
+            "items": "thaumcraft:scribing_tools"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "thaumcraft:scribingtoolsrefill"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_scribing_tools"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "thaumcraft:scribingtoolsrefill"
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "ELEMENTALTOOLS",
+  "result": {
+    "id": "thaumcraft:elemental_axe",
+    "count": 1,
+    "components": {
+      "thaumcraft:infusion_enchantments": [
+        {
+          "id": 0,
+          "lvl": 1
+        },
+        {
+          "id": 2,
+          "lvl": 1
+        }
+      ]
+    }
+  },
+  "instability": 1,
+  "aspects": {
+    "aqua": 60,
+    "herba": 30
+  },
+  "central": {
+    "item": "thaumcraft:thaumium_axe"
+  },
+  "components": [
+    {
+      "type": "thaumcraft:nbt",
+      "stack": {
+        "id": "thaumcraft:crystal_essence",
+        "count": 1,
+        "components": {
+          "thaumcraft:aspects": {
+            "aqua": 1
+          }
+        }
+      }
+    },
+    {
+      "type": "thaumcraft:nbt",
+      "stack": {
+        "id": "thaumcraft:crystal_essence",
+        "count": 1,
+        "components": {
+          "thaumcraft:aspects": {
+            "aqua": 1
+          }
+        }
+      }
+    },
+    {
+      "item": "thaumcraft:nugget_rareearth"
+    },
+    {
+      "item": "thaumcraft:plank_greatwood"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:crystal_essence"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:elemental_axe"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nugget_rareearth"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:plank_greatwood"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:thaumium_axe"
+    }
+  ]
+}

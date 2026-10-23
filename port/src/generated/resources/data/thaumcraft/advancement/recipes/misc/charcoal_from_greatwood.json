@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_log_greatwood": {
+      "conditions": {
+        "items": [
+          {
+            "items": "thaumcraft:log_greatwood"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "thaumcraft:charcoal_from_greatwood"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_log_greatwood"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "thaumcraft:charcoal_from_greatwood"
+    ]
+  }
+}

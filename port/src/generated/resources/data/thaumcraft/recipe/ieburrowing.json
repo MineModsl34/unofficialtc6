@@ -1,0 +1,20 @@
+{
+  "type": "thaumcraft:infusion_enchantment",
+  "enchantment": "BURROWING",
+  "aspects": {
+    "sensus": 80,
+    "terra": 150
+  },
+  "components": [
+    {
+      "type": "thaumcraft:nbt",
+      "stack": {
+        "id": "minecraft:enchanted_book",
+        "count": 1
+      }
+    },
+    {
+      "item": "minecraft:rabbit_foot"
+    }
+  ]
+}

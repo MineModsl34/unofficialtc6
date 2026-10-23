@@ -1,0 +1,12 @@
+package thaumcraft.common.items.armor;
+import java.util.List;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+class WearableRulesTest {
+    @Test void sourceFallReductionsComposeBootsBeforeRing(){assertEquals(0,WearableRules.fallDamage(3,true,false));assertEquals(4,WearableRules.fallDamage(10,true,false));assertEquals(4,WearableRules.fallDamage(18,false,true));assertEquals(0,WearableRules.fallDamage(18,true,true));assertEquals(6,WearableRules.fallDamage(50,true,true),.0001);}
+    @Test void curiosityKeepsSourceSingleRollAndUnclampedThreshold(){assertEquals(2,WearableRules.curiosityAward(10,.249F));assertEquals(1,WearableRules.curiosityAward(10,.25F));assertEquals(0,WearableRules.curiosityAward(4,.4F));assertEquals(2,WearableRules.curiosityAward(100,.99F));}
+    @Test void bootsEnergyAndCloudImpulseAreOriginalValues(){assertEquals(60,WearableRules.energy(0,true));assertEquals(59,WearableRules.energy(60,false));assertEquals(0,WearableRules.energy(0,false));assertEquals(.75F,WearableRules.cloudJump(-1));assertEquals(.95F,WearableRules.cloudJump(1));}
+    @Test void specialArmorAppliesSourceRatioThenExtraArmorAndBothDurabilityPasses(){var result=SourceSpecialArmorRules.reduce(10,19,12,List.of(new SourceSpecialArmorRules.Piece(1,0,6/25D,1000),new SourceSpecialArmorRules.Piece(2,0,7/25D,1000),new SourceSpecialArmorRules.Piece(3,0,3/25D,1000)));assertEquals(.96768F,result.damage(),.00001);assertEquals(List.of(0,3,3,2),result.durability());assertEquals(List.of(new SourceSpecialArmorRules.Payment(2,2),new SourceSpecialArmorRules.Payment(1,2),new SourceSpecialArmorRules.Payment(3,1),new SourceSpecialArmorRules.Payment(1,1),new SourceSpecialArmorRules.Payment(2,1),new SourceSpecialArmorRules.Payment(3,1)),result.payments());}
+    @Test void specialPriorityAndRemainingDurabilityCapsAreNotIgnored(){var result=SourceSpecialArmorRules.reduce(100,0,0,List.of(new SourceSpecialArmorRules.Piece(2,1,.5,1),new SourceSpecialArmorRules.Piece(3,0,.5,1000)));assertEquals(49.5F,result.damage(),.0001);assertEquals(List.of(0,0,1,49),result.durability());}
+    @Test void displayedArmorRetainsSourceSpecialArmorExtrasWithoutChangingDefense(){assertEquals(19,WearableRules.armorDisplay(16,3,0,0));assertEquals(22,WearableRules.armorDisplay(16,3,1,0));assertEquals(40,WearableRules.armorDisplay(20,0,0,20));assertEquals(8,WearableRules.armorDisplay(8,0,0,0));}
+}

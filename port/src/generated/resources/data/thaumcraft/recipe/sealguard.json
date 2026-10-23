@@ -1,0 +1,25 @@
+{
+  "type": "thaumcraft:crucible",
+  "research": "SEALGUARD",
+  "result": {
+    "id": "thaumcraft:seal_guard",
+    "count": 1
+  },
+  "catalyst": {
+    "item": "thaumcraft:seal_blank"
+  },
+  "aspects": {
+    "aversio": 20,
+    "praemunio": 20
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:seal_blank"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:seal_guard"
+    }
+  ]
+}

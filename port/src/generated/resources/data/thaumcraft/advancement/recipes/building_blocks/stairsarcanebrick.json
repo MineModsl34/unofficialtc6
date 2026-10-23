@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stone_arcane_brick": {
+      "conditions": {
+        "items": [
+          {
+            "items": "thaumcraft:stone_arcane_brick"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "thaumcraft:stairsarcanebrick"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stone_arcane_brick"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "thaumcraft:stairsarcanebrick"
+    ]
+  }
+}

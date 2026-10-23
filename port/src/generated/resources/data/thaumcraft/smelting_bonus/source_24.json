@@ -1,0 +1,25 @@
+{
+  "source_order": 24,
+  "input": {
+    "legacy_ore": "oreLapis",
+    "tag": "c:ores/lapis"
+  },
+  "output": {
+    "id": "thaumcraft:nugget_rareearth",
+    "count": 1
+  },
+  "chance": 0.01,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nugget_rareearth"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ores/lapis"
+      }
+    }
+  ]
+}

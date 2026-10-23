@@ -1,0 +1,213 @@
+{
+  "format": 1,
+  "source": "ConfigEntities / ItemBottleTaint / ItemCausalityCollapser / BlockBannerTCItem",
+  "files": [
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/cultist_portal_greater_spawn_egg.json",
+      "payload": {
+        "parent": "minecraft:item/template_spawn_egg"
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/cultist_portal_lesser_spawn_egg.json",
+      "payload": {
+        "parent": "minecraft:item/template_spawn_egg"
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/eldritch_warden_spawn_egg.json",
+      "payload": {
+        "parent": "minecraft:item/template_spawn_egg"
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/eldritch_golem_spawn_egg.json",
+      "payload": {
+        "parent": "minecraft:item/template_spawn_egg"
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/cultist_leader_spawn_egg.json",
+      "payload": {
+        "parent": "minecraft:item/template_spawn_egg"
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/taintacle_giant_spawn_egg.json",
+      "payload": {
+        "parent": "minecraft:item/template_spawn_egg"
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/spellbat_spawn_egg.json",
+      "payload": {
+        "parent": "minecraft:item/template_spawn_egg"
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/mind_spider_spawn_egg.json",
+      "payload": {
+        "parent": "minecraft:item/template_spawn_egg"
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/eldritch_guardian_spawn_egg.json",
+      "payload": {
+        "parent": "minecraft:item/template_spawn_egg"
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/cultist_knight_spawn_egg.json",
+      "payload": {
+        "parent": "minecraft:item/template_spawn_egg"
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/cultist_cleric_spawn_egg.json",
+      "payload": {
+        "parent": "minecraft:item/template_spawn_egg"
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/thaumic_slime_spawn_egg.json",
+      "payload": {
+        "parent": "minecraft:item/template_spawn_egg"
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/taint_crawler_spawn_egg.json",
+      "payload": {
+        "parent": "minecraft:item/template_spawn_egg"
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/taintacle_spawn_egg.json",
+      "payload": {
+        "parent": "minecraft:item/template_spawn_egg"
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/taint_swarm_spawn_egg.json",
+      "payload": {
+        "parent": "minecraft:item/template_spawn_egg"
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/taint_seed_spawn_egg.json",
+      "payload": {
+        "parent": "minecraft:item/template_spawn_egg"
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/taint_seed_prime_spawn_egg.json",
+      "payload": {
+        "parent": "minecraft:item/template_spawn_egg"
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/bottle_taint.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/bottle_taint"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/causality_collapser.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/causality_collapser"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/banner_crimson_cult.json",
+      "payload": {
+        "parent": "minecraft:item/generated",
+        "textures": {
+          "layer0": "thaumcraft:item/banner_stand",
+          "layer1": "thaumcraft:item/banner_cultist"
+        },
+        "display": {
+          "thirdperson_righthand": {
+            "rotation": [
+              -90,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              1,
+              -2.5
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.55
+            ]
+          },
+          "firstperson_righthand": {
+            "rotation": [
+              0,
+              -135,
+              25
+            ],
+            "translation": [
+              0,
+              4,
+              2
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          }
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/banner.json",
+      "payload": {
+        "parent": "minecraft:block/cube_all",
+        "textures": {
+          "all": "thaumcraft:block/base_wood_grain"
+        }
+      }
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/banner_crimson_cult.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/banner"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "group": "minecraft:",
+  "research": "ARCANEPATTERNCRAFTER",
+  "vis": 50,
+  "crystals": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    0
+  ],
+  "result": {
+    "id": "thaumcraft:pattern_crafter",
+    "count": 1
+  },
+  "pattern": [
+    "VH ",
+    "GCG",
+    " W "
+  ],
+  "key": {
+    "H": {
+      "item": "minecraft:hopper"
+    },
+    "W": {
+      "item": "thaumcraft:plank_greatwood"
+    },
+    "G": {
+      "item": "thaumcraft:mechanism_simple"
+    },
+    "V": {
+      "item": "thaumcraft:vis_resonator"
+    },
+    "C": {
+      "tag": "c:workbenches"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:mechanism_simple"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:pattern_crafter"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:plank_greatwood"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:vis_resonator"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:workbenches"
+      }
+    }
+  ]
+}

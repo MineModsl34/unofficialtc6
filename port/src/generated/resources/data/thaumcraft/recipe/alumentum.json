@@ -1,0 +1,7 @@
+{
+  "type": "thaumcraft:crucible",
+  "research": "ALUMENTUM",
+  "result": {"id": "thaumcraft:alumentum", "count": 1},
+  "catalyst": [{"item": "minecraft:coal"}, {"item": "minecraft:charcoal"}],
+  "aspects": {"potentia": 10, "ignis": 10, "perditio": 5}
+}

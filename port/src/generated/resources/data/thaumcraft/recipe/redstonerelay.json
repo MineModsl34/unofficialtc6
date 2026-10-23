@@ -1,0 +1,44 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "group": "minecraft:",
+  "research": "REDSTONERELAY",
+  "vis": 10,
+  "crystals": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+  ],
+  "result": {
+    "id": "thaumcraft:redstone_relay",
+    "count": 1
+  },
+  "pattern": [
+    "   ",
+    "TGT",
+    "SSS"
+  ],
+  "key": {
+    "T": {
+      "item": "minecraft:redstone_torch"
+    },
+    "G": {
+      "item": "thaumcraft:mechanism_simple"
+    },
+    "S": {
+      "item": "minecraft:smooth_stone_slab"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:mechanism_simple"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:redstone_relay"
+    }
+  ]
+}

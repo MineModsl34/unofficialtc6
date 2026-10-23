@@ -1,0 +1,53 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "VOIDSEERPEARL",
+  "result": {
+    "id": "thaumcraft:voidseer_charm",
+    "count": 1
+  },
+  "instability": 8,
+  "aspects": {
+    "cognitio": 150,
+    "vacuos": 150,
+    "praecantatio": 100
+  },
+  "central": {
+    "item": "thaumcraft:amulet_fancy"
+  },
+  "components": [
+    {
+      "item": "thaumcraft:brain"
+    },
+    {
+      "item": "thaumcraft:void_seed"
+    },
+    {
+      "item": "thaumcraft:brain"
+    },
+    {
+      "item": "thaumcraft:primordial_pearl"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:amulet_fancy"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:brain"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:primordial_pearl"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:void_seed"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:voidseer_charm"
+    }
+  ]
+}

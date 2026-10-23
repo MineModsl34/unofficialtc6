@@ -1,0 +1,37 @@
+{
+  "variants": {
+    "charge=0": {
+      "model": "thaumcraft:block/stage6_vis_battery_variant_1"
+    },
+    "charge=1": {
+      "model": "thaumcraft:block/stage6_vis_battery_variant_2"
+    },
+    "charge=2": {
+      "model": "thaumcraft:block/stage6_vis_battery_variant_3"
+    },
+    "charge=3": {
+      "model": "thaumcraft:block/stage6_vis_battery_variant_4"
+    },
+    "charge=4": {
+      "model": "thaumcraft:block/stage6_vis_battery_variant_5"
+    },
+    "charge=5": {
+      "model": "thaumcraft:block/stage6_vis_battery_variant_6"
+    },
+    "charge=6": {
+      "model": "thaumcraft:block/stage6_vis_battery_variant_7"
+    },
+    "charge=7": {
+      "model": "thaumcraft:block/stage6_vis_battery_variant_8"
+    },
+    "charge=8": {
+      "model": "thaumcraft:block/stage6_vis_battery_variant_9"
+    },
+    "charge=9": {
+      "model": "thaumcraft:block/stage6_vis_battery_variant_10"
+    },
+    "charge=10": {
+      "model": "thaumcraft:block/stage6_vis_battery_variant_11"
+    }
+  }
+}

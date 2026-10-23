@@ -1,0 +1,7 @@
+{
+  "loader": "neoforge:obj",
+  "model": "thaumcraft:models/block/arcane_workbench_charger.obj",
+  "automatic_culling": false,
+  "flip_v": true,
+  "textures": {"particle": "thaumcraft:block/arcane_workbench_charger", "texture": "thaumcraft:block/arcane_workbench_charger"}
+}

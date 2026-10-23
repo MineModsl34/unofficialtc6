@@ -1,0 +1,19 @@
+{
+  "source_order": 21,
+  "input": {
+    "items": [
+      "minecraft:mutton"
+    ]
+  },
+  "output": {
+    "id": "thaumcraft:chunk_mutton",
+    "count": 1
+  },
+  "chance": 0.33,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:chunk_mutton"
+    }
+  ]
+}

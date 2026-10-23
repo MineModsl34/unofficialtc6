@@ -1,0 +1,9 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "crystals": [0, 0, 1, 0, 0, 0],
+  "key": {"B": {"item": "minecraft:glass_bottle"}, "E": {"item": "minecraft:fermented_spider_eye"}, "P": {"tag": "c:plates/brass"}, "G": {"item": "thaumcraft:mechanism_simple"}},
+  "pattern": ["B B", "E E", "PGP"],
+  "research": "GOLEMVISION",
+  "result": {"count": 1, "id": "thaumcraft:module_vision"},
+  "vis": 50
+}

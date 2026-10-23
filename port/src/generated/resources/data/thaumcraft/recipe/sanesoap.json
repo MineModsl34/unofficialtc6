@@ -1,0 +1,27 @@
+{
+  "type": "thaumcraft:crucible",
+  "research": "SANESOAP",
+  "result": {
+    "id": "thaumcraft:sanity_soap",
+    "count": 1
+  },
+  "catalyst": {
+    "item": "thaumcraft:flesh_block"
+  },
+  "aspects": {
+    "cognitio": 75,
+    "alienis": 50,
+    "ordo": 75,
+    "victus": 50
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:flesh_block"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:sanity_soap"
+    }
+  ]
+}

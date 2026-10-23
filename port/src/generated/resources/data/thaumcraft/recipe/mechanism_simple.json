@@ -1,0 +1,9 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "crystals": [0, 1, 1, 0, 0, 0],
+  "key": {"B": {"tag": "c:plates/brass"}, "I": {"tag": "c:plates/iron"}, "S": {"tag": "c:rods/wooden"}},
+  "pattern": [" B ", "ISI", " B "],
+  "research": "BASEARTIFICE",
+  "result": {"count": 1, "id": "thaumcraft:mechanism_simple"},
+  "vis": 10
+}

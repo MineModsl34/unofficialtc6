@@ -1,0 +1,24 @@
+{
+  "type": "thaumcraft:crucible",
+  "research": "SEALCOLLECT",
+  "result": {
+    "id": "thaumcraft:seal_pickup",
+    "count": 1
+  },
+  "catalyst": {
+    "item": "thaumcraft:seal_blank"
+  },
+  "aspects": {
+    "desiderium": 10
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:seal_blank"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:seal_pickup"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_plank_greatwood": {
+      "conditions": {
+        "items": [
+          {
+            "items": "thaumcraft:plank_greatwood"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "thaumcraft:stairsgreatwood"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_plank_greatwood"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "thaumcraft:stairsgreatwood"
+    ]
+  }
+}

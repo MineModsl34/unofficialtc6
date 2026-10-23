@@ -1,0 +1,8 @@
+{
+  "type": "thaumcraft:arcane_shapeless",
+  "crystals": [1, 0, 1, 0, 0, 0],
+  "ingredients": [{"tag": "c:plates/iron"}, {"tag": "c:gems/quartz"}],
+  "research": "UNLOCKAUROMANCY@2",
+  "result": {"count": 1, "id": "thaumcraft:vis_resonator"},
+  "vis": 50
+}

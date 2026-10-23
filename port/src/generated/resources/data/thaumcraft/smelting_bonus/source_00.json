@@ -1,0 +1,21 @@
+{
+  "source_order": 0,
+  "input": {
+    "legacy_ore": "oreGold",
+    "tag": "c:ores/gold"
+  },
+  "output": {
+    "id": "minecraft:gold_nugget",
+    "count": 1
+  },
+  "chance": 0.33,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ores/gold"
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "thaumcraft:crucible",
+  "research": "SEALBREAK&&MINDBIOTHAUMIC",
+  "result": {
+    "id": "thaumcraft:seal_breaker_advanced",
+    "count": 1
+  },
+  "catalyst": {
+    "item": "thaumcraft:seal_breaker"
+  },
+  "aspects": {
+    "sensus": 10,
+    "cognitio": 10,
+    "instrumentum": 20
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:seal_breaker"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:seal_breaker_advanced"
+    }
+  ]
+}

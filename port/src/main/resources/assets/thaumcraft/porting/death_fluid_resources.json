@@ -1,0 +1,21 @@
+{
+  "format": 1,
+  "source": "Thaumcraft 6.1.BETA26 ConfigBlocks.FluidDeath and BlockFluidDeath; native universal-bucket replacement",
+  "files": [
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/blockstates/liquid_death.json",
+      "payload": {"variants": {"": {"model": "thaumcraft:block/liquid_death"}}}
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/block/liquid_death.json",
+      "payload": {"textures": {"particle": "thaumcraft:block/animatedglow"}, "elements": []}
+    },
+    {
+      "target": "resource_pack",
+      "path": "thaumcraft/models/item/liquid_death_bucket.json",
+      "payload": {"parent": "neoforge:item/bucket", "loader": "neoforge:fluid_container", "fluid": "thaumcraft:liquid_death"}
+    }
+  ]
+}

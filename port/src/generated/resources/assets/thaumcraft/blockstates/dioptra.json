@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "enabled=false": {
+      "model": "thaumcraft:block/stage6_dioptra_variant_60"
+    },
+    "enabled=true": {
+      "model": "thaumcraft:block/stage6_dioptra_variant_61"
+    }
+  }
+}

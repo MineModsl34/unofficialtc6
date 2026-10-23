@@ -1,0 +1,51 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "FOCUSADVANCED@1",
+  "result": {
+    "id": "thaumcraft:focus_2",
+    "count": 1
+  },
+  "instability": 3,
+  "aspects": {
+    "praecantatio": 25,
+    "ordo": 50
+  },
+  "central": {
+    "item": "thaumcraft:focus_1"
+  },
+  "components": [
+    {
+      "item": "thaumcraft:quicksilver"
+    },
+    {
+      "tag": "c:gems/diamond"
+    },
+    {
+      "item": "thaumcraft:quicksilver"
+    },
+    {
+      "item": "minecraft:ender_pearl"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:focus_1"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:focus_2"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:quicksilver"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:gems/diamond"
+      }
+    }
+  ]
+}

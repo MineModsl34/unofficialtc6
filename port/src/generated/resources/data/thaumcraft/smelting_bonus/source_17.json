@@ -1,0 +1,19 @@
+{
+  "source_order": 17,
+  "input": {
+    "items": [
+      "minecraft:chicken"
+    ]
+  },
+  "output": {
+    "id": "thaumcraft:chunk_chicken",
+    "count": 1
+  },
+  "chance": 0.33,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:chunk_chicken"
+    }
+  ]
+}

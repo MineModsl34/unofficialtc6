@@ -1,0 +1,58 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "group": "minecraft:",
+  "research": "THAUMATORIUM",
+  "vis": 50,
+  "crystals": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    0
+  ],
+  "result": {
+    "id": "thaumcraft:brain_box",
+    "count": 1
+  },
+  "pattern": [
+    "IAI",
+    "ABA",
+    "IAI"
+  ],
+  "key": {
+    "B": {
+      "item": "thaumcraft:mind_clockwork"
+    },
+    "A": {
+      "tag": "c:gems/amber"
+    },
+    "I": {
+      "tag": "c:plates/iron"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:brain_box"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:mind_clockwork"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:gems/amber"
+      }
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:plates/iron"
+      }
+    }
+  ]
+}

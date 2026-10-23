@@ -1,0 +1,1724 @@
+{
+  "source": "ModelFortressArmor",
+  "sha256": "f29cc498b2871a0fc6efd27ea694391f6a41f7a227493febd0a259f8b74a84b4",
+  "textureWidth": 128,
+  "textureHeight": 64,
+  "parts": [
+    {
+      "name": "Mask0",
+      "u": 52,
+      "v": 2,
+      "box": [
+        -4.5,
+        -5,
+        -4.6,
+        9,
+        5,
+        1
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "parent": "bipedHead",
+      "variant": "both"
+    },
+    {
+      "name": "Mask1",
+      "u": 76,
+      "v": 2,
+      "box": [
+        -4.5,
+        -5,
+        -4.6,
+        9,
+        5,
+        1
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "parent": "bipedHead",
+      "variant": "both"
+    },
+    {
+      "name": "Mask2",
+      "u": 100,
+      "v": 2,
+      "box": [
+        -4.5,
+        -5,
+        -4.6,
+        9,
+        5,
+        1
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "parent": "bipedHead",
+      "variant": "both"
+    },
+    {
+      "name": "Goggles",
+      "u": 100,
+      "v": 18,
+      "box": [
+        -4.5,
+        -5,
+        -4.25,
+        9,
+        5,
+        1
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "parent": "bipedHead",
+      "variant": "both"
+    },
+    {
+      "name": "OrnamentL",
+      "u": 78,
+      "v": 8,
+      "box": [
+        1.5,
+        -9,
+        -6.5,
+        2,
+        2,
+        1
+      ],
+      "mirror": true,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.1396263,
+        0,
+        0
+      ],
+      "parent": "bipedHead",
+      "variant": "both"
+    },
+    {
+      "name": "OrnamentL2",
+      "u": 78,
+      "v": 8,
+      "box": [
+        3.5,
+        -10,
+        -6.5,
+        1,
+        2,
+        1
+      ],
+      "mirror": true,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.1396263,
+        0,
+        0
+      ],
+      "parent": "bipedHead",
+      "variant": "both"
+    },
+    {
+      "name": "OrnamentR",
+      "u": 78,
+      "v": 8,
+      "box": [
+        -3.5,
+        -9,
+        -6.5,
+        2,
+        2,
+        1
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.1396263,
+        0,
+        0
+      ],
+      "parent": "bipedHead",
+      "variant": "both"
+    },
+    {
+      "name": "OrnamentR2",
+      "u": 78,
+      "v": 8,
+      "box": [
+        -4.5,
+        -10,
+        -6.5,
+        1,
+        2,
+        1
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.1396263,
+        0,
+        0
+      ],
+      "parent": "bipedHead",
+      "variant": "both"
+    },
+    {
+      "name": "Helmet",
+      "u": 41,
+      "v": 8,
+      "box": [
+        -4.5,
+        -9,
+        -4.5,
+        9,
+        4,
+        9
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "parent": "bipedHead",
+      "variant": "both"
+    },
+    {
+      "name": "HelmetR",
+      "u": 21,
+      "v": 13,
+      "box": [
+        -6.5,
+        -3,
+        -4.5,
+        1,
+        5,
+        9
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0.5235988
+      ],
+      "parent": "bipedHead",
+      "variant": "both"
+    },
+    {
+      "name": "HelmetL",
+      "u": 21,
+      "v": 13,
+      "box": [
+        5.5,
+        -3,
+        -4.5,
+        1,
+        5,
+        9
+      ],
+      "mirror": true,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.5235988
+      ],
+      "parent": "bipedHead",
+      "variant": "both"
+    },
+    {
+      "name": "HelmetB",
+      "u": 41,
+      "v": 21,
+      "box": [
+        -4.5,
+        -3,
+        5.5,
+        9,
+        5,
+        1
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.5235988,
+        0,
+        0
+      ],
+      "parent": "bipedHead",
+      "variant": "both"
+    },
+    {
+      "name": "capsthingy",
+      "u": 21,
+      "v": 0,
+      "box": [
+        -4.5,
+        -6,
+        -6.5,
+        9,
+        1,
+        2
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "parent": "bipedHead",
+      "variant": "both"
+    },
+    {
+      "name": "flapR",
+      "u": 59,
+      "v": 10,
+      "box": [
+        -10,
+        -2,
+        -1,
+        3,
+        3,
+        1
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        -0.5235988,
+        0.5235988
+      ],
+      "parent": "bipedHead",
+      "variant": "both"
+    },
+    {
+      "name": "flapL",
+      "u": 59,
+      "v": 10,
+      "box": [
+        7,
+        -2,
+        -1,
+        3,
+        3,
+        1
+      ],
+      "mirror": true,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0.5235988,
+        -0.5235988
+      ],
+      "parent": "bipedHead",
+      "variant": "both"
+    },
+    {
+      "name": "Gemornament",
+      "u": 68,
+      "v": 11,
+      "box": [
+        -1.5,
+        -9,
+        -7,
+        3,
+        3,
+        2
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.1396263,
+        0,
+        0
+      ],
+      "parent": "bipedHead",
+      "variant": "both"
+    },
+    {
+      "name": "Gem",
+      "u": 72,
+      "v": 8,
+      "box": [
+        -1,
+        -8.5,
+        -7.5,
+        2,
+        2,
+        1
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.1396263,
+        0,
+        0
+      ],
+      "parent": "bipedHead",
+      "variant": "both"
+    },
+    {
+      "name": "BeltR",
+      "u": 76,
+      "v": 44,
+      "box": [
+        -5,
+        4,
+        -3,
+        1,
+        3,
+        6
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "parent": "bipedBody",
+      "variant": "outer"
+    },
+    {
+      "name": "Mbelt",
+      "u": 56,
+      "v": 55,
+      "box": [
+        -4,
+        8,
+        -3,
+        8,
+        4,
+        1
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "parent": "bipedBody",
+      "variant": "inner"
+    },
+    {
+      "name": "MbeltL",
+      "u": 76,
+      "v": 44,
+      "box": [
+        4,
+        8,
+        -3,
+        1,
+        3,
+        6
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "parent": "bipedBody",
+      "variant": "inner"
+    },
+    {
+      "name": "MbeltR",
+      "u": 76,
+      "v": 44,
+      "box": [
+        -5,
+        8,
+        -3,
+        1,
+        3,
+        6
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "parent": "bipedBody",
+      "variant": "inner"
+    },
+    {
+      "name": "BeltL",
+      "u": 76,
+      "v": 44,
+      "box": [
+        4,
+        4,
+        -3,
+        1,
+        3,
+        6
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "parent": "bipedBody",
+      "variant": "outer"
+    },
+    {
+      "name": "Chestplate",
+      "u": 56,
+      "v": 45,
+      "box": [
+        -4,
+        1,
+        -4,
+        8,
+        7,
+        2
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "parent": "bipedBody",
+      "variant": "outer"
+    },
+    {
+      "name": "Scroll",
+      "u": 34,
+      "v": 27,
+      "box": [
+        -2,
+        9.5,
+        4,
+        8,
+        3,
+        3
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0.1919862
+      ],
+      "parent": "bipedBody",
+      "variant": "outer"
+    },
+    {
+      "name": "Backplate",
+      "u": 36,
+      "v": 45,
+      "box": [
+        -4,
+        1,
+        2,
+        8,
+        11,
+        2
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "parent": "bipedBody",
+      "variant": "outer"
+    },
+    {
+      "name": "Book",
+      "u": 100,
+      "v": 8,
+      "box": [
+        1,
+        -0.3,
+        4,
+        5,
+        7,
+        2
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0.7679449
+      ],
+      "parent": "bipedBody",
+      "variant": "outer"
+    },
+    {
+      "name": "ShoulderR",
+      "u": 56,
+      "v": 35,
+      "box": [
+        -3.5,
+        -2.5,
+        -2.5,
+        5,
+        5,
+        5
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "parent": "bipedRightArm",
+      "variant": "both"
+    },
+    {
+      "name": "GauntletR",
+      "u": 100,
+      "v": 26,
+      "box": [
+        -3.5,
+        3.5,
+        -2.5,
+        2,
+        6,
+        5
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "parent": "bipedRightArm",
+      "variant": "both"
+    },
+    {
+      "name": "GauntletstrapR1",
+      "u": 84,
+      "v": 31,
+      "box": [
+        -1.5,
+        3.5,
+        -2.5,
+        3,
+        1,
+        5
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "parent": "bipedRightArm",
+      "variant": "both"
+    },
+    {
+      "name": "GauntletstrapR2",
+      "u": 84,
+      "v": 31,
+      "box": [
+        -1.5,
+        6.5,
+        -2.5,
+        3,
+        1,
+        5
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "parent": "bipedRightArm",
+      "variant": "both"
+    },
+    {
+      "name": "ShoulderplateRtop",
+      "u": 110,
+      "v": 37,
+      "box": [
+        -5.5,
+        -2.5,
+        -3.5,
+        2,
+        1,
+        7
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0.4363323
+      ],
+      "parent": "bipedRightArm",
+      "variant": "both"
+    },
+    {
+      "name": "ShoulderplateR1",
+      "u": 110,
+      "v": 45,
+      "box": [
+        -4.5,
+        -1.5,
+        -3.5,
+        1,
+        4,
+        7
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0.4363323
+      ],
+      "parent": "bipedRightArm",
+      "variant": "both"
+    },
+    {
+      "name": "ShoulderplateR2",
+      "u": 94,
+      "v": 45,
+      "box": [
+        -3.5,
+        1.5,
+        -3.5,
+        1,
+        3,
+        7
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0.4363323
+      ],
+      "parent": "bipedRightArm",
+      "variant": "both"
+    },
+    {
+      "name": "ShoulderplateR3",
+      "u": 94,
+      "v": 45,
+      "box": [
+        -2.5,
+        3.5,
+        -3.5,
+        1,
+        3,
+        7
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0.4363323
+      ],
+      "parent": "bipedRightArm",
+      "variant": "both"
+    },
+    {
+      "name": "ShoulderL",
+      "u": 56,
+      "v": 35,
+      "box": [
+        -1.5,
+        -2.5,
+        -2.5,
+        5,
+        5,
+        5
+      ],
+      "mirror": true,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "parent": "bipedLeftArm",
+      "variant": "both"
+    },
+    {
+      "name": "GauntletL",
+      "u": 114,
+      "v": 26,
+      "box": [
+        1.5,
+        3.5,
+        -2.5,
+        2,
+        6,
+        5
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "parent": "bipedLeftArm",
+      "variant": "both"
+    },
+    {
+      "name": "Gauntletstrapl1",
+      "u": 84,
+      "v": 31,
+      "box": [
+        -1.5,
+        3.5,
+        -2.5,
+        3,
+        1,
+        5
+      ],
+      "mirror": true,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "parent": "bipedLeftArm",
+      "variant": "both"
+    },
+    {
+      "name": "GauntletstrapL2",
+      "u": 84,
+      "v": 31,
+      "box": [
+        -1.5,
+        6.5,
+        -2.5,
+        3,
+        1,
+        5
+      ],
+      "mirror": true,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "parent": "bipedLeftArm",
+      "variant": "both"
+    },
+    {
+      "name": "ShoulderplateLtop",
+      "u": 110,
+      "v": 37,
+      "box": [
+        3.5,
+        -2.5,
+        -3.5,
+        2,
+        1,
+        7
+      ],
+      "mirror": true,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.4363323
+      ],
+      "parent": "bipedLeftArm",
+      "variant": "both"
+    },
+    {
+      "name": "ShoulderplateL1",
+      "u": 110,
+      "v": 45,
+      "box": [
+        3.5,
+        -1.5,
+        -3.5,
+        1,
+        4,
+        7
+      ],
+      "mirror": true,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.4363323
+      ],
+      "parent": "bipedLeftArm",
+      "variant": "both"
+    },
+    {
+      "name": "ShoulderplateL2",
+      "u": 94,
+      "v": 45,
+      "box": [
+        2.5,
+        1.5,
+        -3.5,
+        1,
+        3,
+        7
+      ],
+      "mirror": true,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.4363323
+      ],
+      "parent": "bipedLeftArm",
+      "variant": "both"
+    },
+    {
+      "name": "ShoulderplateL3",
+      "u": 94,
+      "v": 45,
+      "box": [
+        1.5,
+        3.5,
+        -3.5,
+        1,
+        3,
+        7
+      ],
+      "mirror": true,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.4363323
+      ],
+      "parent": "bipedLeftArm",
+      "variant": "both"
+    },
+    {
+      "name": "LegpanelR1",
+      "u": 0,
+      "v": 51,
+      "box": [
+        -1,
+        0.5,
+        -3.5,
+        3,
+        4,
+        1
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.4363323,
+        0,
+        0
+      ],
+      "parent": "bipedRightLeg",
+      "variant": "both"
+    },
+    {
+      "name": "LegpanelR2",
+      "u": 8,
+      "v": 51,
+      "box": [
+        -1,
+        3.5,
+        -2.5,
+        3,
+        4,
+        1
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.4363323,
+        0,
+        0
+      ],
+      "parent": "bipedRightLeg",
+      "variant": "both"
+    },
+    {
+      "name": "LegpanelR3",
+      "u": 0,
+      "v": 56,
+      "box": [
+        -1,
+        6.5,
+        -1.5,
+        3,
+        3,
+        1
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.4363323,
+        0,
+        0
+      ],
+      "parent": "bipedRightLeg",
+      "variant": "both"
+    },
+    {
+      "name": "LegpanelR4",
+      "u": 0,
+      "v": 43,
+      "box": [
+        -3,
+        0.5,
+        -3.5,
+        2,
+        3,
+        1
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.4363323,
+        0,
+        0
+      ],
+      "parent": "bipedRightLeg",
+      "variant": "both"
+    },
+    {
+      "name": "LegpanelR5",
+      "u": 0,
+      "v": 47,
+      "box": [
+        -3,
+        2.5,
+        -2.5,
+        2,
+        3,
+        1
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.4363323,
+        0,
+        0
+      ],
+      "parent": "bipedRightLeg",
+      "variant": "both"
+    },
+    {
+      "name": "LegpanelR6",
+      "u": 6,
+      "v": 43,
+      "box": [
+        -3,
+        4.5,
+        -1.5,
+        2,
+        3,
+        1
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.4363323,
+        0,
+        0
+      ],
+      "parent": "bipedRightLeg",
+      "variant": "both"
+    },
+    {
+      "name": "SidepanelR1",
+      "u": 0,
+      "v": 22,
+      "box": [
+        -2.5,
+        0.5,
+        -2.5,
+        1,
+        4,
+        5
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0.4363323
+      ],
+      "parent": "bipedRightLeg",
+      "variant": "both"
+    },
+    {
+      "name": "SidepanelR2",
+      "u": 0,
+      "v": 31,
+      "box": [
+        -1.5,
+        3.5,
+        -2.5,
+        1,
+        3,
+        5
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0.4363323
+      ],
+      "parent": "bipedRightLeg",
+      "variant": "both"
+    },
+    {
+      "name": "SidepanelR3",
+      "u": 12,
+      "v": 31,
+      "box": [
+        -0.5,
+        5.5,
+        -2.5,
+        1,
+        3,
+        5
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0.4363323
+      ],
+      "parent": "bipedRightLeg",
+      "variant": "both"
+    },
+    {
+      "name": "BackpanelR1",
+      "u": 0,
+      "v": 18,
+      "box": [
+        -3,
+        0.5,
+        2.5,
+        5,
+        3,
+        1
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.4363323,
+        0,
+        0
+      ],
+      "parent": "bipedRightLeg",
+      "variant": "both"
+    },
+    {
+      "name": "BackpanelR2",
+      "u": 0,
+      "v": 18,
+      "box": [
+        -3,
+        2.5,
+        1.5,
+        5,
+        3,
+        1
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.4363323,
+        0,
+        0
+      ],
+      "parent": "bipedRightLeg",
+      "variant": "both"
+    },
+    {
+      "name": "BackpanelR3",
+      "u": 0,
+      "v": 18,
+      "box": [
+        -3,
+        4.5,
+        0.5,
+        5,
+        3,
+        1
+      ],
+      "mirror": false,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.4363323,
+        0,
+        0
+      ],
+      "parent": "bipedRightLeg",
+      "variant": "both"
+    },
+    {
+      "name": "BackpanelL3",
+      "u": 0,
+      "v": 18,
+      "box": [
+        -2,
+        4.5,
+        0.5,
+        5,
+        3,
+        1
+      ],
+      "mirror": true,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.4363323,
+        0,
+        0
+      ],
+      "parent": "bipedLeftLeg",
+      "variant": "both"
+    },
+    {
+      "name": "LegpanelL1",
+      "u": 0,
+      "v": 51,
+      "box": [
+        -2,
+        0.5,
+        -3.5,
+        3,
+        4,
+        1
+      ],
+      "mirror": true,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.4363323,
+        0,
+        0
+      ],
+      "parent": "bipedLeftLeg",
+      "variant": "both"
+    },
+    {
+      "name": "LegpanelL2",
+      "u": 8,
+      "v": 51,
+      "box": [
+        -2,
+        3.5,
+        -2.5,
+        3,
+        4,
+        1
+      ],
+      "mirror": true,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.4363323,
+        0,
+        0
+      ],
+      "parent": "bipedLeftLeg",
+      "variant": "both"
+    },
+    {
+      "name": "LegpanelL3",
+      "u": 0,
+      "v": 56,
+      "box": [
+        -2,
+        6.5,
+        -1.5,
+        3,
+        3,
+        1
+      ],
+      "mirror": true,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.4363323,
+        0,
+        0
+      ],
+      "parent": "bipedLeftLeg",
+      "variant": "both"
+    },
+    {
+      "name": "LegpanelL4",
+      "u": 0,
+      "v": 43,
+      "box": [
+        1,
+        0.5,
+        -3.5,
+        2,
+        3,
+        1
+      ],
+      "mirror": true,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.4363323,
+        0,
+        0
+      ],
+      "parent": "bipedLeftLeg",
+      "variant": "both"
+    },
+    {
+      "name": "LegpanelL5",
+      "u": 0,
+      "v": 47,
+      "box": [
+        1,
+        2.5,
+        -2.5,
+        2,
+        3,
+        1
+      ],
+      "mirror": true,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.4363323,
+        0,
+        0
+      ],
+      "parent": "bipedLeftLeg",
+      "variant": "both"
+    },
+    {
+      "name": "LegpanelL6",
+      "u": 6,
+      "v": 43,
+      "box": [
+        1,
+        4.5,
+        -1.5,
+        2,
+        3,
+        1
+      ],
+      "mirror": true,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.4363323,
+        0,
+        0
+      ],
+      "parent": "bipedLeftLeg",
+      "variant": "both"
+    },
+    {
+      "name": "SidepanelL1",
+      "u": 0,
+      "v": 22,
+      "box": [
+        1.5,
+        0.5,
+        -2.5,
+        1,
+        4,
+        5
+      ],
+      "mirror": true,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.4363323
+      ],
+      "parent": "bipedLeftLeg",
+      "variant": "both"
+    },
+    {
+      "name": "SidepanelL2",
+      "u": 0,
+      "v": 31,
+      "box": [
+        0.5,
+        3.5,
+        -2.5,
+        1,
+        3,
+        5
+      ],
+      "mirror": true,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.4363323
+      ],
+      "parent": "bipedLeftLeg",
+      "variant": "both"
+    },
+    {
+      "name": "SidepanelL3",
+      "u": 12,
+      "v": 31,
+      "box": [
+        -0.5,
+        5.5,
+        -2.5,
+        1,
+        3,
+        5
+      ],
+      "mirror": true,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.4363323
+      ],
+      "parent": "bipedLeftLeg",
+      "variant": "both"
+    },
+    {
+      "name": "BackpanelL1",
+      "u": 0,
+      "v": 18,
+      "box": [
+        -2,
+        0.5,
+        2.5,
+        5,
+        3,
+        1
+      ],
+      "mirror": true,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.4363323,
+        0,
+        0
+      ],
+      "parent": "bipedLeftLeg",
+      "variant": "both"
+    },
+    {
+      "name": "BackpanelL2",
+      "u": 0,
+      "v": 18,
+      "box": [
+        -2,
+        2.5,
+        1.5,
+        5,
+        3,
+        1
+      ],
+      "mirror": true,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.4363323,
+        0,
+        0
+      ],
+      "parent": "bipedLeftLeg",
+      "variant": "both"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "group": "minecraft:",
+  "research": "DIOPTRA",
+  "vis": 50,
+  "crystals": [
+    1,
+    0,
+    1,
+    0,
+    0,
+    0
+  ],
+  "result": {
+    "id": "thaumcraft:dioptra",
+    "count": 1
+  },
+  "pattern": [
+    "APA",
+    "IGI",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "thaumcraft:stone_arcane"
+    },
+    "G": {
+      "item": "thaumcraft:thaumometer"
+    },
+    "P": {
+      "item": "thaumcraft:vis_resonator"
+    },
+    "I": {
+      "tag": "c:plates/iron"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:dioptra"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:stone_arcane"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:thaumometer"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:vis_resonator"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:plates/iron"
+      }
+    }
+  ]
+}

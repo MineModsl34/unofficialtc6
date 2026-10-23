@@ -1,0 +1,44 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "MIRRORHAND",
+  "result": {
+    "id": "thaumcraft:hand_mirror",
+    "count": 1
+  },
+  "instability": 5,
+  "aspects": {
+    "instrumentum": 50,
+    "motus": 50
+  },
+  "central": {
+    "item": "thaumcraft:mirror"
+  },
+  "components": [
+    {
+      "tag": "c:rods/wooden"
+    },
+    {
+      "item": "minecraft:compass"
+    },
+    {
+      "item": "minecraft:map"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:hand_mirror"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:mirror"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:rods/wooden"
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "thaumcraft:tagged_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "thaumcraft:nugget_copper"
+    }
+  },
+  "output_tag": "c:ingots/copper",
+  "count": 1,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ingots/copper"
+      }
+    }
+  ]
+}

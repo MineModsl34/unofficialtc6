@@ -1,0 +1,45 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "group": "minecraft:",
+  "research": "VISBATTERY",
+  "vis": 50,
+  "crystals": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "result": {
+    "id": "thaumcraft:vis_battery",
+    "count": 1
+  },
+  "pattern": [
+    "SSS",
+    "SRS",
+    "SSS"
+  ],
+  "key": {
+    "R": {
+      "item": "thaumcraft:vis_resonator"
+    },
+    "S": {
+      "item": "thaumcraft:slab_arcane_stone"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:slab_arcane_stone"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:vis_battery"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:vis_resonator"
+    }
+  ]
+}

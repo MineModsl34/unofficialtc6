@@ -1,0 +1,79 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "group": "minecraft:",
+  "research": "IMPROVEDSMELTING",
+  "vis": 100,
+  "crystals": [
+    1,
+    0,
+    0,
+    1,
+    0,
+    0
+  ],
+  "result": {
+    "id": "thaumcraft:smelter_aux",
+    "count": 1
+  },
+  "pattern": [
+    "WTW",
+    "RGR",
+    "IBI"
+  ],
+  "key": {
+    "W": {
+      "item": "thaumcraft:plank_greatwood"
+    },
+    "B": {
+      "item": "thaumcraft:bellows"
+    },
+    "R": {
+      "tag": "c:plates/brass"
+    },
+    "T": {
+      "item": "thaumcraft:tube_filter"
+    },
+    "I": {
+      "tag": "c:plates/iron"
+    },
+    "G": {
+      "item": "thaumcraft:metal_alchemical"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:bellows"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:metal_alchemical"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:plank_greatwood"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:smelter_aux"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:tube_filter"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:plates/brass"
+      }
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:plates/iron"
+      }
+    }
+  ]
+}

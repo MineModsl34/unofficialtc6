@@ -1,0 +1,56 @@
+{
+  "format": 1,
+  "source": "reference/tc6/src/thaumcraft/common/blocks/crafting/BlockFocalManipulator.java",
+  "entries": [
+    {
+      "path": "assets/thaumcraft/models/block/wand_workbench.json",
+      "payload": {
+        "parent": "thaumcraft:block/arcane_workbench",
+        "textures": {
+          "particle": "thaumcraft:block/wand_workbench_side",
+          "top": "thaumcraft:block/wand_workbench_top",
+          "side": "thaumcraft:block/wand_workbench_side",
+          "bottom": "thaumcraft:block/base_stone"
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/blockstates/wand_workbench.json",
+      "payload": {
+        "variants": {
+          "": {
+            "model": "thaumcraft:block/wand_workbench"
+          }
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/wand_workbench.json",
+      "payload": {
+        "parent": "thaumcraft:block/wand_workbench"
+      }
+    },
+    {
+      "path": "data/thaumcraft/loot_table/blocks/wand_workbench.json",
+      "payload": {
+        "type": "minecraft:block",
+        "pools": [
+          {
+            "rolls": 1,
+            "entries": [
+              {
+                "type": "minecraft:item",
+                "name": "thaumcraft:wand_workbench"
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:survives_explosion"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

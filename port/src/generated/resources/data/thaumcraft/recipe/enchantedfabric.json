@@ -1,0 +1,9 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "crystals": [0, 0, 0, 0, 0, 0],
+  "key": {"S": {"tag": "c:strings"}, "C": {"tag": "minecraft:wool"}},
+  "pattern": [" S ", "SCS", " S "],
+  "research": "UNLOCKINFUSION",
+  "result": {"count": 1, "id": "thaumcraft:fabric"},
+  "vis": 5
+}

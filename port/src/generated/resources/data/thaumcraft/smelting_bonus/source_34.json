@@ -1,0 +1,58 @@
+{
+  "source_order": 34,
+  "input": {
+    "items": [
+      "thaumcraft:cluster_iron",
+      "thaumcraft:cluster_gold",
+      "thaumcraft:cluster_copper",
+      "thaumcraft:cluster_tin",
+      "thaumcraft:cluster_silver",
+      "thaumcraft:cluster_lead",
+      "thaumcraft:cluster_cinnabar",
+      "thaumcraft:cluster_quartz"
+    ]
+  },
+  "output": {
+    "id": "thaumcraft:nugget_rareearth",
+    "count": 1
+  },
+  "chance": 0.02,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:cluster_cinnabar"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:cluster_copper"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:cluster_gold"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:cluster_iron"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:cluster_lead"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:cluster_quartz"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:cluster_silver"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:cluster_tin"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "thaumcraft:nugget_rareearth"
+    }
+  ]
+}

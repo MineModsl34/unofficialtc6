@@ -1,0 +1,7 @@
+{
+  "parent": "thaumcraft:block/inlay_side_alt",
+  "textures": {
+    "over": "thaumcraft:block/inlay_rune0"
+  },
+  "render_type": "minecraft:cutout"
+}

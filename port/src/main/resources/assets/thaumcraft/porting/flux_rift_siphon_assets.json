@@ -1,0 +1,669 @@
+{
+  "format": 1,
+  "source": "Thaumcraft6.1.BETA26",
+  "entries": [
+    {
+      "path": "assets/thaumcraft/blockstates/void_siphon.json",
+      "payload": {
+        "variants": {
+          "enabled=false": {
+            "model": "thaumcraft:block/void_siphon"
+          },
+          "enabled=true": {
+            "model": "thaumcraft:block/void_siphon"
+          }
+        }
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/block/void_siphon.json",
+      "payload": {
+        "ambientocclusion": false,
+        "textures": {
+          "side": "thaumcraft:block/void_siphon",
+          "particle": "thaumcraft:block/void_siphon"
+        },
+        "elements": [
+          {
+            "from": [
+              3,
+              0,
+              3
+            ],
+            "to": [
+              13,
+              2,
+              13
+            ],
+            "faces": {
+              "up": {
+                "uv": [
+                  0,
+                  11,
+                  5,
+                  16
+                ],
+                "texture": "#side"
+              },
+              "down": {
+                "uv": [
+                  0,
+                  11,
+                  5,
+                  16
+                ],
+                "texture": "#side"
+              },
+              "west": {
+                "uv": [
+                  0,
+                  9.5,
+                  5,
+                  10.5
+                ],
+                "texture": "#side"
+              },
+              "east": {
+                "uv": [
+                  0,
+                  9.5,
+                  5,
+                  10.5
+                ],
+                "texture": "#side"
+              },
+              "north": {
+                "uv": [
+                  0,
+                  9.5,
+                  5,
+                  10.5
+                ],
+                "texture": "#side"
+              },
+              "south": {
+                "uv": [
+                  0,
+                  9.5,
+                  5,
+                  10.5
+                ],
+                "texture": "#side"
+              }
+            }
+          },
+          {
+            "from": [
+              6,
+              12,
+              6
+            ],
+            "to": [
+              10,
+              16,
+              10
+            ],
+            "faces": {
+              "up": {
+                "uv": [
+                  0.5,
+                  0.5,
+                  2.5,
+                  2.5
+                ],
+                "texture": "#side"
+              },
+              "down": {
+                "uv": [
+                  0.5,
+                  0.5,
+                  2.5,
+                  2.5
+                ],
+                "texture": "#side"
+              },
+              "west": {
+                "uv": [
+                  0.5,
+                  0.5,
+                  2.5,
+                  2.5
+                ],
+                "texture": "#side"
+              },
+              "east": {
+                "uv": [
+                  0.5,
+                  0.5,
+                  2.5,
+                  2.5
+                ],
+                "texture": "#side"
+              },
+              "north": {
+                "uv": [
+                  0.5,
+                  0.5,
+                  2.5,
+                  2.5
+                ],
+                "texture": "#side"
+              },
+              "south": {
+                "uv": [
+                  0.5,
+                  0.5,
+                  2.5,
+                  2.5
+                ],
+                "texture": "#side"
+              }
+            }
+          },
+          {
+            "from": [
+              3,
+              8,
+              6
+            ],
+            "to": [
+              13,
+              10,
+              10
+            ],
+            "faces": {
+              "up": {
+                "uv": [
+                  11,
+                  4.5,
+                  16,
+                  6.5
+                ],
+                "texture": "#side"
+              },
+              "west": {
+                "uv": [
+                  12.5,
+                  0,
+                  14.5,
+                  1
+                ],
+                "texture": "#side"
+              },
+              "east": {
+                "uv": [
+                  12.5,
+                  0,
+                  14.5,
+                  1
+                ],
+                "texture": "#side"
+              },
+              "north": {
+                "uv": [
+                  11,
+                  0,
+                  16,
+                  1
+                ],
+                "texture": "#side"
+              },
+              "south": {
+                "uv": [
+                  11,
+                  0,
+                  16,
+                  1
+                ],
+                "texture": "#side"
+              }
+            }
+          },
+          {
+            "from": [
+              6,
+              8,
+              3
+            ],
+            "to": [
+              10,
+              10,
+              13
+            ],
+            "faces": {
+              "up": {
+                "uv": [
+                  11,
+                  4.5,
+                  16,
+                  6.5
+                ],
+                "texture": "#side",
+                "rotation": 90
+              },
+              "west": {
+                "uv": [
+                  11,
+                  0,
+                  16,
+                  1
+                ],
+                "texture": "#side"
+              },
+              "east": {
+                "uv": [
+                  11,
+                  0,
+                  16,
+                  1
+                ],
+                "texture": "#side"
+              },
+              "north": {
+                "uv": [
+                  12.5,
+                  0,
+                  14.5,
+                  1
+                ],
+                "texture": "#side"
+              },
+              "south": {
+                "uv": [
+                  12.5,
+                  0,
+                  14.5,
+                  1
+                ],
+                "texture": "#side"
+              }
+            }
+          },
+          {
+            "from": [
+              5,
+              9,
+              5
+            ],
+            "to": [
+              11,
+              11,
+              11
+            ],
+            "faces": {
+              "up": {
+                "uv": [
+                  0.5,
+                  4,
+                  3.5,
+                  7
+                ],
+                "texture": "#side"
+              },
+              "west": {
+                "uv": [
+                  0.5,
+                  7.5,
+                  3.5,
+                  8.5
+                ],
+                "texture": "#side"
+              },
+              "east": {
+                "uv": [
+                  0.5,
+                  7.5,
+                  3.5,
+                  8.5
+                ],
+                "texture": "#side"
+              },
+              "north": {
+                "uv": [
+                  0.5,
+                  7.5,
+                  3.5,
+                  8.5
+                ],
+                "texture": "#side"
+              },
+              "south": {
+                "uv": [
+                  0.5,
+                  7.5,
+                  3.5,
+                  8.5
+                ],
+                "texture": "#side"
+              }
+            }
+          },
+          {
+            "from": [
+              4,
+              2,
+              4
+            ],
+            "to": [
+              12,
+              9,
+              12
+            ],
+            "faces": {
+              "up": {
+                "uv": [
+                  10.5,
+                  12,
+                  14.5,
+                  16
+                ],
+                "texture": "#side"
+              },
+              "west": {
+                "uv": [
+                  6,
+                  12.5,
+                  10,
+                  16
+                ],
+                "texture": "#side"
+              },
+              "east": {
+                "uv": [
+                  6,
+                  12.5,
+                  10,
+                  16
+                ],
+                "texture": "#side"
+              },
+              "north": {
+                "uv": [
+                  6,
+                  12.5,
+                  10,
+                  16
+                ],
+                "texture": "#side"
+              },
+              "south": {
+                "uv": [
+                  6,
+                  12.5,
+                  10,
+                  16
+                ],
+                "texture": "#side"
+              }
+            }
+          },
+          {
+            "from": [
+              6,
+              2,
+              3
+            ],
+            "to": [
+              7,
+              8,
+              13
+            ],
+            "faces": {
+              "west": {
+                "uv": [
+                  11,
+                  1,
+                  16,
+                  4
+                ],
+                "texture": "#side"
+              },
+              "east": {
+                "uv": [
+                  11,
+                  1,
+                  16,
+                  4
+                ],
+                "texture": "#side"
+              },
+              "north": {
+                "uv": [
+                  14,
+                  1,
+                  14.5,
+                  4
+                ],
+                "texture": "#side"
+              },
+              "south": {
+                "uv": [
+                  12.5,
+                  1,
+                  13,
+                  4
+                ],
+                "texture": "#side"
+              }
+            }
+          },
+          {
+            "from": [
+              3,
+              2,
+              6
+            ],
+            "to": [
+              13,
+              8,
+              7
+            ],
+            "faces": {
+              "west": {
+                "uv": [
+                  12.5,
+                  1,
+                  13,
+                  4
+                ],
+                "texture": "#side"
+              },
+              "east": {
+                "uv": [
+                  14,
+                  1,
+                  14.5,
+                  4
+                ],
+                "texture": "#side"
+              },
+              "north": {
+                "uv": [
+                  11,
+                  1,
+                  16,
+                  4
+                ],
+                "texture": "#side"
+              },
+              "south": {
+                "uv": [
+                  11,
+                  1,
+                  16,
+                  4
+                ],
+                "texture": "#side"
+              }
+            }
+          },
+          {
+            "from": [
+              9,
+              2,
+              3
+            ],
+            "to": [
+              10,
+              8,
+              13
+            ],
+            "faces": {
+              "west": {
+                "uv": [
+                  11,
+                  1,
+                  16,
+                  4
+                ],
+                "texture": "#side"
+              },
+              "east": {
+                "uv": [
+                  11,
+                  1,
+                  16,
+                  4
+                ],
+                "texture": "#side"
+              },
+              "north": {
+                "uv": [
+                  14,
+                  1,
+                  14.5,
+                  4
+                ],
+                "texture": "#side"
+              },
+              "south": {
+                "uv": [
+                  12.5,
+                  1,
+                  13,
+                  4
+                ],
+                "texture": "#side"
+              }
+            }
+          },
+          {
+            "from": [
+              3,
+              2,
+              9
+            ],
+            "to": [
+              13,
+              8,
+              10
+            ],
+            "faces": {
+              "west": {
+                "uv": [
+                  12.5,
+                  1,
+                  13,
+                  4
+                ],
+                "texture": "#side"
+              },
+              "east": {
+                "uv": [
+                  14,
+                  1,
+                  14.5,
+                  4
+                ],
+                "texture": "#side"
+              },
+              "north": {
+                "uv": [
+                  11,
+                  1,
+                  16,
+                  4
+                ],
+                "texture": "#side"
+              },
+              "south": {
+                "uv": [
+                  11,
+                  1,
+                  16,
+                  4
+                ],
+                "texture": "#side"
+              }
+            }
+          }
+        ],
+        "parent": "minecraft:block/block"
+      }
+    },
+    {
+      "path": "assets/thaumcraft/models/item/void_siphon.json",
+      "payload": {
+        "parent": "thaumcraft:block/void_siphon"
+      }
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "reference/tc6/src/thaumcraft/common/entities/EntityFluxRift.java",
+      "sha256": "5994388d6e8adc785d6a25423f091978071ea9c3db100389592f7d831905a203"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/common/tiles/crafting/TileVoidSiphon.java",
+      "sha256": "28eb7fc9fda177d24251984fbcfc077c71dc3c9819e5e42b6a598f4ad1ec10e2"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/common/container/ContainerVoidSiphon.java",
+      "sha256": "8835c0a66fcf30e81dc059ea8f1ba8196a9e493c8ea1f5b17d32f38cf2268fea"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/common/blocks/crafting/BlockVoidSiphon.java",
+      "sha256": "f7b30c3f8743838fec9f186e534ec1d779f859a4da857b500e07e3658b0cb3e0"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/client/renderers/entity/RenderFluxRift.java",
+      "sha256": "b263cd3e0a180db92c9707b11f80817505dcd6a3902a94d5e6438a8250dc790e"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/client/renderers/tile/TileVoidSiphonRenderer.java",
+      "sha256": "36e32b81687e7e66bba1c357a99d0d2f6752539a129d326cacf25fae78673ee7"
+    },
+    {
+      "path": "reference/tc6/src/thaumcraft/client/gui/GuiVoidSiphon.java",
+      "sha256": "f37248159b510a54bdff4b6c4a225ffeadf775ec43798341cba3db966ee3ef8d"
+    },
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/blockstates/void_siphon.json",
+      "sha256": "d3d10a432df276fb73ae44aad901803dad3ef433863aff38b79ab3df0c50e633"
+    },
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/models/block/void_siphon.json",
+      "sha256": "a587d26bc16ede0d5e054d6e727f0baca887eeb96e57f41e6b0bb15ed5626c7a"
+    },
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/textures/blocks/void_siphon.png",
+      "sha256": "8afe4e68ecbd3090e05c5ce85a7b4d6c0c2fde5ed5d64afa84fb0caa069720fd"
+    },
+    {
+      "path": "reference/tc6/src/assets/thaumcraft/textures/gui/gui_void_siphon.png",
+      "sha256": "222e2cd3fa1520d5f7e3ee0d8a4054d4b13fd2e25bba1a03358e62f81f3abeaf"
+    },
+    {
+      "path": "reference/tc6/src/com/sasmaster/glelwjgl/java/CoreGLE.java",
+      "sha256": "6e5f60882da0c95290216029b441424f3d4f09181257bd7d47052ec19d5211b7"
+    },
+    {
+      "path": "reference/tc6/src/com/sasmaster/glelwjgl/java/intersect.java",
+      "sha256": "5e1b796fd813d43d5e780db084307136b00019535f9aa6a1d4703e5533e6dcbc"
+    },
+    {
+      "path": "reference/tc6/src/com/sasmaster/glelwjgl/java/matrix.java",
+      "sha256": "12bd27f5656a37328595c7e8cbb40472b7ba4fa68d8e97f32dbdcfbb3c1e7f2f"
+    }
+  ]
+}

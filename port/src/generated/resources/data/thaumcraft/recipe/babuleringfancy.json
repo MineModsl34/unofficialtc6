@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "thaumcraft:baubles_stuff",
+  "key": {
+    "G": {
+      "tag": "c:gems/diamond"
+    },
+    "N": {
+      "tag": "c:nuggets/gold"
+    }
+  },
+  "pattern": [
+    "NGN",
+    "N N",
+    "NNN"
+  ],
+  "result": {
+    "count": 1,
+    "id": "thaumcraft:ring_fancy"
+  }
+}

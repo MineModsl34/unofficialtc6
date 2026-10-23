@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "enabled=false": {
+      "model": "thaumcraft:block/stage6_condenser_variant_77"
+    },
+    "enabled=true": {
+      "model": "thaumcraft:block/stage6_condenser"
+    }
+  }
+}

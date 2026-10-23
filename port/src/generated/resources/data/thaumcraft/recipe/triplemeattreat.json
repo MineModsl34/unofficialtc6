@@ -1,0 +1,7 @@
+{
+  "type": "thaumcraft:triplemeattreat",
+  "category": "misc",
+  "neoforge:conditions": [
+    { "type": "neoforge:item_exists", "item": "thaumcraft:triple_meat_treat" }
+  ]
+}

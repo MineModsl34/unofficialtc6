@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_plank_silverwood": {
+      "conditions": {
+        "items": [
+          {
+            "items": "thaumcraft:plank_silverwood"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "thaumcraft:slabsilverwood"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_plank_silverwood"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "thaumcraft:slabsilverwood"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+package thaumcraft.api.items;
+import java.util.ArrayList;
+import net.minecraft.core.*;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.phys.HitResult;
+public interface IArchitect {
+    HitResult getArchitectMOP(ItemStack stack,Level level,LivingEntity player);boolean useBlockHighlight(ItemStack stack);
+    ArrayList<BlockPos> getArchitectBlocks(ItemStack stack,Level level,BlockPos pos,Direction side,Player player);
+    boolean showAxis(ItemStack stack,Level level,Player player,Direction side,EnumAxis axis);
+    enum EnumAxis {X,Y,Z}
+}
